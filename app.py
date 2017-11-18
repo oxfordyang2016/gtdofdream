@@ -92,7 +92,7 @@ def information():
         all_users = User.query.all()
         #print(all_users)
         for k in all_users:
-            print(k.email)
+            print(str(k.email)+'email')
         #content = task(content)
         #print(content)
         return json.dumps({'content':str(content),'time':str(time.time())})
