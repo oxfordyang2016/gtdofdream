@@ -58,9 +58,9 @@ def everyday():
 
 #a=requests.post("https://gtdofdream.herokuapp.com/info/",data={'foo':'bar','input':'yangming is here'})
 
-
+'''
 #python flask deal with flask post
-# requests.post('http://localhost:5000/info',data={'user':'yangming','userinput':'yangming is here','content':'yangming'}).text
+# requests.post('http://:5000/info',data={'user':'yangming','userinput':'yangming is here','content':'yangming'}).text
 @app.route('/info',methods=['GET', 'POST'])
 def info():
     print("i have no word")
@@ -72,13 +72,35 @@ def info():
         #print(content)
         userinput = request.values.get('input')
         taskcontent = task(str(userinput)
-        db.session.add(str(taskcontent)    
-        db.session.commit()    
-    #content = "yangming"
-    a={'test':'yangming is hereko','userinput':str(userinput),'time':str(time.time()),'user':str(username)}
+    db.session.add(taskcontent)    
+    db.session.commit()    
+    content = "yangming"
+    a = {'test':'yangming is hereko','userinput':str(userinput),'time':str(time.time()),'user':str(username)}
     #print(content)
     #print(userinput)
     return json.dumps(a)
+
+'''
+
+@app.route('/info',methods=['GET','POST'])
+def info():
+    if request.method == 'POST':
+        timer = str(time.time())
+        content = request.values.get('input')
+        taskcontent = task(str(content))
+        db.session.add(taskcontent)
+        db.session.commit()
+    a={'date':timer,'content':str(content)}
+    return json.dumps(a)    
+
+
+
+
+
+
+
+
+
 
 
 
