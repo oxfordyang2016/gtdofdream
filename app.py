@@ -81,7 +81,7 @@ def info():
     return json.dumps(a)
 
 '''
-
+'''
 @app.route('/info',methods=['GET','POST'])
 def info():
     if request.method == 'POST':
@@ -99,6 +99,23 @@ def info():
     return json.dumps(a)    
 
 
+'''
+
+@app.route('/info',methods=['GET','POST'])
+def info():
+    if request.method == 'POST':
+        timer = str(time.time())
+        content = request.values.get('input')
+        print(content)
+        taskcontent = task(content)
+        print(taskcontent)
+        #print("====================")
+        #print(taskcontent)
+        print("++++++++++++++++++++")
+        db.session.add(taskcontent)
+        db.session.commit()
+    a={'date':timer,'content':str(content)}
+    return json.dumps(a)    
 
 
 
