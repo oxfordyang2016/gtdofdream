@@ -86,7 +86,7 @@ def information():
     if request.method == 'POST':
         content = request.values.get('input')
         print(content)
-        #content = task(content)
+        content = task(content)
         print(content)
         return json.dumps({'content':str(content)})
   
