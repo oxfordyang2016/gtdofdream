@@ -41,7 +41,7 @@ class task(db.Model):
 
 @app.route('/')
 def hello_world():
-    return render_template('in.thml')
+    return render_template('in.html')
 
 
 
