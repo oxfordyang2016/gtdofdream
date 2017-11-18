@@ -122,7 +122,7 @@ def info1():
 
 
 @app.route('/testpost')
-def info1():
+def info2():
 
     a={'test':'++++++++++++','time':str(time.time())}
 
