@@ -43,6 +43,12 @@ class task(db.Model):
 def hello_world():
     return render_template('in.html')
 
+@app.route('/all')
+def all():
+    return render_template('all.html')
+
+
+
 
 
 
