@@ -2,6 +2,7 @@ import os,time,json
 from flask import Flask, request
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
+from models import User1
 #in procfile to specify the python run the app
 #web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
@@ -85,7 +86,7 @@ def info():
 def information():
     if request.method == 'POST':
         content = request.values.get('input')
-        user = User('John Doe', str(content))
+        user = User1('John Doe', str(content))
         db.session.add(user)
         db.session.commit()
         print(content)
