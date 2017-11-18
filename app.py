@@ -6,6 +6,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 #web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 db = SQLAlchemy(app)
 
 
@@ -26,12 +27,13 @@ class User(db.Model):
 class task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.String(80))
-    typeoftask = db.Column(db.String(80))
+
     task = db.Column(db.String(120), unique=True)
 
     def __init__(self, task):
         self.task = task
         self.date = str(time.time())
+
 
     def __repr__(self):
         return '<Name %r>' % self.name
@@ -85,14 +87,18 @@ def info():
 def information():
     if request.method == 'POST':
         content = request.values.get('input')
-        user = User(str(time.time()), str(content)+str(time.time()))
-        db.session.add(user)
+        #user = User(str(time.time()), str(content)+str(time.time()))
+        #db.session.add(user)
+        taskcontent = task(str(content))
+        db.session.add(taskcontent)
         db.session.commit()
         print(content)
-        all_users = User.query.all()
+        #all_users = User.query.all()
         #print(all_users)
+        '''
         for k in all_users:
             print(str(k.email)+'email')
+        '''    
         #content = task(content)
         #print(content)
         return json.dumps({'content':str(content),'time':str(time.time())})
