@@ -91,6 +91,7 @@ def info():
         taskcontent = task(str(content))
         print("====================")
         print(taskcontent)
+        print("++++++++++++++++++++")
         db.session.add(taskcontent)
         db.session.commit()
     a={'date':timer,'content':str(content)}
