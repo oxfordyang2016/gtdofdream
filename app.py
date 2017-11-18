@@ -55,12 +55,13 @@ def project():
 def everyday():
     return render_template('everyday.html')
 
-
+#a=requests.post("https://gtdofdream.herokuapp.com/info/",data={'foo':'bar','input':'yangming is here'})
 
 @app.route('/info')
 def info():
     req_data = request.get_json()
     content = req_data['foo']
+    print(content)
     userinput = req_data['input']
     #content = "yangming"
     a={'test':'yangming is hereko','time':str(time.time()),'content':str(content),'userinpit':str(userinput)}
