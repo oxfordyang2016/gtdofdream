@@ -85,9 +85,9 @@ def info():
 def information():
     if request.method == 'POST':
         content = request.values.get('input')
-        #user = User('John Doe', str(content))
-        #db.session.add(user)
-        #db.session.commit()
+        user = User('John Doe', str(content))
+        db.session.add(user)
+        db.session.commit()
         print(content)
         #all_users = User.query.all()
         #print(all_users)
