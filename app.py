@@ -108,7 +108,7 @@ def info():
         content = request.values.get('input')
         print(content)
         taskcontent = task(str(content)
-        print(taskcontent)
+        #print(taskcontent)
         #print("====================")
         #print(taskcontent)
         print("++++++++++++++++++++")
