@@ -39,13 +39,20 @@ class task(db.Model):
 
 
 
-@app.route('/')
+@app.route('/in')
 def hello_world():
     return render_template('in.html')
 
 @app.route('/all')
 def all():
     return render_template('all.html')
+
+@app.route('/project')
+def project():
+    return render_template('project.html')
+
+
+
 
 
 
