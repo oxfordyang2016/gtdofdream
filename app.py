@@ -88,7 +88,7 @@ def info():
         timer = str(time.time())
         content = request.values.get('input')
         print(content)
-        taskcontent = task(str(content))
+        taskcontent = task(content)
         print("====================")
         print(taskcontent)
         print("++++++++++++++++++++")
