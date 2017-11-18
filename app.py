@@ -121,8 +121,12 @@ def info1():
     return json.dumps(a)
 
 
+@app.route('/testpost')
+def info1():
 
+    a={'test':'++++++++++++','time':str(time.time())}
 
+    return json.dumps(a)
 
 
 
