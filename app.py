@@ -82,7 +82,7 @@ def info():
 
 '''
 @app.route('/info',methods=['GET','POST'])
-def info1():
+def information():
     if request.method == 'POST':
         content = request.values.get('input')
         print(content)
