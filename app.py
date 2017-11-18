@@ -26,7 +26,7 @@ class User(db.Model):
 
 @app.route('/')
 def hello_world():
-    return 'Hello World'
+    return render_template('in.thml')
 
 
 
