@@ -2,7 +2,6 @@ import os,time,json
 from flask import Flask, request
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-from models import User1
 #in procfile to specify the python run the app
 #web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
