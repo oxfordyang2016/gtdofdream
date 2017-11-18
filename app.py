@@ -1,4 +1,4 @@
-import os
+import os,time,json
 from flask import Flask, request
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -26,6 +26,7 @@ class User(db.Model):
 class task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.String(80))
+    typeoftask = db.Column(db.String(80))
     task = db.Column(db.String(120), unique=True)
 
     def __init__(self, task):
@@ -57,21 +58,36 @@ def everyday():
 
 #a=requests.post("https://gtdofdream.herokuapp.com/info/",data={'foo':'bar','input':'yangming is here'})
 
-@app.route('/info')
+
+#python flask deal with flask post
+# requests.post('http://localhost:5000/info',data={'user':'yangming','userinput':'yangming is here','content':'yangming'}).text
+@app.route('/info',methods=['GET', 'POST'])
 def info():
-    req_data = request.get_json()
-    content = req_data['foo']
-    print(content)
-    userinput = req_data['input']
+    print("i have no word")
+    if request.method == 'POST':
+        username = request.values.get('user')
+        print(username)
+        #req_data = request.get_json()
+        content = request.values.get('foo')
+        #print(content)
+        userinput = request.values.get('input')
+        taskcontent = task(str(userinput)
+        db.session.add(str(taskcontent)    
+        db.session.commit()    
     #content = "yangming"
-    a={'test':'yangming is hereko','time':str(time.time()),'content':str(content),'userinpit':str(userinput)}
-    print(content)
-    print(userinput)
+    a={'test':'yangming is hereko','userinput':str(userinput),'time':str(time.time()),'user':str(username)}
+    #print(content)
+    #print(userinput)
     return json.dumps(a)
 
 
 
+@app.route('/test')
+def info1():
 
+    a={'test':'yangming is hereko','time':str(time.time())}
+
+    return json.dumps(a)
 
 
 
