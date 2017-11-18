@@ -12,7 +12,7 @@ class User1(db.Model):
         return '<Name %r>' % self.name
 
 
- class task(db.Model):
+class task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.String(80))
     typeoftask = db.Column(db.String(80))
