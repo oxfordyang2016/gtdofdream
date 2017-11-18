@@ -28,9 +28,9 @@ class task(db.Model):
     date = db.Column(db.String(80))
     task = db.Column(db.String(120), unique=True)
 
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
+    def __init__(self, task):
+        self.task = task
+        self.date = str(time.time())
 
     def __repr__(self):
         return '<Name %r>' % self.name
