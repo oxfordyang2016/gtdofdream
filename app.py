@@ -7,7 +7,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
-db.create_all()
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -85,6 +85,9 @@ def info():
 def information():
     if request.method == 'POST':
         content = request.values.get('input')
+        user = User('John Doe', str(content))
+        db.session.add(user)
+        db.session.commit()
         print(content)
         #content = task(content)
         #print(content)
