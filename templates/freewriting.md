@@ -27,6 +27,13 @@ someone
 get big data to sell   !!!
 
 
+--------
+flask deal with json
+----------
+https://scotch.io/bar-talk/processing-incoming-request-data-in-flask
+
+
+
 
 ---------
 someone

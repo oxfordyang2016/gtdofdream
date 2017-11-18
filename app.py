@@ -1,9 +1,9 @@
 import os
-
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-
+#in procfile to specify the python run the app
+#web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app)
@@ -54,6 +54,26 @@ def project():
 @app.route('/everyday')
 def everyday():
     return render_template('everyday.html')
+
+
+
+@app.route('/info')
+def info():
+    req_data = request.get_json()
+    content = req_data['foo']
+    userinput = req_data['input']
+    #content = "yangming"
+    a={'test':'yangming is hereko','time':str(time.time()),'content':str(content),'userinpit':str(userinput)}
+    print(content)
+    print(userinput)
+    return json.dumps(a)
+
+
+
+
+
+
+
 
 
 
