@@ -51,7 +51,9 @@ def all():
 def project():
     return render_template('project.html')
 
-
+@app.route('/everyday')
+def everyday():
+    return render_template('everyday.html')
 
 
 
