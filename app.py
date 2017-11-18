@@ -22,9 +22,13 @@ class User(db.Model):
         return '<Name %r>' % self.name
 
 
+
+
 @app.route('/')
-def home():
-    return render_template('index.html')
+def hello_world():
+    return 'Hello World'
+
+
 
 
 @app.route('/robots.txt')
