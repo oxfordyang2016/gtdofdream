@@ -85,7 +85,7 @@ def info():
 def information():
     if request.method == 'POST':
         content = request.values.get('input')
-        user = User(str(time.time()), str(content))
+        user = User(str(time.time()), str(content)+str(time.time()))
         db.session.add(user)
         db.session.commit()
         print(content)
