@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yangming's computer intro</title>
+    <style>
+    /* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+
+.red{
+    color: red
+}
+    </style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's Computer Intro</a></h2>
+
+      <ul>
+         <li><a href="http://stackoverflow.com/questions/5201852/what-is-a-thread-really">Thread</a></li>
+ <li><a href="http://serverfault.com/questions/262071/whats-the-difference-between-a-gateway-and-a-router">gateway and router</a></li>
+     <!--   <li><a href="http://www.wadewegner.com/2014/12/easy-go-programming-setup-for-windows/">Golang setup-for-windows</a></li>
+        <li><a href="https://github.com/DisposaBoy/GoSublime">configure a good editor  in sublime </a></li>
+		<li><a href="hello-world">Hello World</a></li>
+		
+                 
+        <li><a href="values">Values</a></li>
+      
+        <li><a href="variables">Variables</a></li>
+        <li><a href="https://gobyexample.com/constants">Constants</a></li>
+      
+        <li><a href ="http://stackoverflow.com/questions/20170275/how-to-find-a-type-of-a-object-in-golang"> Get object type</a><li>    
+        <li><a href="for">For</a></li>
+      
+        <li><a href="https://gobyexample.com/if-else">If/Else</a></li>
+		<li><a href="https://yangmingweatherapp.herokuapp.com/format/">If/Else 2</a></li>
+      
+        <li><a href="https://gobyexample.com/switch/">Switch</a></li>
+      
+        <li><a href="https://gobyexample.com/arrays">Arrays</a></li>
+		<li><a href="https://yangmingweatherapp.herokuapp.com/slice/">Slices 1</a></li>
+		<li><a href="https://yangmingweatherapp.herokuapp.com/slice/">return slice</a></li>
+      
+        <li><a href="https://gobyexample.com/slices">Slices 2</a></li>
+      
+        <li><a href="https://gobyexample.com/maps">Maps</a></li>
+      
+        <li><a href="https://gobyexample.com/range">Range</a></li>
+      
+        <li><a href="functions">Functions</a></li>
+        <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/function.jpg">all kinds of Functions</a></li>
+        <li><a href="http://stackoverflow.com/questions/8263546/whats-the-difference-of-functions-and-methods-in-go">Functions and Method</a></li>
+        <li><a href="https://yangmingweatherapp.herokuapp.com/gopackage/">shit!package!</a></li>
+        <li><a href="https://github.com/oxfordyang2016/caton_time/tree/master/package">shit!package!2</a></li>		 
+        <li><a href="https://gobyexample.com/multiple-return-values">Multiple Return Values</a></li>
+
+        <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/type.jpg">type</a></li>
+        <li><a href="variadic-functions">Variadic Functions</a></li>
+      
+        <li><a href="closures">Closures</a></li>
+      
+        <li><a href="recursion">Recursion</a></li>
+		 <li><a href="http://www.tutorialspoint.com/cprogramming/c_pointers.htm" class='pointer'>About C pointer</a></li>
+
+        <li><a href="https://yangmingweatherapp.heroku.com/pointerbasic/">golang pointer basic</a></li>
+        <li><a href="https://gobyexample.com/pointers" class='pointer'>Pointers 1</a></li>
+		<li><a href="http://www.giantflyingsaucer.com/blog/?p=4720" class='pointer'>Pointers 2</a></li>
+		 <li><a href="http://stackoverflow.com/questions/38172661/what-is-the-meaning-of-and-in-golang">& and *</a></li>
+       <li><a href="https://gobyexample.com/interfaces">interface(easy!)</a></li>
+        <li><a href="https://www.golang-book.com/books/intro/9">Structs(include interfaces)</a></li>
+        <li><a href="http://www.hydrogen18.com/blog/golang-embedding.html">Embeding in go(anonymous filed)</a></li>
+        <li><a href="http://pro-tips-dot-com.tumblr.com/post/61034575675/golang-access-anonymous-fields-in-structs">Embeding in go 2(anonymous filed)</a></li>
+        <li><a href="http://cwinters.com/2014/09/02/embedded_structs_in_go.html">Embeding in go 3(anonymous filed)</a></li>
+         <li><a href="http://stackoverflow.com/questions/26866879/initialize-nested-struct-definition-in-golang">Nested struct</a></li>
+        <li><a href="methods">Methods</a></li>
+      
+        <li><a href="http://go-book.appspot.com/interfaces.html" class='interfaces'>Interfaces</a></li>
+         <li><a href="https://golang.org/pkg/builtin/#make">make and new</a></li>
+      
+        <li><a href="errors">Errors</a></li>
+      
+        <li><a href="https://gobyexample.com/goroutines">Goroutines</a></li>
+      
+        <li><a href="http://golangtutorials.blogspot.com/2011/06/channels-in-go.html">Channels(chan)</a></li>
+      
+        <li><a href="channel-buffering">Channel Buffering</a></li>
+      
+        <li><a href="channel-synchronization">Channel Synchronization</a></li>
+      
+        <li><a href="channel-directions">Channel Directions</a></li>
+      
+        <li><a href="select">Select</a></li>
+      
+        <li><a href="timeouts">Timeouts</a></li>
+      
+        <li><a href="non-blocking-channel-operations">Non-Blocking Channel Operations</a></li>
+      
+        <li><a href="closing-channels">Closing Channels</a></li>
+      
+        <li><a href="range-over-channels">Range over Channels</a></li>
+      
+        <li><a href="timers">Timers</a></li>
+      
+        <li><a href="tickers">Tickers</a></li>
+      
+        <li><a href="worker-pools">Worker Pools</a></li>
+      
+        <li><a href="rate-limiting">Rate Limiting</a></li>
+      
+        <li><a href="atomic-counters">Atomic Counters</a></li>
+      
+        <li><a href="mutexes">Mutexes</a></li>
+      
+        <li><a href="stateful-goroutines">Stateful Goroutines</a></li>
+      
+        <li><a href="sorting">Sorting</a></li>
+      
+        <li><a href="sorting-by-functions">Sorting by Functions</a></li>
+      
+        <li><a href="panic">Panic</a></li>
+      
+        <li><a href="https://gobyexample.com/defer">Defer</a></li>
+      
+        <li><a href="collection-functions">Collection Functions</a></li>
+      
+        <li><a href="string-functions">String Functions</a></li>
+      
+        <li><a href="string-formatting">String Formatting</a></li>
+      
+        <li><a href="regular-expressions">Regular Expressions</a></li>
+         <li><a href="https://gobyexample.com/json">json by example</a></li>
+      
+        <li><a href="https://yangmingweatherapp.herokuapp.com/server/">JSON And go-Struct</a></li>
+         <li><a href="http://choly.ca/post/go-json-marshalling/">Structs==>json</a></li>
+		 
+       <li><a href="http://yangmingweatherapp.herokuapp.com/struct2json/">Structs==>json and all kinds of pointers</a></li>
+        <li><a href="https://pages.18f.gov/testing-cookbook/go/">Go Testing</a></li>      
+        <li><a href="https://github.com/oxfordyang2016/caton_time/tree/master/transfer">Go Testing 2(by yangming) </a><li>
+	    <li><a href="time">Time</a></li>
+      
+        <li><a href="epoch">Epoch</a></li>
+      
+        <li><a href="time-formatting-parsing">Time Formatting / Parsing</a></li>
+      
+        <li><a href="random-numbers">Random Numbers</a></li>
+      
+        <li><a href="number-parsing">Number Parsing</a></li>
+      
+        <li><a href="url-parsing">URL Parsing</a></li>
+      
+        <li><a href="sha1-hashes">SHA1 Hashes</a></li>
+      
+        <li><a href="base64-encoding">Base64 Encoding</a></li>
+      
+        <li><a href="reading-files">Reading Files</a></li>
+      
+        <li><a href="writing-files">Writing Files</a></li>
+      
+        <li><a href="line-filters">Line Filters</a></li>
+      
+        <li><a href="https://gobyexample.com/command-line-arguments">Command-Line Arguments</a></li>
+      
+        <li><a href="command-line-flags">Command-Line Flags</a></li>
+      
+        <li><a href="environment-variables">Environment Variables</a></li>
+      
+        <li><a href="spawning-processes">Spawning Processes</a></li>
+      
+        <li><a href="execing-processes">Exec'ing Processes</a></li>
+      
+        <li><a href="signals">Signals</a></li>
+      <li><a href="http://www.darrencoxall.com/golang/executing-commands-in-go/">Executing Commands In Go</a></li>
+         <li><a href="signals">Signals</a></li>
+      <li><a href="http://stackoverflow.com/questions/10105935/how-to-convert-an-int-value-to-string-in-go">How to convert an int value to string in go?</a></li>
+        <li><a href="exit">Exit</a></li>
+      -->  
+
+
+      </ul>
+      <p class="footer">
+        by <a>yangming</a> | <a href="yang756260386@gmail.com">feedback</a> | <a href="https://github.com/oxfordyang2016/">source</a> | <a href="https://yangmingweatherapp.herokuapp.com">page</a>
+        {% load disqus_tags %}
+{% disqus_show_comments "yangmingweatherappherokuappcom" %}
+{% set_disqus_url object.get_absolute_url %}
+      </p>
+    </div>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

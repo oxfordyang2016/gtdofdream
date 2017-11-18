@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yangming's python</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+/* Syntax highlighting */
+
+body .s1 { color: #219161 }                     /* Literal.String.Single */
+body .ss { color: #19469D }                     /* Literal.String.Symbol */
+body .bp { color: #954121 }                     /* Name.Builtin.Pseudo */
+body .vc { color: #19469D }                     /* Name.Variable.Class */
+body .vg { color: #19469D }                     /* Name.Variable.Global */
+body .vi { color: #19469D }                     /* Name.Variable.Instance */
+body .il { color: #666666 }                     /* Literal.Number.Integer.Long */
+.classfication{color:red !important;}
+	.subclassification{color:blue !important;}
+  .dnr{color:orange !important }
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's python</a></h2>
+    
+
+      <ul>
+
+<br/>
+
+
+
+<li><a class="classfication"> Chapter 1. Welcome to Python!</a></li>
+<li><a class="" href='http://pythonforengineers.com/this-is-what-python-beginners-have-to-deal-with/'>170204  This is What Python Beginners Have to Deal With</a></li>
+<li><a class="subclassification"> Section 1.1. What Is Python?</a></li>
+<li><a  class="dnr" href="http://pythontutor.com/">161229Python visualize </a></li>
+<li><a  class="dnr" href="http://pbpython.com/">161229Python business </a></li>
+<li><a class="" href="">  the zen of python==import this</a></li>
+<li><a class="subclassification"> Section 1.2. Origins</a></li>
+<li><a class="subclassification"> Section 1.3. Features</a></li>
+<li><a  class="dnr" href="https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/">why python is slow</a></li>
+<li><a  href="https://tomlee.co/wp-content/uploads/2012/11/108_python-language-internals.pdf">python compile and run and construct</a></li>
+<li><a  href="https://jeffknupp.com/blog/2013/02/14/drastically-improve-your-python-understanding-pythons-execution-model/">python excute mode</a></li>
+<li><a class="subclassification"> Section 1.4. Downloading and Installing Python</a></li>
+<li><a class="" href='https://ipython.readthedocs.io/en/stable/install/index.html'>Install ipython</a></li>
+<li><a class="" href='https://yoongkang.com/blog/use-ptipython-a-better-python-shell/'>161227 Install ptipython</a></li>
+
+
+
+
+<li><a class="" href='http://stackoverflow.com/questions/19816275/no-acceptable-c-compiler-found-in-path-when-installing-python'>no acceptable C compiler found in $PATH when installing python</a></li>
+<li><a class="" href='http://stackoverflow.com/questions/11094718/error-command-gcc-failed-with-exit-status-1-while-installing-eventlet'>170209 error: command 'gcc' failed with exit status 1 while installing</a></li>
+
+
+ <li><a href="http://stackoverflow.com/questions/8087184/problems-installing-python3-on-rhel">linux install python3(python3.5+pip+virtualenv)</a></li>
+ <li><a href="http://unix.stackexchange.com/questions/291737/zipimport-zipimporterror-cant-decompress-data-zlib-not-available">170207 zipimport.ZipImportError: can't decompress data; zlib not available</a></li>
+  <li><a href="http://stackoverflow.com/questions/23842713/using-python-3-in-virtualenv">specify python version  in using-python-3-in-virtualenv</a></li>
+<li><a href="http://stackoverflow.com/questions/5846167/how-to-change-default-python-version">160207 change default python version</a></li>
+<li><a href="http://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory">160207 fatal error: Python.h: No such file or directory</a></li>
+
+<li><a href="http://www.simononsoftware.com/virtualenv-tutorial/">virtualenv 1</a></li>
+<li><a href="https://iamzed.com/2009/05/07/a-primer-on-virtualenv/">virtualenv 2</a></li>
+<li><a href="https://tech.knewton.com/blog/2015/09/best-practices-for-python-dependency-management/">virtualenv with python version interpreter</a></li>
+
+<li><a href="http://stackoverflow.com/questions/30983607/how-to-install-pip-in-python-3-4-on-windows">windows python 3.4 install pip</a></li>   
+<li><a href="http://stackoverflow.com/questions/1471994/what-is-setup-py">setup.py</a></li>  
+<li><a href="https://www.quora.com/What-is-Python-byte-code">170225 what is pyhton bytecode</a></li> 
+<li><a href="https://www.liquidweb.com/kb/how-to-check-and-verify-the-version-of-python/">Python Version</a></li>
+<li><a href="http://ask.xmodulo.com/install-pip-linux.html">linux install pip</a></li> 
+<li><a href="https://pip.pypa.io/en/stable/reference/pip_uninstall/">161227 pip uninstall a package</a></li> 
+<li><a class="subclassification"> Section 1.5. Running Python</a></li>
+<li><a class="dnr" href="https://ruslanspivak.com/lsbasi-part1/">build a smiple interpreter</a></li> 
+<li><a class="dnr" href="http://www.fullstackpython.com/table-of-contents.html">Python fullstack map</a></li> 
+<li><a class="dnr" href="http://www.pythontutor.com/live.html#mode=edit">170224 visualize Python run process</a></li>
+<li><a class="dnr" href="http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html">170224 how python run&& Understanding Python Bytecode</a></li>
+<li><a class="dnr" href="">170228 python .pyc file example</a></li>
+<li><a class="dnr" href="https://dbader.org/blog/why-learn-python">170203why  you need to learn Python </a></li> 
+<li><a class="subclassification"> Section 1.6. Python Documentation</a></li>
+<li><a class="dnr" href="https://dbader.org/blog/why-learn-python">170225 python glossary/all  </a></li> 
+<li><a class="subclassification"> Section 1.7. Comparing Python</a></li>
+<li><a class="subclassification"> Section 1.8. Other Implementations</a></li>
+<li><a class="dnr" href="https://dbader.org/blog/why-learn-python">170204 online python env </a></li> 
+<br/>
+<li><a class="classfication"> Chapter 2. Getting Started</a></li>
+<li><a class="subclassification"> Section 2.1. Program Output, the print Statement, and "Hello World!"</a></li>
+   <li><a href="http://stackoverflow.com/questions/15286401/print-multiple-arguments-in-python">python print format relace</a></li>
+<li><a href="https://pypi.python.org/pypi/termcolor">170515 python print color solution 0</a></li>
+<li><a href="https://github.com/oxfordyang2016/colors">170515 python print color solution 1</a></li>
+<li><a href="https://github.com/tartley/colorama">170515 python print color solution 2</a></li>
+   <li><a href="http://stackoverflow.com/questions/15286401/print-multiple-arguments-in-python">170226 python print format controller</a></li>
+    <li><a href="https://github.com/oxfordyang2016/google-10000-english/blob/master/format.py">170226 python string padding excel likely schema</a></li>
+    <li><a href="https://stackoverflow.com/questions/14776788/python-how-can-i-pad-a-string-with-spaces-from-the-right-and-left">170226 python string padding space</a></li>
+   
+     <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/return.py">170104 python Return</a></li> 
+     <li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/rf.py">170222 python Return function</a></li> 
+      <li><a href="http://stackoverflow.com/questions/10660435/pythonic-way-to-create-a-long-multi-line-string">Python print many line </a></li>
+<li><a class="subclassification"> Section 2.2. Program Input and the raw_input()Built-in Function</a></li>
+<li><a class="subclassification"> Section 2.3. Comments</a></li>
+<li><a href="http://stackoverflow.com/questions/7696924/multiline-comments-in-python">Multiline comments in Python</a></li>
+<li><a class="subclassification"> Section 2.4. Operators</a></li>
+<li><a class="subclassification"> Section 2.5. Variables and Assignment</a></li>
+
+<li><a class="subclassification"> Section 2.6. Numbers</a></li>
+<li><a class="subclassification"> Section 2.7. Strings</a></li>
+
+<li><a class="subclassification"> Section 2.8. Lists and Tuples</a></li>
+  
+<li><a class="subclassification"> Section 2.9. Dictionaries</a></li>
+<li><a class="subclassification"> Section 2.10. Code Blocks Use Indentation</a></li>
+ <li><a href="http://stackoverflow.com/questions/5685406/inconsistent-use-of-tabs-and-spaces-in-indentation">Python Identation </a></li>
+
+<li><a href="http://stackoverflow.com/questions/7123660/python-help-function-printing-docstrings">docstring method </a></li>
+<li><a href="http://www.pythonforbeginners.com/basics/python-docstrings/">docstring method 2</a></li>
+
+<li><a class="subclassification"> Section 2.11. if Statement</a></li>
+<li><a class="subclassification"> Section 2.12. while Loop</a></li>
+<li><a href="http://www.tutorialspoint.com/python/python_loop_control.htm">170110 Python break, continue and pass Statements </a></li>
+<li><a class="subclassification"> Section 2.13. for Loop and the range() Built-in Function</a></li>
+<li><a class="subclassification"> Section 2.14. List Comprehensions</a></li>
+<li><a class="subclassification"> Section 2.15. Files and the open() and file() Built-in Functions</a></li>
+<li><a class="subclassification"> Section 2.16. Errors and Exceptions</a></li>
+<li><a class="subclassification"> Section 2.17. Functions</a></li>
+<li><a class="subclassification"> Section 2.18. Classes</a></li>
+<li><a class="subclassification"> Section 2.19. Modules</a></li>
+<li><a class="subclassification"> Section 2.20. Useful Functions</a></li>
+
+<li><a class="subclassification"> Section 2.21. python god view</a></li>
+<li><a href="http://pycallgraph.slowchop.com/en/master/">170309 Python call  graph </a></li>
+<li><a href="https://ruslanspivak.com/lsbasi-part1/">170310 what are interpreters and compilers? </a></li>
+<li><a href="https://news.ycombinator.com/item?id=13825225">170310 170310 introduce python interpreter (hn) </a></li>
+
+<li><a href="http://akaptur.com/blog/2013/11/15/introduction-to-the-python-interpreter/">170310 introduce python interpreter </a></li>
+<li><a href="http://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html">170310 how to write a python interpreter in python </a></li>
+<li><a href="http://www.bogotobogo.com/python/python_introduction.php">170310 python virtual machine intro</a></li>
+<li><a href="https://leanpub.com/insidethepythonvirtualmachine/read">170310 python virtual machine inside</a></li>
+<li><a href="http://doar-e.github.io/blog/2014/04/17/deep-dive-into-pythons-vm-story-of-load_const-bug/">170310 python virtual machine inside 2 simple</a></li>
+<br/>
+<li><a class="classfication"> Chapter 3. Python Basics</a></li>
+<li><a class="subclassification"> Section 3.1. Statements and Syntax</a></li>
+<li><a href="https://stackoverflow.com/questions/53162/how-can-i-do-a-line-break-line-continuation-in-python">170525 How can I do a line break (line continuation) in Python?
+
+</a></li>
+<li><a class="subclassification"> Section 3.2. Variable Assignment</a></li>
+<li><a href="http://nedbatchelder.com/text/names.html">161229 Name and Value (Great)</a></li>
+<li><a href="http://stackoverflow.com/questions/419163/what-does-if-name-main-do">161229 variable type </a></li>
+<li><a href="http://foobarnbaz.com/2012/07/08/understanding-python-variables/">161229 variale and memory management</a></li>
+<li><a href="http://nedbatchelder.com/text/names.html">161229 Garbage collection and reference count</a></li>
+<li><a href="https://mathieularose.com/python-variables/">161229 variables and memory manage 2</a></li>
+<li><a href="http://stackoverflow.com/questions/419163/what-does-if-name-main-do">_ _name_ _</a></li>
+<li><a class="subclassification"> Section 3.3. Identifiers</a></li>
+<li><a href="https://www.programiz.com/python-programming/keywords-identifier">Python Keywords and Identifier</a></li>
+<li><a href="https://www.programiz.com/python-programming/keyword-list">170204 Python Keyword list</a></li>
+<li><a class="subclassification"> Section 3.4. Basic Style Guidelines</a></li>
+<li><a class="subclassification"> Section 3.5. Memory Management</a></li>
+<li><a class="" href="http://dan.iel.fm/posts/python-c-extensions/"> reference count</a></li>
+<li><a class="subclassification"> Section 3.6. First Python Programs</a></li>
+<li><a class="subclassification"> Section 3.7. Related Modules/Developer Tools</a></li>
+
+<br/>
+<li><a class="classfication"> Chapter 4. Python Objects</a></li>
+<li><a class="subclassification"> Section 4.1. Python Objects</a></li>
+<li><a class="dnr" href="https://www.packtpub.com/books/content/objects-python">object </a></li>
+<li><a class="dnr" href="https://jeffknupp.com/blog/2013/02/14/drastically-improve-your-python-understanding-pythons-execution-model/">object attribute</a></li>
+<li><a class="subclassification"> Section 4.2. Standard Types</a></li>
+<li><a class="" href="https://dzone.com/articles/glossary-python-objects-types">object and type id(72)</a></li>
+<li><a class="subclassification"> Section 4.3. Other Built-in Types</a></li>
+<li><a class="subclassification"> Section 4.4. Internal Types</a></li>
+<li><a class="subclassification"> Section 4.5. Standard Type Operators</a></li>
+<li><a class="subclassification"> Section 4.6. Standard Type Built-in Functions</a></li>
+<li><a class="subclassification"> Section 4.7. Type Factory Functions</a></li>
+<li><a class="subclassification"> Section 4.8. Categorizing the Standard Types</a></li>
+<li><a class="subclassification"> Section 4.9. Unsupported Types</a></li>
+<li><a class="subclassification"> Section 4.10. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 5. Numbers</a></li>
+<li><a class="subclassification"> Section 5.1. Introduction to Numbers</a></li>
+<li><a class="subclassification"> Section 5.2. Integers</a></li>
+<li><a class="" href="http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python">170116 python random</a></li>
+<li><a class="subclassification"> Section 5.3. Double Precision Floating Point Numbers</a></li>
+<li><a class="subclassification"> Section 5.4. Complex Numbers</a></li>
+<li><a class="subclassification"> Section 5.5. Operators</a></li>
+<li><a class="subclassification"> Section 5.6. Built-in and Factory Functions</a></li>
+<li><a class="subclassification"> Section 5.7. Other Numeric Types</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/9210525/how-do-i-convert-hex-to-decimal-in-python">170331 How do I convert hex to decimal in Python? </a></li>
+<li><a class="subclassification"> Section 5.8. Related Modules</a></li>
+<li><a class="subclassification"> Section 5.9. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 6. Sequences: Strings, Lists, and Tuples</a></li>
+<li><a class="subclassification"> Section 6.1. Sequences</a></li>
+<li><a class="" href="https://docs.python.org/3/library/stdtypes.html">170224 sequence type</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/663171/is-there-a-way-to-substring-a-string-in-python">get string 's substring from head and tail</a></li>
+<li><a class="subclassification"> Section 6.2. Strings</a></li>
+
+<li><a class="" href="https://github.com/bslatkin/effectivepython/blob/master/example_code/item_05.py">170214 how to slice a sequences </a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/unpackatuple.py">170224 assign to slice and list slice </a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/unpackatuple.py">170224 how to split a pargraph to lines  </a></li>
+
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">170221 string ,list and split </a></li>
+
+<li><a class="subclassification"> Section 6.3. Strings and Operators</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/vargiveformatandgetcommandlineargv.py">give var double quotes</a></li>
+<li><a class="" href="http://preshing.com/20110920/the-python-with-statement-by-example/">170104python with(more complicated)</a></li>
+<li><a class="subclassification"> Section 6.4. String-Only Operators</a></li>
+<li><a class="subclassification"> Section 6.5. Built-in Functions</a></li>
+<li><a class="" href="https://docs.python.org/3/tutorial/inputoutput.html">170226 string repr a---'a'</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/733454/best-way-to-format-integer-as-string-with-leading-zeros">170226 print and foramt d :</a></li>
+<li><a class="subclassification"> Section 6.6. String Built-in Methods</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/733454/best-way-to-format-integer-as-string-with-leading-zeros"> 65---'00000065' format integer as string with leading zeros</a></li>
+<li><a class="subclassification"> Section 6.7. Special Features of Strings</a></li>
+<li><a class="subclassification"> Section 6.8. Unicode</a></li>
+<li><a class="" href="http://www.tbray.org/ongoing/When/200x/2003/04/06/unicode"> 170214 good introduce unicode</a></li>
+<li><a class="" href="http://www.rapidtables.com/code/text/unicode-characters.htm"> 170214 unicode character table.</a></li>
+
+<li><a class="" href="http://study.com/academy/lesson/what-is-a-byte-definition-measurements.html"> 170214 what is bytes????</a></li>
+<li><a class="" href="http://nedbatchelder.com/text/unipain.html"> 170214 python unicode great</a></li>
+<li><a class="" href="https://www.cogsci.nl/blog/a-simple-explanation-of-character-encoding-in-python"> 170214 how to understand python unicode /encode/decode</a></li>
+
+<li><a class="" href="http://stackoverflow.com/questions/11375684/python-how-to-convert-utf-8-code-string-back-to-string"> 170511 python utf-8 ep1</a></li>
+
+
+
+<li><a class="subclassification"> Section 6.9. Related Modules</a></li>
+<li><a class="subclassification"> Section 6.10. Summary of String Highlights</a></li>
+<li><a class="subclassification"> Section 6.11. Lists</a></li>
+<li><a href="http://www.tutorialspoint.com/python/python_lists.htm">Python List</a></li>
+<li><a href="Getting the last element of a list in Python">get List last element</a></li>
+<li><a href="http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/">170221 sorted(list)</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-3132/">170223 PEP 3132 -- Extended Iterable Unpacking about list *a </a></li>
+<li><a href="https://www.tutorialspoint.com/python/list_index.htm">170226 python list index method </a></li>
+<li><a href="https://www.python.org/dev/peps/pep-3132/">170223 powerful *,list,parallel assignment </a></li>
+
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">170221 how to implement sorted ,reverse ,len,index so on list method</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">170221 how to get list value's index</a></li>
+<li><a href="http://stackoverflow.com/questions/252703/append-vs-extend">170503 python list append and extent</a></li>
+<li><a class="subclassification"> Section 6.12. Operators</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/vector2d.py">170221 how to implement operator + - * / abs</a></li>
+<li><a class="subclassification"> Section 6.13. Built-in Functions</a></li>
+<li><a class="" href='http://www.diveintopython.net/power_of_introspection/built_in_functions.html'> 170122 python Built-in Functions</a></li>
+<li><a class="subclassification"> Section 6.14. List Type Built-in Methods</a></li>
+<li><a class="subclassification"> Section 6.15. Special Features of Lists</a></li>
+<li><a class="subclassification"> Section 6.16. Tuples</a></li>
+<li><a class="subclassification"> Section 6.17. Tuple Operators and Built-in Functions</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/626759/whats-the-difference-between-lists-and-tuples"> What's the difference between lists and tuples?</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/unpackatuple.py">170224 named tuple</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/unpackatuple.py">170223 unpack a tuple  advanced usage and nested tuple ,print format control</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/unpackatuple.py">170223 _ ,* like placeholder usage</a></li>
+<li><a class="" href="https://automatetheboringstuff.com/chapter18/">170227
+print format control print(/b end='') </a></li>
+
+
+<li><a class="subclassification"> Section 6.18. Special Features of Tuples</a></li>
+<li><a class="" href="http://book.pythontips.com/en/latest/collections.html">170220 python namedtupe</a></li>
+<li><a class="subclassification"> Section 6.19. Related Modules</a></li>
+<li><a class="subclassification"> Section 6.20. *Copying Python Objects and Shallow and Deep Copies</a></li>
+<li><a class="subclassification"> Section 6.21. Summary of Sequences</a></li>
+<li><a class="" href="https://www.tutorialspoint.com/python/number_shuffle.htm">170330 python random.shuffle(list)</a></li>
+<li><a class="subclassification"> Section 6.22. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 7. Mapping and Set Types</a></li>
+<li><a class="subclassification"> Section 7.1. Mapping Type: Dictionaries</a></li>
+<li><a class="" href="http://www.saltycrane.com/blog/2007/09/how-to-sort-python-dictionary-by-keys/"> sort a Python dict (dictionary) by keys or values</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/209840/map-two-lists-into-a-dictionary-in-python">Map two lists into a dictionary in Python</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">170221 python dictionary length</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">170221 python get dict dict(spades=3, hearts=2)</a></li>
+<li><a class="subclassification"> Section 7.2. Mapping Type Operators</a></li>
+<li><a class="subclassification"> Section 7.3. Mapping Type Built-in and Factory Functions</a></li>
+<li><a class="subclassification"> Section 7.4. Mapping Type Built-in Methods</a></li>
+<li><a class="subclassification"> Section 7.5. Dictionary Keys</a></li>
+<li><a href="http://stackoverflow.com/questions/4348232/python-dictionary-keys-besides-strings-and-integers">170302 Python dictionary keys besides strings and integers?
+</a></li>
+<li><a href="http://stackoverflow.com/questions/16819222/how-to-return-dictionary-keys-as-a-list-in-python-3-3/42665738#42665738">170308 How to return dictionary keys as a list in Python 3.3</a></li>
+<li><a class="subclassification"> Section 7.6. Set Types</a></li>
+<li><a class="subclassification"> Section 7.7. Set Type Operators</a></li>
+<li><a class="subclassification"> Section 7.8. Built-in Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/python/dictionary_get.htm">170302 python dictionary get method .get()</a></li>
+<li><a class="subclassification"> Section 7.9. Set Type Built-in Methods</a></li>
+<li><a class="subclassification"> Section 7.10. Operator, Function/Method Summary Table for Set Types</a></li>
+<li><a class="subclassification"> Section 7.11. Related Modules</a></li>
+
+<br/>
+<li><a class="classfication"> Chapter 8. Conditionals and Loops</a></li>
+<li><a class="subclassification"> Section 8.1. if Statement</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator">if  else in a line</a></li>
+<li><a class="subclassification"> Section 8.2. else Statement</a></li>
+<li><a class="subclassification"> Section 8.3. elif (aka else-if) Statement</a></li>
+<li><a class="subclassification"> Section 8.4. Conditional Expressions (aka "the Ternary Operator")</a></li>
+<li><a class="subclassification"> Section 8.5. while Statement</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/while.py"> if and while</a></li>
+<li><a class="subclassification"> Section 8.6. for Statement</a></li>
+<li><a class="">Table of Contents</a></li>
+<li><a class="subclassification"> Section 8.7. break Statement</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/databasebackupschma/loaddb.py"> break</a></li>
+<li><a class="subclassification"> Section 8.8. continue Statement</a></li>
+<li><a class="subclassification"> Section 8.9. pass Statement</a></li>
+<li><a class="subclassification"> Section 8.10. else Statement ... Take Two</a></li>
+<li><a class="subclassification"> Section 8.11. Iterators and the iter() Function</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/9884132/what-exactly-are-pythons-iterator-iterable-and-iteration-protocols">161227 iterator, iterable, and iteration protocols</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170104 python iterator (greate)</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170104 python generator (greate)</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/bisect_demo.py">170223 python generator example</a></li>
+
+<li><a class="subclassification"> Section 8.12. List Comprehensions</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/comprehensionlist.py">161228 [k*k for k in range(10) if pre(k) ] list comprehension</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">170221 list comprehension complex</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/comprehensionlistdiff.doctest">170223 list comprehension leak variable</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/bisect_demo.py">170223 list comprehension example and Cartesian_product</a></li>
+
+<li><a class="subclassification"> Section 8.13. Generator Expressions</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170104 python Generator and yield</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170114 yield example</a></li>
+<li><a class="" href="https://realpython.com/blog/python/introduction-to-python-generators/">170104 python generator and example(greate)</a></li>
+<li><a class="subclassification"> Section 8.14. Related Modules</a></li>
+<li><a class="subclassification"> Section 8.15. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 9. File system and Input/Output</a></li>
+<li><a class="subclassification"> Section 9.1. File Objects</a></li>
+<li><a href="http://stackoverflow.com/questions/120656/directory-listing-in-python">Directory listing in Python(list file and dir)</a></li>
+<li><a href="https://www.blog.pythonlibrary.org/2014/01/21/python-201-what-is-super/">170111 python super</a></li>
+<li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/getfilepathorfilename.py">python get file name and path by yangming</a></li>
+<li><a href="http://stackoverflow.com/questions/3204782/how-to-check-if-a-file-is-a-directory-or-regular-file-in-python">170103 how to check if a file is a directory or regular file </a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/unpackatuple.py">170223 how to split a path to filename and dirname using unpack a tuple</a></li>
+<li><a href="http://stackoverflow.com/questions/2918362/writing-string-to-a-file-on-a-new-line-everytime">170504 how to  write a file on a new line everytime </a></li>
+<li><a href="http://stackoverflow.com/questions/13613738/python-how-to-create-a-new-file-and-write-contents-of-variable-to-it">170504 how to  write a var content to a file  </a></li>
+<li><a href="https://www.reddit.com/r/learnpython/comments/1vd3j8/how_do_i_output_my_print_statements_to_a_text_file/">170602 print to a file </a></li>
+
+<li><a href="https://stackoverflow.com/questions/3277503/how-do-i-read-a-file-line-by-line-into-a-list">170602 read every line of a file to a list  </a></li>
+<li><a class="subclassification"> Section 9.2. File Built-in Functions [open() and file()]</a></li>
+<li><a class="subclassification"> Section 9.3. File Built-in Methods</a></li>
+<li><a class="subclassification"> Section 9.4. File Built-in Attributes</a></li>
+<li><a class="subclassification"> Section 9.5. Standard Files</a></li>
+<li><a class="subclassification"> Section 9.6. Command-Line Arguments</a></li>
+ <li><a href="http://stackoverflow.com/questions/1009860/command-line-arguments-in-python">Python get command line arguments </a></li>
+          <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/vargiveformatandgetcommandlineargv.py">command argument position</a></li>
+    
+
+<li><a class="subclassification"> Section 9.7. File System</a></li>
+ <li><a href="http://stackoverflow.com/questions/8884188/how-to-read-and-write-ini-file-with-python">read and write ini file</a></li>
+  <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/malipulateinisuccess.py">read and write ini file success code</a></li>
+<li><a class="subclassification"> Section 9.8. File Execution</a></li>
+<li><a class="subclassification"> Section 9.9. Persistent Storage Modules</a></li>
+<li><a class="subclassification"> Section 9.10. Related Modules</a></li>
+<li><a class="subclassification"> Section 9.11. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 10. Errors and Exceptions</a></li>
+<li><a class="subclassification"> Section 10.1. What Are Exceptions?</a></li>
+<li><a class="subclassification"> Section 10.2. Exceptions in Python</a></li>
+ <li><a href="https://automatetheboringstuff.com/chapter18/">170227 python KeyboardInterrupt except example </a></li>
+<li><a class="subclassification"> Section 10.3. Detecting and Handling Exceptions</a></li>
+<li><a class="subclassification"> Section 10.4. Context Management</a></li>
+<li><a href="https://www.codementor.io/vishalgowda/how-to-make-a-sandwich-using-python-context-manager-du1086w6k
+  ">170227 python conetxt manager </a></li>
+<li><a class="subclassification"> Section 10.5. *Exceptions as Strings</a></li>
+<li><a class="subclassification"> Section 10.6. Raising Exceptions</a></li>
+<li><a class="subclassification"> Section 10.7. Assertions</a></li>
+<li><a class="subclassification"> Section 10.8. Standard Exceptions</a></li>
+<li><a class="subclassification"> Section 10.9. *Creating Exceptions</a></li>
+<li><a class="subclassification"> Section 10.10. Why Exceptions (Now)?</a></li>
+<li><a class="subclassification"> Section 10.11. Why Exceptions at All?</a></li>
+<li><a class="subclassification"> Section 10.12. Exceptions and the sys Module</a></li>
+<li><a class="subclassification"> Section 10.13. Related Modules</a></li>
+
+ <li><a href="http://stackoverflow.com/questions/730764/try-except-in-python-how-do-you-properly-ignore-exceptions">Python Except </a></li> 
+  <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/httpsconnect.py">python finally</a></li>
+<br/>
+<li><a class="classfication"> Chapter 11. Function and Functional Programming</a></li>
+<li><a class="subclassification"> Section 11.1. What Are Functions?</a></li>
+<li><a class="" href="https://docs.python.org/3/library/functions.html"> Built function</a></li>
+
+
+<li><a class="subclassification"> Section 11.2. Calling Functions</a></li>
+<li><a class="subclassification"> Section 11.3. Creating Functions</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170413 Arguments and parameters</a></li>
+<li><a class="" href="http://sys-exit.blogspot.jp/2013/07/python-positional-arguments-and-keyword.html">170413 python positional arguments and keyword arguments</a></li>
+
+
+
+<li><a class="subclassification"> Section 11.4. Passing Functions</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170104 Magical method</a></li>
+<li><a class="" href="http://intermediatepythonista.com/python-generators">170221 python __repr__ method and str</a></li>
+<li><a class="" href="https://bytesforlunch.wordpress.com/2012/03/15/simple-callback-implementation-in-python/">170113 callback function</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/decorator">function as argument</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/7974442/lambda-in-python">lambda </a></li>
+<li><a class="subclassification"> Section 11.5. Formal Arguments</a></li>
+<li><a class="" href="https://www.quora.com/What-is-a-positional-argument-in-Python-programming">170413 python positional arguments </a></li>
+<li><a class="" href="http://www.diveintopython.net/power_of_introspection/optional_arguments.html">170413 python Optional and Named Arguments </a></li>
+
+
+<li><a class="subclassification"> Section 11.6. Variable-Length Arguments</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/decorator">function(*args, **kwargs)</a></li>
+<li><a class="" href="http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/">function(*args, **kwargs) 2</a></li>
+<li><a class="subclassification"> Section 11.7. Functional Programming</a></li>
+<li><a class="subclassification"> Section 11.8. Variable Scope</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/closure">161227 python closures</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/keyword-list#nonlocal">170204 python nonlocal and global</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/pythonclosure.py">170204 python closures func and func(a,b)</a></li>
+<li><a class="subclassification"> Section 11.9. *Recursion</a></li>
+<li><a class="subclassification"> Section 11.10. Generators</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/decorator">python decorator</a></li>
+<li><a class="" href="http://www.learnpython.org/en/Decorators">python decorator 1</a></li>
+<li><a class="" href="https://wiki.python.org/moin/PythonDecoratorLibrary">python decorator 2</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/pythondecorator.py">python decorator 3 by yangming</a></li>
+<li><a class="" href="http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html">Map, Filter, Lambda, and List Comprehensions in Python</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/databasebackupschma/simpleload.python">Map, Filter, Lambda, and List Comprehensions in Python 2 by yangming</a></li>
+
+<br/>
+<li><a class="classfication"> Chapter 12. Modules</a></li>
+<li><a class="subclassification"> Section 12.1. What Are Modules?</a></li>
+<li><a class="subclassification"> Section 12.2. Modules and Files</a></li>
+<li><a class="subclassification"> Section 12.3. Namespaces</a></li>
+<li><a class="" href="https://bytebaker.com/2008/07/30/python-namespaces/"> Importing Modules namespace and scope 1</a></li>
+<li><a class="" href="http://www.python-course.eu/namespaces.php"> Importing Modules namespace and scope 2</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/namespace"> Importing Modules namespace and scope 3</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/namespace.py"> namespace code by yang</a></li>
+<li><a class="subclassification"> Section 12.4. Importing Modules</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/regularbookdotreplce.txt"> Importing Modules select python version</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/modules"> Importing Modules and import search and sys path</a></li>
+<li><a class="subclassification"> Section 12.5. Features of Module Import</a></li>
+<li><a class="" href="https://www.programiz.com/python-programming/modules"> 170308 python reload a moudle</a></li>
+<li><a class="subclassification"> Section 12.6. Module Built-in Functions</a></li>
+<li><a class="subclassification"> Section 12.7. Packages</a></li>
+
+<li><a class="dnr" href="https://nylas.com/blog/packaging-deploying-python">how to package your code to pypi</a></li>
+<li><a class="" href="http://www.discoversdk.com/blog/how-to-create-a-new-python-module">how to package your code to pypi 2</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/youngmenpackage">deploy code to pypi dir-structure</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/caton_time/tree/master/hodgepodge/package_structure_show">package dir-structure  show</a></li>
+<li><a class="dnr" href="http://blog.securem.eu/tips%20and%20tricks/2016/02/29/creating-and-publishing-a-python-module/">antoher deploy method to pypi</a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/youngmenpackage/blob/master/setup.py">pypi,update, version ,setup.py,version='0.4'</a></li>
+
+<li><a class="" href="https://docs.python.org/2/install/">170515 setup.py and installation</a></li>
+
+<li><a class="" href="http://www.blog.pythonlibrary.org/2012/07/08/python-201-creating-modules-and-packages/">how to package your code</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/29350703/registering-to-pypi-basic-auth-failed">Registering to PyPi: basic auth failed</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/29485874/pypi-not-allowed-to-store-or-edit-package-information">Pypi: Not allowed to store or edit package information</a></li>
+<li><a class="" href="https://bitbucket.org/pypa/pypi/issues/134/cheeseshop-returns-403-when-registering-a">Pypi: Not allowed to store or edit package information 2</a></li>
+<li><a class="subclassification"> Section 12.8. Other Features of Modules</a></li>
+<li><a class="subclassification"> Section 12.9. Related Modules</a></li>
+<li><a class="subclassification"> Section 12.10. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 13. Object-Oriented Programming</a></li>
+<li><a class="subclassification"> Section 13.1. Introduction</a></li>
+<li><a class="subclassification"> Section 13.2. Object-Oriented Programming</a></li>
+<li><a class="subclassification"> Section 13.3. Classes</a></li>
+<li><a href="https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/">python class </a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">python class example</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py">120221 python class level attribute</a></li>
+<li><a class="subclassification"> Section 13.4. Class Attributes</a></li>
+<li><a href="https://pythonspot.com/en/tag/constructor/">120221 python class constructor</a></li>
+<li><a class="subclassification"> Section 13.5. Instances</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/vector2d">120221 python class return the class instance</a></li>
+<li><a href="http://www.python-course.eu/python3_class_and_instance_attributes.php">120221 python class instance</a></li>
+<li><a href="http://stackoverflow.com/questions/207000/python-difference-between-class-and-instance-attributes">120224 Python: Difference between class and instance attributes</a></li>
+<li><a href="http://python-history.blogspot.com/2010/06/method-resolution-order.html">120303
+  python methods resolution order</a></li>
+
+<li><a class="subclassification"> Section 13.6. Instance Attributes</a></li>
+<li><a href="http://www.bogotobogo.com/python/python_private_attributes_methods.php">170302 python class PRIVATE ATTRIBUTES AND METHODS </a></li>
+<li><a href="http://stackoverflow.com/questions/1301346/what-is-the-meaning-of-a-single-and-a-double-underscore-before-an-object-name">170302 python  What is the meaning of a single- and a double-underscore before an object name?</a></li>
+<li><a class="subclassification"> Section 13.7. Binding and Method Invocation</a></li>
+<li><a class="subclassification"> Section 13.8. Static Methods and Class Methods</a></li>
+<li><a href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/vector2d">170221 python class how to invoke my class method 1</a></li>
+<li><a class="subclassification"> Section 13.9. Composition</a></li>
+<li><a class="subclassification"> Section 13.10. Subclassing and Derivation</a></li>
+<li><a class="subclassification"> Section 13.11. Inheritance</a></li>
+<li><a class="subclassification"> Section 13.12. Built-in Functions for Classes, Instances, and Other Objects</a></li>
+<li><a href="https://www.codementor.io/vishalgowda/how-to-make-a-sandwich-using-python-context-manager-du1086w6k">170221 python return self</a></li>
+<li><a class="subclassification"> Section 13.13. Customizing Classes with Special Methods</a></li>
+<li><a class="subclassification"> Section 13.14. Privacy</a></li>
+<li><a class="subclassification"> Section 13.15. *Delegation</a></li>
+<li><a class="subclassification"> Section 13.16. Advanced Features of New-Style Classes (Python 2.2+)</a></li>
+<li><a href="http://programeveryday.com/post/an-introduction-to-python-descriptors/">170302 python descriptor(invoke is not clear)</a></li>
+<li><a href="http://martyalchin.com/2007/nov/23/python-descriptors-part-1-of-2/">170302 python descriptor(invoke is clear)</a></li>
+<li><a href="http://nbviewer.jupyter.org/urls/gist.github.com/ChrisBeaumont/5758381/raw/descriptor_writeup.ipynb">170302 python descriptor(great)</a></li>
+<li><a class="subclassification"> Section 13.17. Related Modules and Documentation</a></li>
+
+<br/>
+<li><a class="classfication"> Chapter 14. Execution Environment</a></li>
+<li><a class="subclassification"> Section 14.1. Callable Objects</a></li>
+<li><a class="subclassification"> Section 14.2. Code Objects</a></li>
+<li><a class="subclassification"> Section 14.3. Executable Object Statements and Built-in Functions</a></li>
+    
+         <li><a href="https://www.learn2crack.com/2014/03/linux-shell-commands-from-python.html">python excute linux/windows commandline</a></li>
+         <li><a href="http://www.tutorialspoint.com/python/os_mkdir.htm">os mkdir</a></li>
+<li><a href="http://www.tutorialspoint.com/python/os_mkdir.htm">identify whether a file is normal file or directory using python</a></li>  
+<li><a href="http://xahlee.info/perl-python/python_path_manipulation.html">Get file info name and dir name</a></li>  
+
+<li><a href="http://stackoverflow.com/questions/8933237/how-to-find-if-directory-exists-in-python">How to find if directory exists in Python</a></li>     
+<li><a href="http://stackoverflow.com/questions/123198/how-do-i-copy-a-file-in-python">python copy file</a></li>    
+<li><a class="subclassification"> Section 14.4. Executing Other (Python) Programs</a></li>
+<li><a class="subclassification"> Section 14.5. Executing Other (Non-Python) Programs</a></li>
+<li><a class="subclassification"> Section 14.6. Restricted Execution</a></li>
+<li><a class="subclassification"> Section 14.7. Terminating Execution</a></li>
+<li><a class="subclassification"> Section 14.8. Miscellaneous Operating System Interface</a></li>
+<li><a class='dnr' href="http://stackoverflow.com/questions/1181464/controlling-mouse-with-python">python control mouse</a></li> 
+<li><a class="subclassification"> Section 14.9. Related Modules</a></li>
+<li><a class="subclassification"> Section 14.10. Exercises</a></li>
+<li><a class=""> Part II: Advanced Topics</a></li>
+<br/>
+<li><a class="classfication"> Chapter 15. Regular Expressions</a></li>
+  <li><a href="https://www.analyticsvidhya.com/blog/2015/06/regular-expression-python/">Python regular expression </a></li>
+           <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/retest.py">Python regular expression  code </a></li>
+<li><a class="subclassification"> Section 15.1. Introduction/Motivation</a></li>
+<li><a class="subclassification"> Section 15.2. Special Symbols and Characters</a></li>
+<li><a class="subclassification"> Section 15.3. REs and Python</a></li>
+<li><a href="http://stackoverflow.com/questions/10365225/extract-digits-in-a-simple-way-from-a-python-string">170503 Python  extract regular number example </a></li>
+<li><a class="subclassification"> Section 15.4. Regular Expressions Example</a></li>
+<li><a class="subclassification"> Section 15.5. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 16. Network Programming</a></li>
+<li><a class="subclassification"> Section 16.1. Introduction</a></li>
+<li><a class="" href="http://machinesaredigging.com/2013/10/29/how-does-a-web-session-work/">170213 what is a web session and how does it work???</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/3804209/what-are-sessions-how-do-they-work">170213 What are sessions? How do they work?</a></li>
+
+
+<li><a class="" href="http://stackoverflow.com/questions/31021764/where-does-chrome-store-cookies">170213 Where does Chrome store cookies?</a></li>
+<li><a class="subclassification"> Section 16.2. Sockets: Communication Endpoints</a></li>
+<li><a class="" href="https://wiki.python.org/moin/TcpCommunication">170115 python tcp comunicate</a></li>
+<li><a class="subclassification"> Section 16.3. Network Programming in Python</a></li>
+<li><a class="subclassification"> Section 16.4. *SocketServer Module</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use">170115 python socket.error: [Errno 48] Address already in use
+</a></li>
+<li><a class="" href="https://codeplanet.io/principles-good-restful-api-design/">170330 websocket and http 
+</a></li>
+<li><a class="subclassification"> Section 16.5. *Introduction to the Twisted Framework</a></li>
+<li><a class="subclassification"> Section 16.6. Related Modules</a></li>
+<li><a class="subclassification"> Section 16.7. Exercises</a></li>
+
+<li><a class="classfication"> Chapter 17. Django</a></li>
+<li><a class="" href="https://docs.djangoproject.com/en/1.10/intro/tutorial01/"> Section 17.1 Quick start and run</a></li>
+<li><a class="subclassification"> Section 16.2. Sockets: Communication Endpoints</a></li>
+<li><a class="subclassification"> Section 16.3. Network Programming in Python</a></li>
+<li><a class="subclassification"> Section 16.4. *SocketServer Module</a></li>
+<li><a class="subclassification"> Section 16.5. *Introduction to the Twisted Framework</a></li>
+<li><a class="subclassification"> Section 16.6. Related Modules</a></li>
+<li><a class="subclassification"> Section 16.7. Exercises</a></li>
+       
+          <li><a href="http://effbot.org/librarybook/ftplib.htm">python ftp client </a></li>
+          <li><a href="https://github.com/oxfordyang2016/caton_time/tree/master/hodgepodge/pythonftpclientcode">python ftp client code by yang</a></li>
+            <li><a href="https://pythonhosted.org/pyftpdlib/tutorial.html">Python ftp pyftpdlib moudle tutorial</a></li>
+           <li><a href="http://effbot.org/librarybook/ftplib.htm">python ftp client </a></li>
+            <li><a href="https://daanlenaerts.com/blog/2015/08/18/python-3-upload-files-over-ftp/">python ftp client upload file</a></li>
+            <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/ftplibclientsuccess.py">python ftp client upload file code by yangming</a></li>
+            <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/advanced%20info_gather_server_golang/threads_exp.py">Python thread code by yangming</a></li>
+            <li><a href="http://agiliq.com/blog/2013/09/understanding-threads-in-python/">Python thread very simple!</a></li>
+             <li><a href="http://www.saltycrane.com/blog/2008/09/simplistic-python-thread-example/">Python thread very simple 2!</a></li>
+         <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/advanced%20info_gather_server_golang/threads_exp.py">Python http_client solution</a></li>
+          <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/httpsconnect.py">python https client schema </a></li>
+        <li><a href="http://stackoverflow.com/questions/510348/how-can-i-make-a-time-delay-in-python">Python sleep schema</a></li>
+         <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/pyqtconnectserver.py">Python pyqt connect server code</a></li>
+        <li><a href="https://github.com/oxfordyang2016/caton_time/tree/master/hodgepodge/python%20updclient-server">Python udp client_server</a></li>
+          <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/httpsconnect.py">Python https Ignore certificate validation with urllib3</a></li>
+        <li><a href="https://urllib3.readthedocs.io/en/latest/">urllib3 guide </a></li>
+         <li><a href="http://urllib3.readthedocs.io/en/1.1/pools.html">urllib3 https connect timeout </a></li>
+        <li><a href="http://stackoverflow.com/questions/4994638/one-line-ftp-server-in-python">Python Ftp server  </a></li>
+<br/>
+<li><a class="classfication"> Chapter 17. Flask</a></li>
+<li><a class="" href='http://www.tutorialspoint.com/flask/'>flask tutorpoint guide</a></li>
+<li><a class="" href='https://github.com/oxfordyang2016/flask-help'>flask  all code by yangming referencing tutorpoint </a></li>
+<li><a class="" href='https://pythonspot.com/login-authentication-with-flask/'>170222 flask  authenticate </a></li>
+<li><a class="" href='https://packagecontrol.io/packages/Markdown%20Preview'>170209 markdown preview writting </a></li>
+<li><a class="" href='https://github.com/oxfordyang2016/flask-help/blob/master/hello.py'>170222 how to get html form data in python flask </a></li>
+<li><a class="" href='https://github.com/oxfordyang2016/flask-help/blob/master/hello.py'>170222 how to design flask login logic in flask python</a></li>
+<li><a class="" href='https://github.com/oxfordyang2016/flask-help/blob/master/hello.py'>170222 how to get cookie in flask</a></li>
+<li><a class="" href='http://stackoverflow.com/questions/24992035/python-flask-how-to-get-parameters-from-a-url'>170425 Python Flask how to get parameters from a URL </a></li>
+<br/>
+
+
+
+
+
+<li><a class="classfication"> Chapter 17. Internet Client Programming</a></li>
+<li><a class="subclassification"> Section 17.1. What Are Internet Clients?</a></li>
+<li><a class="" href="http://docs.python-requests.org/en/master/">170308 python requests for human</a></li>
+<li><a class="subclassification"> Section 17.2. Transferring Files</a></li>
+<li><a class="subclassification"> Section 17.3. Network News</a></li>
+<li><a class="subclassification"> Section 17.4. Electronic Mail</a></li>
+<li><a class="subclassification"> Section 17.5. Related Modules</a></li>
+<li><a class="subclassification"> Section 17.6. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 18. Multithreaded Programming</a></li>
+<li><a class="subclassification"> Section 18.1. Introduction/Motivation</a></li>
+<li><a class="subclassification"> Section 18.2. Threads and Processes</a></li>
+<li><a class="subclassification"> Section 18.3. Python, Threads, and the Global Interpreter Lock</a></li>
+<li><a class="subclassification"> Section 18.4. thread Module</a></li>
+<li><a class="subclassification"> Section 18.5. threading Module</a></li>
+<li><a class="subclassification"> Section 18.6. Related Modules</a></li>
+<li><a class="" href="https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python">python thread example 1</a></li>
+<li><a class="" href="http://agiliq.com/blog/2013/09/understanding-threads-in-python/">python thread example 2</a></li>
+<li><a class="" href="http://stackoverflow.com/questions/1294382/what-is-a-global-interpreter-lock-gil">GIL</a></li>
+<li><a class="subclassification"> Section 18.7. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 19. GUI Programming</a></li>
+<li><a class="subclassification"> Section 19.1. Introduction</a></li>
+
+         <li><a href="http://projects.skylogic.ca/blog/how-to-install-pyqt5-and-build-your-first-gui-in-python-3-4/">How to Install PyQt5 and Build Your First GUI in Python 3.4</a></li>
+<li><a class="subclassification"> Section 19.2. Tkinter and Python Programming</a></li>
+<li><a class="subclassification"> Section 19.3. Tkinter Examples</a></li>
+<li><a class="">Table of Contents</a></li>
+<li><a class="subclassification"> Section 19.4. Brief Tour of Other GUIs</a></li>
+<li><a class="subclassification"> Section 19.5. Related Modules and Other GUIs</a></li>
+ <li><a href="https://wp.stolaf.edu/it/installing-pil-pillow-cimage-on-windows-and-mac/">170227 Installing PIL/Pillow/cImage for Python on Windows and Mac</a></li>
+ <li><a href="https://automatetheboringstuff.com/chapter18/">170227 control gui </a></li>
+<li><a class="subclassification"> Section 19.6. Exercises</a></li>
+ 
+<br/>
+<li><a class="classfication"> Chapter 20. Web Programming</a></li>
+<li><a class="subclassification"> Section 20.1. Introduction</a></li>
+
+<li><a class="subclassification"> Section 20.2. Web Surfing with Python: Creating Simple Web Clients</a></li>
+<li><a class="subclassification"> Section 20.3. Advanced Web Clients</a></li>
+<li><a class="subclassification"> Section 20.4. CGI: Helping Web Servers Process Client Data</a></li>
+<li><a class="subclassification"> Section 20.5. Building CGI Applications</a></li>
+<li><a class="subclassification"> Section 20.6. Using Unicode with CGI</a></li>
+<li><a class="subclassification"> Section 20.7. Advanced CGI</a></li>
+<li><a class="subclassification"> Section 20.8. Web (HTTP) Servers</a></li>
+<li><a href="http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/">070105 simplehttpserver</a></li>
+<li><a href="https://www.artofsoftwaredevelopment.com/architecture/good-architecture">070213 Strong Web Application Architecture</a></li>
+<li><a href="http://www.restapitutorial.com/lessons/httpmethods.html">070405 CRUD and restful api</a></li>
+<li><a class="subclassification"> Section 20.9. Related Modules</a></li>
+<li><a class="subclassification"> Section 20.10. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 21. Database Programming</a></li>
+<li><a class="subclassification"> Section 21.1. Introduction</a></li>
+<li><a href="http://docs.python-guide.org/en/latest/scenarios/db/">Python database </a></li>
+<li><a class="subclassification"> Section 21.2. Python Database Application Programmer's Interface (DB-API)</a></li>
+<li><a href="http://stackoverflow.com/questions/8932261/create-mysqldb-database-using-python-script">170508 create database and table and excute and mysql</a></li>
+
+<li><a class="subclassification"> Section 21.3. Object-Relational Managers (ORMs)</a></li>
+<li><a href="http://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it">170118 What is an ORM and where can I learn more about it?</a></li>
+<li><a href="http://docs.peewee-orm.com/en/latest/index.html">170207 peeweee orm </a></li>
+<li><a href="http://stackoverflow.com/questions/16448198/accessing-remote-mysql-database-with-peewee">170208 peeweee orm connect mysql</a></li>
+<li><a class="subclassification"> Section 21.4. Related Modules</a></li>
+<li><a class="subclassification"> Section 21.5. Exercises</a></li>
+          
+           <li><a href="http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python">Python connect mysql</a></li>
+           <li><a href="https://www.tutorialspoint.com/sqlite/sqlite_python.htm">Python sqlite moudle</a></li>
+           <li><a href="http://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip">Python install MySQLdb</a></li>
+           <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/pythonconnectmysqlandredis.py">Python connect mysql and redis database code</a></li>
+            <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/pythonconnectmysql.py">Python connect mysql database code</a></li>
+
+   <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/pythonconnectmysql.py">170222 Python get mysql table row data</a></li>
+
+  <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/allmysqldbmethod.py">170508 Python and mysql all solution</a></li>
+
+           <li><a href="http://stackoverflow.com/questions/12967107/managing-connection-to-redis-from-python">Python connect redis</a></li>
+           <li><a href="http://stackoverflow.com/questions/5010042/mysql-get-column-name-or-alias-from-query">python get mysql column name</a></li>
+<br/>
+<li><a class="classfication"> Chapter 22. Extending Python</a></li>
+<li><a href="http://dan.iel.fm/posts/python-c-extensions/">Python modules in C (wrapper a c moudle)</a></li>
+<li><a class=""> 22.1. Introduction/Motivation</a></li>
+<li><a class=""> 22.2. Extending Python by Writing Extensions</a></li>
+<li><a class=""> 22.3. Related Topics</a></li>
+<li><a class=""> 22.4. Exercises</a></li>
+<br/>
+<li><a class="classfication"> Chapter 23. Miscellaneous</a></li>
+<li><a class="subclassification"> Section 23.1. Web Services</a></li>
+<li><a class="subclassification"> Section 23.2. Programming Microsoft Office with Win32 COM</a></li>
+<li><a class="subclassification"> Section 23.3. Python and Java Programming with Jython</a></li>
+<li><a href="https://www.huyng.com/posts/python-performance-analysis">170309 python performance analysis</a></li>
+<li><a class="subclassification"> Section 23.4. Exercises</a></li>
+<br/>
+
+<li><a class="classfication"> Chapter 24. Python distribution deployment</a></li>
+<li><a href="http://www.fullstackpython.com/full-stack-python-map.pdf">170122 python deployment map</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-14-04">170122 How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 14.04</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-centos-7">170122 How To Serve Flask Applications with uWSGI and Nginx on centos 7</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/community/why_use_it/">170213 why use nginx</a></li>
+<li><a href="https://news.ycombinator.com/item?id=5432610">170213 what nginx can do</a></li>
+<li><a href="http://odewahn.github.io/docker-jumpstart/introduction.html">170203 docker introduce</a></li>
+<li><a href="http://surajnarwade.github.io/how-to-setup-private-docker-registry-in-fedoracentos.html">170209 docker private repo setup</a></li>
+<li><a href="https://github.com/prakhar1989/docker-curriculum">170209 docker greate document</a></li>
+
+<li><a href="https://github.com/prakhar1989/docker-curriculum">170203 python requirements.txt</a></li>
+
+
+
+<br/>
+
+<li><a class="classfication"> Chapter 25. IPython</a></li>
+<li><a class=""> 23.1. basic operate</a></li>
+
+<li><a href="http://stackoverflow.com/questions/10886946/how-does-ipythons-magic-paste-work">ipython paste</a></li>
+<li><a href="http://stackoverflow.com/questions/15680463/change-ipython-working-directory">161228 ipython cd directory</a></li>
+<li><a class="" href='https://yoongkang.com/blog/use-ptipython-a-better-python-shell/'>170116 ipython bookmark and alias</a></li>
+<li><a href="http://ipython.org/ipython-doc/dev/interactive/magics.html">170515 ipython magical commands</a></li>
+<li><a href="https://ipython.org/ipython-doc/3/config/extensions/autoreload.html">170517 ipython reload code</a></li>
+<br/>
+<li><a class="classfication"> Chapter 26. Scrapy frame</a></li>
+<li><a href="https://doc.scrapy.org/en/1.3/intro/tutorial.html">170115 scrapy tutorial</a></li>
+<br/>
+
+
+
+
+<li><a class="classfication"> Chapter 28. Python log</a></li>
+<li><a href="https://www.loggly.com/blog/4-reasons-a-python-logging-library-is-much-better-than-putting-print-statements-everywhere/">170206 4 Reasons a Python Logging Library Is Much Better than Putting Print Statements Everywhere</a></li>
+<li><a href="https://docs.python.org/3/howto/logging-cookbook.html">170206 Python Logging Library Cooking book</a></li>
+<li><a href="https://www.blog.pythonlibrary.org/2012/08/02/python-101-an-intro-to-logging/">170206 Python Logging introduce</a></li>
+<li><a href="https://www.blog.pythonlibrary.org/2012/08/02/python-101-an-intro-to-logging/">170206 Python Logging great the former sector</a></li>
+
+<br/>
+
+
+
+
+
+<li><a class="classfication"> Chapter 29. Python test</a></li>
+<li><a href="http://pythontesting.net/">170206 Python test intro</a></li>
+<li><a href="http://pythontesting.net/">170206 Python test intro 1 and tool </a></li>
+<li><a href="http://pythontesting.net/framework/unittest/unittest-introduction">170206 Python  unittest introduction</a></li>
+<li><a href="http://pythontesting.net/framework/doctest/doctest-introduction/#example">170206 Python  doctest introduction</a></li>
+<li><a href="https://docs.python.org/2/library/doctest.html">170206 Python  doctest format reference </a></li>
+<li><a class="" href="https://github.com/oxfordyang2016/learnfluentpython/blob/master/02-array-seq/comprehensionlistdiff.doctest">170223 python doctest example and warn</a></li>
+<li><a href='https://github.com/oxfordyang2016/Testpython'>170206 Python test code by yangming</a></li>
+<li><a href='https://github.com/oxfordyang2016/learnfluentpython/blob/master/01-data-model/frenchdeck.py'>170206 Python doctest comment</a></li>
+<br/>
+
+<li><a class="classfication"> Chapter 30. Python and Automation</a></li>
+<li><a href="https://www.youtube.com/watch?v=QiLkTP9Y_d4">170215 windows automatic sikulix</a></li>
+<li><a href="http://stackoverflow.com/questions/18937058/clear-screen-in-shell">170515  python clear screen</a></li>
+
+<li><a href="http://doc.sikuli.org/tutorials/helloworld/helloworld-win.html">170215 windows automatic hello world</a></li>
+<li><a href="http://pythontesting.net/">170206 Python test intro 1 and tool </a></li>
+<li><a href="http://pythontesting.net/framework/unittest/unittest-introduction">170206 Python  unittest introduction</a></li>
+<li><a href="http://pythontesting.net/framework/doctest/doctest-introduction/#example">170206 Python  doctest introduction</a></li>
+<li><a href='https://github.com/oxfordyang2016/Testpython'>170206 Python test code by yangming</a></li>
+
+<br/>
+
+
+
+
+<li><a href="" class='classfication'>Chapter V.Reference python</a></li>
+<li><a href="https://python.libhunt.com/">Awesome python</a></li>
+<li><a href="http://awesome-python.com/">Awesome python 2</a></li>
+<li><a href="http://planetpython.org/">Awesome python 3</a></li>
+<li><a href="http://docs.python-guide.org/en/latest/">070105The Hitchhiker’s Guide to Python</a></li>
+<li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/Pro%20Python.pdf">070105Pro python</a></li>
+<li><a href="http://gettopical.com/pythonlanguage">070105Pro python community</a></li>
+
+<li><a href="http://stackoverflow.com/questions/7696924/multiline-comments-in-python">python package minimal structure</a></li> 
+<li><a href="http://importpython.com/newsletter/">170301 python import python community</a></li>
+<li><a href="http://code.activestate.com/recipes/langs/python/?page=1">170301 python recipes</a></li>
+<li><a href="https://wiki.python.org/moin/AdvancedBooks">170309 python book reference </a></li>    
+          
+      <li class="classfication">Python feature and syntax</li>
+      
+     
+       
+        
+        
+     
+        <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/httpsconnect.py">Python time schema </a></li>
+        
+        <li><a href="http://stackoverflow.com/questions/1345827/how-do-i-find-the-time-difference-between-two-datetime-objects-in-python">170509 Python time gap difference seconds/minutes/hour/day compute </a></li>
+      
+        <br/>
+      <li class="classfication">python Audio</li>
+      <li><a class="" href="http://cmusphinx.sourceforge.net/wiki/tutorial">python Audio recognization-cmusphinx</a></li>
+      <li><a class="" href="http://cmusphinx.sourceforge.net/wiki/tutorial">python Audio recognization pocketsphinx</a></li>
+      <li><a class="" href="http://depado.markdownblog.com/2015-05-13-tutorial-on-pocketsphinx-with-python-3-4">Tutorial on PocketSphinx with Python 3.4</a></li>
+      <li><a  class="" href="http://depado.markdownblog.com/2015-05-13-tutorial-on-pocketsphinx-with-python-3-4">Cannot install pyaudio, gcc error</a></li>
+        <li class="classfication">python Authentication</li>
+        <li class="classfication">python Data visualization</li>
+        <li class="classfication">python Restful api</li>
+        <li class="classfication">python text processing</li>
+        <li class="classfication">python Build</li>
+        <li class="classfication">python Algorithms and Design Patterns</li>
+        <li class="classfication">python Algorithms and Design Patterns</li>
+        <li class="classfication">python Cache</li>
+        <li class="classfication">python Date and time</li>
+        <li><a href="http://stackoverflow.com/questions/415511/how-to-get-current-time-in-python">Python time </a></li>
+        <li><a href="http://stackoverflow.com/questions/237079/how-to-get-file-creation-modification-date-times-in-python">Python get file time </a></li>
+         <li class="classfication">python Distribution</li>
+          <li class="classfication">Python Foreign Function Interface</li>
+          <li class="classfication">python email</li>
+          <li class="classfication">python Web crawing</li>
+        <li class="classfication">Python And C language</li>
+         <li class="http://www.c4learn.com/c-programs/how-to-create-your-own-header-file-in-c.html" href=''>170315 how to write a c header file</li>
+         <li class="" href='https://github.com/oxfordyang2016/c/blob/master/linuxvm.pdf'>170315 how to configure/install C envirement in linux</li>
+
+      <li class="" href='https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm'>170320 strcpy and strcmp</li>
+
+         <li class="" href='https://github.com/oxfordyang2016/c'>170315 how to compile a c program</li>
+        <li><a href="http://www.cs.toronto.edu/~patitsas/cs190/c_for_python.html">170310 C for python programmer </a></li>  
+ <li><a href="https://github.com/oxfordyang2016/hellofudan/blob/master/fd2011/fd111.c">170310 how to get string in c scanf </a></li>  
+ <li><a href="https://github.com/oxfordyang2016/hellofudan/blob/master/basic/hello.c">170310 c simple quick </a></li>  
+<li><a href="">170310 how to get int in c scanf </a></li> 
+
+
+        <br/>
+        <li class="classfication">Python Natural language processing</li>
+        <li class="classfication">python command-line tools</li>
+        <li class="classfication" href='http://yerevann.com/a-guide-to-deep-learning/'>python Deep learning</li>
+       
+        <li class="dnr" href='https://www.fullstackpython.com/blog/make-phone-calls-python.html'>170110 python Dail call phone</li>
+          </ul>  
+             <p class="footer">
+        by <a href="">yangming</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+  </body>
+</html>

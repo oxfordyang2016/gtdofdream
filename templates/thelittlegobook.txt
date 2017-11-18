@@ -1,0 +1,772 @@
+chapter 1 About book
+
+
+chapter 2 Intro
+1.why go?
+(a).
+The first is that it’s a relatively simple language with a relatively simple standard library.
+ In a lot of ways, the incremental nature of Go is to simplify some of the complexity 
+we’ve seen being added to languages over the last couple of decades. The other
+reason is that for many developers, it will complement your existing arsenal.
+(b).
+Go was built as a system language (e.g., operating systems, device drivers)
+for system developers  
+(c).
+go can do many things
+
+2.A Note from the Author
+(a).The Little MongoDB Book
+(b).The Little Redis Book
+(c).the book is too shallow or others too detailed
+
+
+chapter 3   
+1.get started
+(a). Go Playground which lets you run code online withouthaving to install anything
+(b).install
+    1.You can install it from source
+    2.you use one of the pre-compiled binaries(https://golang.org/dl/)
+      When you go to the download page, you’ll see installers for various platforms.
+(c). setup Go ourselves
+    1.Except for simple examples, Go is designed to work when your code 
+      is inside a workspace. The workspace is a folder
+      composed of bin, pkg and src subfolders      
+    2.in short, create a go folder with a src subfolder wherever you expect to put your projects.
+
+ (d).windows
+    Download the latest zip file. If you’re on an x64 system, you’ll want go#.#.#.windows-amd64.zip, where #.#.# is
+   the latest version of Go.
+   Unzip it at a location of your choosing. c:\Go is a good choice.
+   Set up two environment variables:
+   1. GOPATH points to your workspace. That might be something like c:\users\goku\work\go.
+   2. Add c:\Go\bin to your PATH environment variable.
+     Environment variables can be set through the Environment Variables button on the Advanced tab of the System
+     control panel. Some versions of Windows provide this control panel through the Advanced System Settings option
+     inside the System control panel.
+     Open a command prompt and type go version. You’ll hopefully get an output that looks like go version go1.3.3
+     windows/amd64.
+   
+Chapter 4
+(1).the basic
+  Go is a compiled, statically typed language with a C-like syntax and garbage collection.
+ (a)Compilation
+  1.Compilation is the process of translating the source code that you write into a 
+  lower level language – either assembly(as is the case with Go), 
+  or some other intermediary language (as with Java and C#).
+ 2.Compiled languages can be unpleasant to work with because compilation can be slow
+   Compiled languages can be unpleasant to work with because compilation can be slow. It’s hard to iterate quickly if you
+   have to spend minutes or hours waiting for code to compile. Compilation speed is one of the major design goals of Go.
+   This is good news for people working on large projects as well as those of us used to a quick feedback cycle offered by
+   interpreted languages.
+ 3.Compiled languages tend to run faster and the executable can be run without additional dependencies (at least, that’s
+   true for languages like C, C++ and Go which compile directly to assembly).
+ 
+(2).Static Typing
+  1. Being statically typed means that variables must be of a specific type (int, string, bool, []byte, etc.). This is either
+     achieved by specifying the type when the variable is declared or, in many cases, letting the compiler infer the type
+     (we’ll look at examples shortly).
+  2.but there are advantages, especially when you pair static typing with compilation.
+    The two are often conflated. It’s true that when you have one, you normally have 
+    the other but it isn’t a hard rule. With a rigid type system, a compiler is able
+    to detect problems beyond mere syntactical mistakes as well as make further optimizations 
+ 
+ (3).C-Like Syntax 
+  1.Saying that a language has a C-like syntax means that if you’re used to any other C-like languages such as C, C++,
+    Java, JavaScript and C#, then you’re going to find Go familiar – superficially, at least. For example, it means && is
+    used as a boolean AND, == is used to compare equality, { and } start and end a scope, and array indexes start at 0.
+  2.C-like syntax also tends to mean semi-colon terminated lines and parentheses around conditions. Go does away with
+    both of these, though parentheses are still used to control precedence. For example, an if statement looks like this:
+    if name == "Leto" {
+    print("the spice must flow")
+    }
+   And in more complicated cases, parentheses are still useful:
+    if (name == "Goku" && power > 9000) || (name == "gohan" && power < 4000) {
+    print("super Saiyan")
+    }
+   Beyond this, Go is much closer to C than C# or Java - not only in terms of syntax, but in terms of purpose. That’s
+   reflected in the terseness and simplicity of the language which will hopefully start to become obvious as you learn it.
+ (4).Garbage Collected
+   1.Some variables, when created, have an easy-to-define life. A variable local to a function, for example, disappears when
+     the function exits. In other cases, it isn’t so obvious – at least to a compiler. For example, the lifetime of a variable
+     returned by a function or referenced by other variables and objects can be tricky to determine.
+   2.Without garbage collection, it’s up to developers to free the memory associated with such variables 
+   at a point where the developer knows the variable isn’t needed. How? In C, you’d literally free(str); the variable.
+   3.Languages with garbage collectors (e.g., Ruby, Python, Java, JavaScript, C#, Go) are able to keep track of these
+     and free them when they’re no longer used. Garbage collection adds overhead, but it also eliminates a number of
+     devastating bugs.
+ (5).Running Go Code
+     1.Let’s start our journey by creating a simple program and learning how to compile and execute it
+     package main
+    func main() {
+    println("it's over 9000!")
+    }
+    Save the file as main.go. For now, you can save it anywhere you want;
+     we don’t need to live inside Go’s workspace for trivial examples.
+    Next, open a shell/command prompt and change the directory to where you saved the file. For me, that means typing
+    cd ~/code.Finally, run the program by entering:go run main.go If everything worked, you should see it’s over 9000!.
+    
+    2.But wait, what about the compilation step? go run is a handy command that compiles and runs your code. It uses
+      a temporary directory to build the program, executes it and then cleans itself up. You can see the location of the
+      temporary file by running:go run --work main.go
+
+    3.To explicitly compile code, use go build: go build main.go This will generate an executable main which you can run.
+     On Linux / OSX, don’t forget that you need to prefix the executable with dot-slash, so you need to type ./main.
+
+    4.While developing, you can use either go run or go build. When you deploy your code however, you’ll want to deploy
+     a binary via go build and execute that. 
+   
+   	5.ABOUT MAIN 
+   	  Hopefully, the code that we just executed is understandable. We’ve created a function and printed out a string with
+      the built-in println function. Did go run know what to execute because there was only a single choice? No. In Go,
+      the entry point to a program has to be a function called main within a package main.
+      If you want, you can alter the code and change the package name. Run the code via go run and you should get
+      an error. Then, change the name back to main but use a different function name. You should see a different error
+      message. Try making those same changes but use go build instead. Notice that the code compiles, there’s just no
+      entry point to run it. This is perfectly normal when you are, for example, building a library
+   
+    6.About Import
+      Go has a number of built-in functions, such as println, which can be used without reference. We can’t get very far
+      though, without making use of Go’s standard library and eventually using third-party libraries. In Go, the import
+      keyword is used to declare the packages that are used by the code in the file.Let’s change our program:
+      Let’s change our program:
+     
+     package main
+     import (
+     "fmt"
+     "os"
+     )
+     func main() {
+     if len(os.Args) != 2 {
+     os.Exit(1)
+     }
+     fmt.Println("It's over", os.Args[1])
+     }
+     Which you can run via:
+     go run main.go 9000
+    
+     We’re now using two of Go’s standard packages: fmt and os. We’ve also introduced another built-in function len.  
+     len returns the size of a string, or the number of values in a dictionary, or, as we see here, the number of elements
+     in an array. If you’re wondering why we expect 2 arguments, it’s because the first argument – at index 0 – is always
+     the path of the currently running executable. (Change the program to print it out and see for yourself.)
+
+     #You’ve probably noticed we prefix the function name with the package, e.g., fmt.Println. 
+
+     #Go is strict about importing packages. It will not compile if you import a package but don’t use it.
+      Go is strict about this because unused imports can slowcompilation; 
+      admittedly a problem most of us don’t have to this degree
+
+      package main
+     import (
+     "fmt"
+     "os"
+      )
+     func main() {
+     }
+
+     You should get two errors about fmt and os being imported and not used. Can this get annoying? Absolutely. Over
+     time, you’ll get used to it (it’ll still be annoying though).
+
+   7.how to get document
+   8.Variables and Declarations
+     It’d be nice to begin and end our look at variables by saying you declare
+      and assign to a variable by doing x = 4.Unfortunately, things are more complicated in Go. 
+     The most explicit way to deal with variable declaration and assignment in Go is also the most verbose:
+     package main
+    import ( 
+    "fmt"
+    )
+   func main() {
+   var power int
+   power = 9000
+   fmt.Printf("It's over %d\n", power)
+   }
+   Here, we declare a variable power of type int. By default, Go assigns a zero value to variables. Integers are assigned
+   0, booleans false, strings "" and so on. Next, we assign 9000 to our power variable. We can merge the first two
+   lines:var power int = 9000,Still, that’s a lot of typing. Go has a handy short variable declaration operator, 
+   :=, which can infer the type:power := 9000,This is handy, and it works just as well with functions:
+   func main() {
+   power := getPower()
+   }
+   func getPower() int {
+   return 9001
+   }
+   It’s important that you remember that := is used to declare the variable as well as assign a value to it. Why? Because
+   a variable can’t be declared twice (not in the same scope anyway). If you try to run the following, you’ll get an error.
+   func main() {
+   power := 9000
+   fmt.Printf("It's over %d\n", power)
+   // COMPILER ERROR:
+   // no new variables on left side of :=
+   power := 9001
+   fmt.Printf("It's also over %d\n", power)
+   }
+   The compiler will complain with no new variables on left side of :=. This means that when we first declare a variable,
+		we use := but on subsequent assignment, we use the assignment operator =. This makes a lot of sense, but it can be
+		tricky for your muscle memory to remember when to switch between the two
+
+		If you read the error message closely, you’ll notice that variables is plural. That’s because Go lets you assign multiple
+		variables (using either = or :=):
+		func main() {
+		name, power := "Goku", 9000
+		fmt.Printf("%s's power is over %d\n", name, power)
+		}
+		As long as one of the variables is new, := can be used. Consider:
+		func main() {
+		power := 1000
+		fmt.Printf("default power is %d\n", power)
+		name, power := "Goku", 9000
+		fmt.Printf("%s's power is over %d\n", name, power)
+		}
+
+		Although power is being used twice with :=, the compiler won’t complain the second time we use it, it’ll see that the
+		other variable, name, is a new variable and allow :=. However, you can’t change the type of power. It was declared
+		(implicitly) as an integer and thus, can only be assigned integers.
+
+		For now, the last thing to know is that, like imports, Go won’t let you have unused variables. For example,
+		func main() {
+		name, power := "Goku", 1000
+		fmt.Printf("default power is %d\n", power)
+		}
+		won’t compile because name is declared but not used. Like unused imports it’ll cause some frustration, but overall I
+		think it helps with code cleanliness and readability.
+
+		There’s more to learn about declaration and assignments. For now, remember that you’ll use var NAME TYPE when
+		declaring a variable to its zero value, NAME := VALUE when declaring and assigning a value, and NAME = VALUE when
+		assigning to a previously declared variable
+
+
+  9.Function Declarations
+    This is a good time to point out that functions can return multiple values. 
+    Let’s look at three functions: one with no
+    return value, one with one return value, and one with two return values.
+       
+			    func log(message string) {
+			}
+			func add(a int, b int) int {
+			}
+			func power(name string) (int, bool) {
+			}
+		    We’d use the last one like so:
+		value, exists := power("goku")
+		if exists == false {
+		// handle this error case
+     }
+
+     Sometimes, you only care about one of the return values. In these cases, you assign the other values to _:
+     _, exists := power("goku")
+     if exists == false {
+     // handle this error case
+     }
+
+     This is more than a convention. _, the blank identifier, 
+     is special in that the return value isn’t actually assigned. This
+     lets you use _ over and over again regardless of the returned type.
+
+    Finally, there’s something else that you’re likely to run into with function declarations. If parameters share the same
+type, we can use a shorter syntax
+    func add(a, b int) int {
+}
+Being able to return multiple values is something you’ll use often. You’ll also frequently use _ to discard a value. Named
+return values and the slightly less verbose parameter declaration aren’t that common. Still, you’ll run into all of these
+sooner than later so it’s important to know about them.
+
+#about some dynamical and statical info
+If you’re coming from a dynamic language, the complexity around types and declarations might seem like a step
+backwards. I don’t disagree with you. For some systems, dynamic languages are categorically more productive.
+If you’re coming from a statically typed language, you’re probably feeling comfortable with Go. Inferred types and
+multiple return values are nice (though certainly not exclusive to Go). Hopefully as we learn more, you’ll appreciate
+the clean and terse syntax.
+
+
+Chapter 5
+Chapter 2 - Structures
+
+Go isn’t an object-oriented (OO) language like C++, Java, Ruby and C#. It doesn’t have objects nor inheritance and
+thus, doesn’t have the many concepts associated with OO such as polymorphism and overloading.
+(It’s worth pointing out that composition over inheritance is an old battle cry and Go is the first language I’ve
+used that takes a firm stand on the issue)
+
+Although Go doesn’t do OO like you may be used to, 
+you’ll notice a lot of similarities between the definition of a structure
+and that of a class. A simple example is the following Saiyan structure:
+type Saiyan struct {
+Name string
+Power int
+}
+
+We’ll soon see how to add a method to this structure,
+ much like you’d have methods as part of a class. Before we do
+that, we have to dive back into declarations.
+
+1.Declarations and Initializations
+When we first looked at variables and declarations, we looked only at built-in types, like integers and strings. Now that
+we’re talking about structures, we need to expand that conversation to include pointers.
+
+The simplest way to create a value of our structure is:
+goku := Saiyan{
+Name: "Goku",
+Power: 9000,
+`}
+Note: The trailing , in the above structure is required. Without it, the compiler will give an error. You’ll appreciate the
+required consistency, especially if you’ve used a language or format that enforces the opposite.
+
+We don’t have to set all or even any of the fields. Both of these are valid:
+goku := Saiyan{}
+// or
+goku := Saiyan{Name: "Goku"}
+goku.Power = 9000
+Just like unassigned variables have a zero value, so do fields.
+Furthermore, you can skip the field name and rely on the order of the field declarations (though for the sake of clarity,
+you should only do this for structures with few fields):
+
+goku := Saiyan{"Goku", 9000}
+
+What all of the above examples do is declare a variable goku and assign a value to it
+
+Many times though, we don’t want a variable that is directly associated with our value but rather a variable that has a
+pointer to our value. A pointer is a memory address; it’s the location of where to find the actual value. It’s a level of
+indirection. Loosely, it’s the difference between being at a house and having directions to the house.
+
+Why do we want a pointer to the value, rather than the actual value? It comes down to the way Go passes arguments
+to a function: as copies. Knowing this, what does the following print?
+
+func main() {
+goku := Saiyan{"Goku", 9000}
+Super(goku)
+fmt.Println(goku.Power)
+}
+func Super(s Saiyan) {
+s.Power += 10000
+}
+
+
+The answer is 9000, not 19000. Why? Because Super made changes to a copy of our original goku value and thus,
+changes made in Super weren’t reflected in the caller. To make this work as you probably expect, we need to pass a
+pointer to our value:
+
+
+func main() {
+goku := &Saiyan{"Goku", 9000}
+Super(goku)
+fmt.Println(goku.Power)
+}
+func Super(s *Saiyan) {
+s.Power += 10000
+}
+
+We made two changes. The first is the use of the & operator to get the address of our value (it’s called the address
+of operator). Next, we changed the type of parameter Super expects. It used to expect a value of type Saiyan but
+now expects an address of type *Saiyan, where *X means pointer to value of type X. There’s obviously some relation
+between the types Saiyan and *Saiyan, but they are two distinct types.
+
+
+Note that we’re still passing a copy of goku's value to Super it just so happens that goku's value has become an
+address. That copy is the same address as the original, which is what that indirection buys us. Think of it as copying
+the directions to a restaurant. What you have is a copy, but it still points to the same restaurant as the original.
+We can prove that it’s a copy by trying to change where it points to (not something you’d likely want to actually do):
+
+func main() {
+goku := &Saiyan{"Goku", 9000}
+Super(goku)
+fmt.Println(goku.Power)
+}
+func Super(s *Saiyan) {
+s = &Saiyan{"Gohan", 1000}
+}
+
+The above, once again, prints 9000. This is how many languages behave, including Ruby, Python, Java and C#. Go,
+and to some degree C#, simply make the fact visible
+
+It should also be obvious that copying a pointer is going to be cheaper than copying a complex structure. On a 64-bit
+machine, a pointer is 64 bits large. If we have a structure with many fields, creating copies can be expensive. The
+real value of pointers though is that they let you share values. Do we want Super to alter a copy of goku or alter the
+shared goku value itself?
+
+All this isn’t to say that you’ll always want a pointer. At the end of this chapter, after we’ve seen a bit more of what
+we can do with structures, we’ll re-examine the pointer-versus-value question.
+
+Functions on Structures
+
+We can associate a method with a structure:
+
+type Saiyan struct {
+Name string
+Power int
+}
+func (s *Saiyan) Super() {
+s.Power += 10000
+}
+In the above code, we say that the type *Saiyan is the receiver of the Super method. We call Super like so:
+goku := &Saiyan{"Goku", 9001}
+goku.Super()
+fmt.Println(goku.Power) // will print 19001
+
+
+New
+
+Despite the lack of constructors, Go does have a built-in new function which is used to allocate the memory required
+by a type. The result of new(X) is the same as &X{}:
+goku := new(Saiyan)
+// same as
+goku := &Saiyan{}
+
+#define a struct type ,donot allocate memory
+
+
+Which you use is up to you, but you’ll find that most people prefer the latter whenever they have fields to initialize,
+since it tends to be easier to read:
+
+hich you use is up to you, but you’ll find that most people prefer the latter whenever they have fields to initialize,
+since it tends to be easier to read:
+goku := new(Saiyan)
+goku.name = "goku"
+goku.power = 9001
+//vs
+goku := &Saiyan {
+name: "goku",
+power: 9000,
+}
+Whichever approach you choose, if you follow the factory pattern above, you can shield the rest of your code from
+knowing and worrying about any of the allocation details
+
+
+
+Fields of a Structure
+In the example that we’ve seen so far, Saiyan has two fields Name and Power of types string and int, respectively.
+Fields can be of any type – including other structures and types that we haven’t explored yet such as arrays, maps,
+interfaces and functions.
+For example, we could expand our definition of Saiyan:
+type Saiyan struct {
+Name string
+Power int
+Father *Saiyan
+}
+which we’d initialize via:
+gohan := &Saiyan{
+Name: "Gohan",
+Power: 1000,
+Father: &Saiyan {
+Name: "Goku",
+Power: 9001,
+Father: nil,
+},
+}
+
+
+
+Composition
+Go supports composition, which is the act of including one structure into another
+This can get pretty tedious. Every method of Person needs to be duplicated in Saiyan. Go avoids this tediousness:
+type Person struct {
+Name string
+}
+func (p *Person) Introduce() {
+fmt.Printf("Hi, I'm %s\n", p.Name)
+}
+type Saiyan struct {
+*Person
+Power int
+}
+// and to use it:
+goku := &Saiyan{
+Person: &Person{"Goku"},
+Power: 9001,
+}
+goku.Introduce()
+
+The Saiyan structure has a field of type *Person. Because we didn’t give it an explicit field name, we can implicitly
+access the fields and functions of the composed type. However, the Go compiler did give it a field name, consider the
+perfectly valid:
+goku := &Saiyan{
+Person: &Person{"Goku"},
+}
+fmt.Println(goku.Name)
+fmt.Println(goku.Person.Name)
+Both of the above will print “Goku”.
+Is composition better than inheritance? Many people think that it’s a more robust way to share code. When using
+inheritance, your class is tightly coupled to your superclass and you end up focusing on hierarchy rather than behavior.
+
+
+Overloading
+While overloading isn’t specific to structures, it’s worth addressing. Simply, Go doesn’t support overloading. For this
+reason, you’ll see (and write) a lot of functions that look like Load, LoadById, LoadByName and so on.
+However, because implicit composition is really just a compiler trick, we can “overwrite” the functions of a composed
+type. For example, our Saiyan structure can have its own Introduce function:
+func (s *Saiyan) Introduce() {
+fmt.Printf("Hi, I'm %s. Ya!\n", s.Name)
+}
+The composed version is always available via s.Person.Introduce().
+
+
+Pointers versus Values
+As you write Go code, it’s natural to ask yourself should this be a value, or a pointer to a value? There are two pieces
+of good news. First, the answer is the same regardless of which of the following we’re talking about:
+• A local variable assignment
+• Field in a structure
+• Return value from a function
+• Parameters to a function
+• The receiver of a method
+Secondly, if you aren’t sure, use a pointer.
+As we already saw, passing values is a great way to make data immutable (changes that a function makes to it won’t
+be reflected in the calling code). Sometimes, this is the behavior that you’ll want but more often, it won’t be.
+Even if you don’t intend to change the data, consider the cost of creating a copy of large structures. Conversely, you
+might have small structures, say:
+type Point struct {
+X int
+Y int
+}
+In such cases, the cost of copying the structure is probably offset by being able to access X and Y directly, without any
+indirection.
+Again, these are all pretty subtle cases. Unless you’re iterating over thousands or possibly tens of thousands of such
+points, you wouldn’t notice a difference.
+
+
+Before You Continue
+From a practical point of view, this chapter introduced structures, how to make an instance of a structure a receiver
+of a function, and added pointers to our existing knowledge of Go’s type system. The following chapters will build on
+what we know about structures as well as the inner workings that we’ve explored
+
+Chapter 6
+Chapter 3 - Maps, Arrays and Slices
+So far we’ve seen a number of simple types and structures. It’s now time to look at arrays, slices and maps.
+Arrays
+If you come from Python, Ruby, Perl, JavaScript or PHP (and more), you’re probably used to programming with dynamic
+arrays. These are arrays that resize themselves as data is added to them. In Go, like many other languages, arrays
+are fixed. Declaring an array requires that we specify the size, and once the size is specified, it cannot grow:
+var scores [10]int
+scores[0] = 339
+The above array can hold up to 10 scores using indexes scores[0] through scores[9]. Attempts to access an out
+of range index in the array will result in a compiler or runtime error.
+We can initialize the array with values:
+scores := [4]int{9001, 9333, 212, 33}
+We can use len to get the length of the array. range can be used to iterate over it:
+for index, value := range scores {
+}
+Arrays are efficient but rigid. We often don’t know the number of elements we’ll be dealing with upfront. For this, we
+turn to slices.
+============================================================================
+Chapter 8
+Chapter 5 - Tidbits
+In this chapter, we’ll talk about a miscellany of Go’s feature which didn’t quite fit anywhere else
+
+  
+
+Error Handling
+Go’s preferred way to deal with errors is through return values, not exceptions. Consider the strconv.Atoi function
+which takes a string and tries to convert it to an integer:
+package main
+import (
+"fmt"
+"os"
+"strconv"
+)
+func main() {
+if len(os.Args) != 2 {
+os.Exit(1)
+}
+n, err := strconv.Atoi(os.Args[1])
+if err != nil {
+fmt.Println("not a valid number")
+} else {
+fmt.Println(n)
+}
+}
+
+
+You can create your own error type; the only requirement is that it fulfills the contract of the built-in error interface,
+which is:
+type error interface {
+Error() string
+}
+More commonly, we can create our own errors by importing the errors package and using it in the New function:
+import (
+"errors"
+)
+func process(count int) error {
+if count < 1 {
+return errors.New("Invalid count")
+}
+return nil
+}
+
+There’s a common pattern in Go’s standard library of using error variables. For example, the io package has an EOF
+variable which is defined as:
+var EOF = errors.New("EOF")
+This is a package variable (it’s defined outside of a function) which is publicly accessible (upper-case first letter). Various
+functions can return this error, say when we’re reading from a file or STDIN. If it makes contextual sense, you should
+use this error, too. As consumers, we can use this singleton:
+package main
+import (
+"fmt"
+"io"
+)
+func main() {
+var input int
+_, err := fmt.Scan(&input)
+if err == io.EOF {
+fmt.Println("no more input!")
+}
+}
+As a final note, Go does have panic and recover functions. panic is like throwing an exception while recover is
+like catch; they are rarely used.
+Defer
+Even though Go has a garbage collector, some resources require that we explicitly release them. For example, we need
+to Close() files after we’re done with them. This sort of code is always dangerous. For one thing, as we’re writing
+a function, it’s easy to forget to Close something that we declared 10 lines up. For another, a function might have
+multiple return points. Go’s solution is the defer keyword:
+package main
+import (
+"fmt"
+"os"
+)
+func main() {
+file, err := os.Open("a_file_to_read")
+if err != nil {
+fmt.Println(err)
+return
+}
+defer file.Close()
+// read the file
+}
+If you try to run the above code, you’ll probably get an error (the file doesn’t exist). The point is to show how defer
+works. Whatever you defer will be executed after the enclosing function (in this case main()) returns, even if it does
+so violently. This lets you release resources near where it’s initialized and takes care of multiple return points.
+
+Defer
+Even though Go has a garbage collector, some resources require that we explicitly release them. For example, we need
+to Close() files after we’re done with them. This sort of code is always dangerous. For one thing, as we’re writing
+a function, it’s easy to forget to Close something that we declared 10 lines up. For another, a function might have
+multiple return points. Go’s solution is the defer keyword:
+package main
+import (
+"fmt"
+"os"
+)
+func main() {
+file, err := os.Open("a_file_to_read")
+if err != nil {
+fmt.Println(err)
+return
+}
+defer file.Close()
+// read the file
+}
+
+Initialized If
+Go supports a slightly modified if-statement, one where a value can be initiated prior to the condition being evaluated:
+if x := 10; count > x {
+...
+}
+That’s a pretty silly example. More realistically, you might do something like:
+if err := process(); err != nil {
+return err
+}
+Interestingly, while the values aren’t available outside the if-statement, they are available inside any else if or else.
+
+
+
+
+
+
+
+Empty Interface and Conversions
+In most object-oriented languages, a built-in base class, often named object, is the superclass for all other classes.
+Go, having no inheritance, doesn’t have such a superclass. What it does have is an empty interface with no methods:
+interface{}. Since every type implements all 0 of the empty interface’s methods, and since interfaces are implicitly
+implemented, every type fulfills the contract of the empty interface.
+If we wanted to, we could write an add function with the following signature:
+func add(a interface{}, b interface{}) interface{} {
+...
+}
+To convert an interface variable to an explicit type, you use .(TYPE):
+return a.(int) + b.(int)
+Note that if the underlying type is not int, the above will result in an error.
+You also have access to a powerful type switch:
+switch a.(type) {
+case int:
+fmt.Printf("a is now an int and equals %d\n", a)
+case bool, string:
+// ...
+default:
+// ...
+}
+You’ll see and probably use the empty interface more than you might first expect. Admittedly, it won’t result in clean
+code. Converting values back and forth is ugly and dangerous but sometimes, in a static language, it’s the only choice
+
+
+
+
+Strings and Byte Arrays
+Strings and byte arrays are closely related. We can easily convert one to the other:
+stra := "the spice must flow"
+byts := []byte(stra)
+strb := string(byts)
+In fact, this way of converting is common across various types as well. Some functions explicitly expect an int32 or
+an int64 or their unsigned counterparts. You might find yourself having to do things like:
+int64(count)
+Still, when it comes to bytes and strings, it’s probably something you’ll end up doing often. Do note that when you use
+[]byte(X) or string(X), you’re creating a copy of the data. This is necessary because strings are immutable.
+Strings are made of runes which are unicode code points. If you take the length of a string, you might not get what
+you expect. The following prints 3:
+fmt.Println(len(""))
+If you iterate over a string using range, you’ll get runes, not bytes. Of course, when you turn a string into a []byte
+you’ll get the correct data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

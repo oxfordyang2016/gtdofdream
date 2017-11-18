@@ -1,0 +1,2297 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dream's everyday</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+.color{
+
+color:red
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+
+/* Syntax highlighting */
+body .hll { background-color: #ffffcc }
+
+body .il { color: #666666 }                     /* Literal.Number.Integer.Long */
+.g23,.g24,.g15,.g37,.g41,.g42,.g3,.finish,.finish20160909{
+    text-decoration: line-through;
+    color:black;
+    background: red;
+}
+.anotherday{
+    text-decoration: line-through;
+    color:black;
+    background: green;
+}
+.replace{
+    text-decoration: line-through;
+    color:black;
+    background:blue;
+}
+.giveup{
+    text-decoration: line-through;
+    color:black;
+    background: yellow;
+}
+
+.holiday{
+    text-decoration: line-through;
+    color:black;
+    background: yellow;
+}
+
+
+.fudan{
+    text-decoration: line-through;
+    color:blue;
+}
+.month{
+    color:red;
+}
+
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yang's everyday<2016-2021> </a></h2>
+      <p>
+        patience,discipline.
+      </on>
+       <a href="https://yangmingweatherapp.herokuapp.com/dream/" >yang's fiveyear</a>
+      <p>
+        <em>yangming's everyday</em>
+      </p>
+
+
+
+
+ <li><a class="">finish all task before 6:00 pm</a></li>
+       <li><a class="">try to tidy freewritting</a></li>
+             <li><a class="">try to start new routine</a></li>
+	           <li><a class="">words 10 minutes</a></li>
+		         <li><a class="">push-up 5 sets</a></li>
+			       <li><a class="">get things done 15 pages </a></li>
+			       <li><a class="">try to debug the final ivp</a></li>
+				     <li class="">August 2<br/></li>
+
+
+
+
+
+<li><a class="">deal with my first drawer</a></li>
+<li><a class="">try to give price to the project</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+       <li><a class="finish">try to tidy freewritting</a></li>
+             <li><a class="finish">try to start new routine</a></li>
+	           <li><a class="finish">words 10 minutes</a></li>
+		         <li><a class="finish">push-up 5 sets</a></li>
+			       <li><a class="replace">get things done 15 pages </a></li>
+			       <li><a class="finish">try to end ivp Projects </a></li>
+				     <li class="">August 1<br/></li>
+
+
+
+
+
+<li><a class="finish">try to look for good templates for nz</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+       <li><a class="finish">try to tidy freewritting</a></li>
+             <li><a class="finish">try to start new routine</a></li>
+	           <li><a class="">words 10 minutes</a></li>
+		         <li><a class="finish">push-up 5 sets</a></li>
+			       <li><a class="replace">get things done 15 pages </a></li>
+			       <li><a class="finish">try to test ivp including port </a></li>
+				     <li class="">july 27<br/></li>
+
+
+
+
+
+<li><a class="finish">try to look for good templates for nz</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+       <li><a class="finish">try to tidy freewritting</a></li>
+             <li><a class="finish">try to start new routine</a></li>
+	           <li><a class="">words 10 minutes</a></li>
+		         <li><a class="finish">push-up 5 sets</a></li>
+			       <li><a class="replace">get things done 15 pages </a></li>
+			       <li><a class="finish">try to test ivp including port </a></li>
+				     <li class="">july 27<br/></li>
+
+
+
+
+   <li><a class="finish">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="">get things done 15 pages </a></li>
+        <li><a class="finish">try to fix ivp bug in beijingdevice</a></li>
+                <li class="">july 27<br/></li>
+
+
+
+
+
+   <li><a class="finish">deal with folder delete program</a></li>
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">get things done 15 pages </a></li>
+        <li><a class="finish">try to check the ivp api</a></li>
+                <li class="">july 27<br/></li>
+
+
+
+
+
+
+
+
+   <li><a class="finish">deal with subtutile of playlist</a></li>
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">get things done 15 pages </a></li>
+        <li><a class="">try to check the ivp api</a></li>
+                <li class="">july 26<br/></li>
+
+
+
+   <li><a class="anotherday">try to add images to website</a></li>
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">get things done 15 pages </a></li>
+        <li><a class="finish">try to debug the stream</a></li>
+                <li class="">july 25<br/></li>
+
+
+
+
+   <li><a class="finish">try to give templates</a></li>
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">get things done 15 pages </a></li>
+        <li><a class="replace">try to debug the stream</a></li>
+                <li class="">july 24<br/></li>
+
+
+
+
+
+
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="finish">get things done 15 pages </a></li>
+        <li><a class="replace">try to finish producitivity development</a></li>
+                <li class="">july 21<br/></li>
+
+
+
+
+
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="finish">get things done 15 pages </a></li>
+        <li><a class="finish">try to finish producitivity development</a></li>
+                <li class="">july 20<br/></li>
+
+
+
+
+
+
+
+
+<li><a class="finish">try to finish heroku verify</a></li>
+<li><a class="">try to test public address</a></li>
+   <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="replace">elon musk 2 pages </a></li>
+        <li><a class="finish">try to finish producitivity development</a></li>
+                <li class="">july 19<br/></li>
+
+
+
+
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="finish">try to rewite smip.py</a></li>
+                <li class="">july 18<br/></li>
+
+
+
+
+
+<li><a class="finish">try to lookup blockchain  materaial</a></li>
+      <li><a class="">try to finish sicp 6 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="">try to slove python paralle</a></li>
+                <li class="">july 17<br/></li>
+
+
+
+
+
+      <li><a class="">try to finish sicp 6 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="finish">try to add public ip to ivp</a></li>
+                <li class="">july 14<br/></li>
+
+      <li><a class="">try to finish sicp 6 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="">modify the bug of link status </a></li>
+                <li class="">july 13<br/></li>
+
+      <li><a class="">try to finish sicp 8 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="finish">modify the bug of link status </a></li>
+                <li class="">july 12<br/></li>
+
+
+
+
+
+
+
+
+      <li><a class="">try to finish sicp 20 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="finish">elon musk 2 pages </a></li>
+        <li><a class="finish">give the ivp boards info</a></li>
+                <li class="">july 11<br/></li>
+
+
+
+
+
+
+  <li><a class="">debug fuck yao problem</a></li>
+      <li><a class="">try to finish sicp 50 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="anotherday">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="">give the ivp version  </a></li>
+                <li class="">july 10<br/></li>
+
+
+        <li><a class="">try to finish sicp 50 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="anotherday">elon musk 2 pages </a></li>
+        <li><a class="">give all final apis of ivp</a></li>
+                <li class="">july 7<br/></li>
+
+
+
+
+  <li><a class="finish">try to write a plugin  for atom</a></li>
+        <li><a class="">try to finish sicp 50 Pages</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="anotherday">elon musk 2 pages </a></li>
+        <li><a class="">try to add simple strem info</a></li>
+                <li class="">july 6<br/></li>
+
+
+
+
+
+
+        <li><a class="">try to finish sicp 50 Pages</a></li>
+        <li><a class="finish">try to send  email abot salary</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="">words 10 minutes</a></li>
+        <li><a class="">push-up 5 sets</a></li>
+        <li><a class="finish">elon musk 2 pages </a></li>
+        <li><a class="finish">try to slove productivity problem</a></li>
+                <li class="">july 5<br/></li>
+
+                <li><a class="">try to finish sicp 50 Pages</a></li>
+                <li><a class="">try to send  email abot salary</a></li>
+                 <li><a class="">finish all task before 6:00 pm</a></li>
+                <li><a class="">try to tidy freewritting</a></li>
+                <li><a class="">try to start new routine</a></li>
+                <li><a class="">words 10 minutes</a></li>
+                <li><a class="">push-up 5 sets</a></li>
+                <li><a class="anotherday">elon musk 2 pages </a></li>
+                <li><a class="">try to monitor link status </a></li>
+                        <li class="">july 4<br/></li>
+
+
+
+        <li><a class="">try to finish sicp 50 oages</a></li>
+        <li><a class="">try to start write email abot salary</a></li>
+         <li><a class="finish">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="finish">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="replace">push-up 5 sets</a></li>
+        <li><a class="">elon musk 2 pages </a></li>
+        <li><a class="finish">try to migrate encoder and decoder </a></li>
+                <li class="">july 3<br/></li>
+
+
+
+	  <li><a class="">try to finish sicp 500 pages</a></li>
+	      <li><a class="">finish python core source code</a></li>
+<li><a class="">try to finish someone tidy</a></li>
+   <li><a class="">try to start new routine</a></li>
+<li><a class="">communicate with boss about salary</a></li>
+<li><a class="">words 70 minutes</a></li>
+<li><a class="">push-up 35 sets</a></li>
+<li><a class="">finish elon musk 70 pages </a></li>
+<li><a class="">finish ivp all vp works</a></li>
+        <li class="">week plan<br/></li>
+
+
+        <li><a class="finish">test the countdown js script</a></li>
+        <li><a class="">try to finish stanford startup course</a></li>
+        <li><a class="">try to start write email abot salary</a></li>
+         <li><a class="">finish all task before 6:00 pm</a></li>
+        <li><a class="finish">try to tidy freewritting</a></li>
+        <li><a class="">try to start new routine</a></li>
+        <li><a class="finish">words 10 minutes</a></li>
+        <li><a class="finish">push-up 5 sets</a></li>
+        <li><a class="">elon musk 10 pages </a></li>
+        <li><a class="finish">try to finish encoder info</a></li>
+                <li class="">june 30<br/></li>
+
+
+
+
+
+
+  <li><a class="finish">try to get 15 pycon subtile</a></li>
+<li><a class="finish">test the countdown js script</a></li>
+<li><a class="">try to start watch a video about python</a></li>
+<li><a class="">try to start write email abot salary</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="">elon musk 10 pages </a></li>
+<li><a class="">try to finish encoder info</a></li>
+        <li class="">june 29<br/></li>
+
+
+  <li><a class="">try to get 15 pycon subtile</a></li>
+        <li><a class="finish">try to start move videos to disk</a></li>
+<li><a class="finish">try to develop the countdown js script</a></li>
+<li><a class="">try to start watch a video about python</a></li>
+<li><a class="">try to start write email abot salary</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="finish">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="">elon musk 10 pages </a></li>
+<li><a class="">try to finish encoder info</a></li>
+        <li class="">june 28<br/></li>
+
+
+
+        <li><a class="finish">try to slove nz mail problem</a></li>
+        <li><a class="finish">try to start move videos to disk</a></li>
+<li><a class="finish">try to fetch pycon2014 video</a></li>
+<li><a class="">try to start watch a video about python</a></li>
+<li><a class="">try to start write email abot salary</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="anotherday">elon musk 10 pages </a></li>
+<li><a class="">try to finish encoder info</a></li>
+        <li class="">june 27<br/></li>
+
+
+
+
+
+        <li><a class="">try to start move videos to disk</a></li>
+<li><a class="">try to fetch pycon2014 video</a></li>
+<li><a class="">try to start watch a video about python</a></li>
+<li><a class="">try to start write email abot salary</a></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="">elon musk 10 pages </a></li>
+<li><a class="">try to finish all info</a></li>
+        <li class="">june 26<br/></li>
+
+    <li><a class="finish">try to finish new opensource</a></li>
+<li><a class="">try to finish someone tidy</a></li>
+   <li><a class="">try to start new routine</a></li>
+<li><a class="">communicate with boss about salary</a></li>
+<li><a class="finish">words 70 minutes</a></li>
+<li><a class="finish">push-up 35 sets</a></li>
+<li><a class="">finish elon musk 70 pages </a></li>
+<li><a class="">finish ivp all vp works</a></li>
+        <li class="">week plan<br/></li>
+
+<li class="">june 24-25<br/></li>
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="finish">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="">finish a mind for numbers 10 pages </a></li>
+<li><a class="">try to redisgn the all info</a></li>
+        <li class="">june 23<br/></li>
+
+
+
+
+
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="">try to design tomorrow plan</a></li>
+<li><a class="finish">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="">finish a mind for numbers 10 pages </a></li>
+<li><a class="">try to finish all info</a></li>
+        <li class="">june 22<br/></li>
+
+ <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="">try to design tomorrow plan</a></li>
+<li><a class="finish">try to tidy freewritting</a></li>
+<li><a class="">try to start new routine</a></li>
+<li><a class="">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="anotherday">finish a mind for numbers 10 pages </a></li>
+<li><a class="">try to update the all info</a></li>
+        <li class="">june 21<br/></li>
+
+
+        <li><a class="">finish all task before 6:00 pm</a></li>
+<li><a class="finish">try to design tomorrow plan</a></li>
+<li><a class="finish">try to tidy freewritting</a></li>
+<li><a class="finish">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="">finish a mind for numbers 10 pages </a></li>
+<li><a class="replace">try to update the all info</a></li>
+        <li class="">june 20<br/></li>
+
+<li><a class="finish">try to design tomorrow plan</a></li>
+<li><a class="finish">try to start new routine</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="anotherday">finish a mind for numbers 10 pages </a></li>
+<li><a class="finish">try to start design warn mechinism of  ivp about 2 h </a></li>
+        <li class="anotherday">june 19<br/></li>
+        <li><a class="finish">try to finish new opensource</a></li>
+<li><a class="finish">try to finish someone tidy</a></li>
+   <li><a class="finish">try to start new routine</a></li>
+<li><a class="">try to requests to increase the salary</a></li>
+<li><a class="">words 70 minutes</a></li>
+<li><a class="">push-up 35 sets</a></li>
+<li><a class="finish">finish a mind for numbers </a></li>
+<li><a class="">finish ivp all work except for the test part in college</a></li>
+        <li class="">week plan<br/></li>
+
+
+ <li><a class="finish">finish all affairs before 6:00</a></li>
+ <li><a class="finish">try to design the routine of myself again</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="anotherday">finish a mind for numbers 10 pages</a></li>
+<li><a class="finish">try to give the all info </a></li>
+<li><a class="finish">try to debug the test problem by college</a></li>
+        <li class="finish">june 16<br/></li>
+ <li><a class="">finish all affairs before 6:00</a></li>
+ <li><a class="finish">try to design the routine of myself</a></li>
+<li><a class="finish">finish fudan affairs of youtube 30 total</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="anotherday">finish a mind for numbers 10 pages</a></li>
+<li><a class="finish">try to slove link all problem</a></li>
+<li><a class="finish">try to give a good package</a></li>
+        <li class="">june 15<br/></li>
+
+
+
+ <li><a class="">finish all affairs before 6:00</a></li>
+<li><a class="finish">finish fudan affairs of youtube 30 total</a></li>
+<li><a class="finish">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="anotherday">finish a mind for numbers 10 pages</a></li>
+<li><a class="finish">slove slow response problem </a></li>
+        <li class="">june 14<br/></li>
+ <li><a class="">finish all affairs before 6:00</a></li>
+<li><a class="finish">finish fudan affairs of youtube 30 total</a></li>
+<li><a class="">words 10 minutes</a></li>
+<li><a class="finish">push-up 5 sets</a></li>
+<li><a class="finish">finish a mind for numbers 10 pages</a></li>
+<li><a class="replace">grasp the tech of vagrant generating tech </a></li>
+        <li class="">june 13<br/></li>
+   <li><a class="">try to conclude my habit</a></li>
+<li><a class="">finish fudan affairs of youtube</a></li>
+<li><a class="">words 10 minutes</a></li>
+<li><a class="">push-up 5 sets</a></li>
+<li><a class="finish">finish a mind for numbers 10 pages</a></li>
+<li><a class="finish">deal with installation package problem</a></li>
+        <li class="">june 12<br/></li>
+
+   <li><a class="">design a set group action</a></li>
+<li><a class="finish">finish fudan affairs of youtube</a></li>
+<li><a class="">words 70 minutes</a></li>
+<li><a class="">push-up 35 sets</a></li>
+<li><a class="">finish a mind for numbers 80 pages</a></li>
+<li><a class="finish">deal with ivp all things</a></li>
+        <li class="">week plan<br/></li>
+
+
+
+
+        <li><a class="">finish all task befo 6:30 pm</a></li>
+<li><a class="">finish fudan task.</a></li>
+<li><a class="">a mind for numbers 10 pages.</a></li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="">finish next week plan</a></li>
+<li><a class="">try to finish automatical install mariadb</a></li>
+        <li class="">june 10-11<br/></li>
+<li><a class="">finish ivp package work</a> </li>
+<li><a class="">finish abother device test</a> </li>
+       <li><a class="finish">a mind for number 10 pages</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+<li><a class="">remmeber 10 minutes words</a> </li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="">finish smip moudle </a></li>
+<li><a class="">finish the task before 7 pm</a></li>
+        <li class="">june 9<br/></li>
+ <li><a class="">finish abother device test</a> </li>
+       <li><a class="finish">a mind for number 10 pages</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="">finish smip moudle </a></li>
+        <li class="">june 8<br/></li>
+        <li><a class="">try to design a routine for a habit</a> </li>
+        <li><a class="">finish 1 hours listenning background</a> </li>
+         <li><a class="">try to finish all device test</a> </li>
+        <li><a class="finish">a mind for number 10 pages</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="replace">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+
+        <li class="">june 7<br/></li>
+        <li><a class="finish">try to look for english phrasal verb material</a> </li>
+        <li><a class="finish">finish 4 hours listenning background</a> </li>
+         <li><a class="">finish another device status</a> </li>
+        <li><a class="finish">a mind for number 10 pages</a> </li>
+ <li><a class="finish">try to update link except code</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="finish">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+ <li><a class="finish">try to give device turn/off status</a></li>
+        <li class="">june 6<br/></li>
+       <li><a class="finish">a mind for number 10 pages</a> </li>
+ <li><a class="finish">try to test another device</a> </li>
+<li><a class="finish">elon mask 10 pages</a> </li>
+<li><a class="finish">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="finish">tidy alarm info</a></li>
+        <li class="finish">june 5<br/></li>
+
+     <li class="holiday">june 3-4<br/></li>
+    <li><a class="finish">try to  tidy the 20k vocabulary  table</a> </li>
+       <li><a class="anotherday">a mind for number 10 pages</a> </li>
+        <li><a class="">try to many device test link</a> </li>
+ <li><a class="finish">deal with link json format</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="finish">update link status</a></li>
+        <li class="">june 2<br/></li>
+
+
+<li><a class="finish">write a test moudle.</a> </li>
+       <li><a class="finish">a mind for number 10 pages</a> </li>
+        <li><a class="">finish the ivp all course test(simple)</a> </li>
+ <li><a class="finish">deal with link json format</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="finish">update working status of device</a></li>
+        <li class="">june 1<br/></li>
+        <li><a class="">try to change my taobao password</a> </li>
+       <li><a class="anotherday">a mind for number 10 pages</a> </li>
+        <li><a class="">finish the ivp the first version</a> </li>
+ <li><a class="finish">give fudan document info</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="">remmeber 10 minutes words</a> </li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="finish">finish ivp link api</a></li>
+        <li class="">may 31<br/></li>
+ <li><a class="">try to change my taobao password</a> </li>
+       <li><a class="finish">a mind for number 10 pages</a> </li>
+        <li><a class="">finish the ivp the first version</a> </li>
+ <li><a class="finish">give fudan document info</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="">remmeber 10 minutes words</a> </li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="finish">finish ivp link api</a></li>
+        <li class="">may 31<br/></li>
+
+
+        <li class="">may 28-30 duanwu<br/></li>
+         <li><a class="finish">decoder a mind for number pdf affairs</a> </li>
+        <li><a class="finish">try to ask stackoverflow problem</a> </li>
+ <li><a class="finish">lookup fudan progress of document</a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="finish">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="finish">finish ivp link get</a></li>
+        <li class="">may 27<br/></li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="">remmeber 10 minutes words</a> </li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="anotherday">finish ivp link get</a></li>
+        <li class="">may 26<br/></li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="">remmeber 10 minutes words</a> </li>
+<li><a class="">push-up 3 sets</a></li>
+<li><a class="anotherday">finish ivp link get</a></li>
+        <li class="">may 25<br/></li>
+            <li><a class="finish">try to deal with fudan affairs </a> </li>
+<li><a class="finish">try to show link info </a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="">remmeber 10 minutes words</a> </li>
+<li><a class="anotherday">push-up 3 sets</a></li>
+<li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 24<br/></li>
+<li><a class="finish">try to slove js tomato rest solution</a> </li>
+<li><a class="">try to give essay words explantion</a> </li>
+            <li><a class="">try to deal with fudan affairs </a> </li>
+<li><a class="">try to show link info </a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 23<br/></li>
+  <li><a class="finish">try to deal with fudan affairs </a> </li>
+<li><a class="finish">try to give the boards en/decoder and smip </a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">remmeber 10 minutes words</a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 23<br/></li>
+         <li><a class="anotherday">deal with the mr ling and bai qiao affairs..</a> </li>
+            <li><a class="">deal with the Equestrian order.</a> </li>
+          <li><a class="finish">deal with the 40 rmb order</a> </li>
+        <li><a class="">deal with kid photography</a> </li>
+<li><a class="">try to give the link info </a> </li>
+<li><a class="">elon mask 10 pages</a> </li>
+<li><a class="">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 22<br/></li>
+
+         <li class="finish">may 20-21<br/></li>
+<li><a class="finish">try to tidy my five year plan</a> </li>
+<li><a class="finish">try to finish countdown demo</a> </li>
+<li><a class="replace">try to write data to db in turn</a> </li>
+<li><a class="replace">try to write info to db of ivp</a> </li>
+<li><a class="finish">try to remember 10 minutes words</a> </li>
+<li><a class="finish">elon mask 2 pages</a> </li>
+<li><a class="finish">try to finish grammar sentence  1 </a> </li>
+<li><a class="finish">push-up 3 sets</a></li>
+<li><a class="finish">sole developer story 50 min </a></li>
+        <li class="finish">may 19<br/></li>
+
+             <li><a class="giveup">try to deal with fudan affairs</a> </li>
+             <li><a class="finish">try to design a countdown demo</a> </li>
+          <li><a class="">try to write data to db in turn</a> </li>
+    <li><a class="finish">try to intergated ivp start</a> </li>
+    <li><a class="anotherday">try to remember 10 minutes words</a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 18<br/></li>
+
+
+
+             <li><a class="">try to start new body exercise solution</a> </li>
+             <li><a class="finish">try to design a countdown demo</a> </li>
+          <li><a class="">ms programming start </a> </li>
+    <li><a class="">try to give status standard and code</a> </li>
+    <li><a class="">try to remember 10 minutes words</a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 17<br/></li>
+
+             <li><a class="">try to start new body exercise solution</a> </li>
+             <li><a class="finish">try to rethink the days</a> </li>
+          <li><a class="">ms programming start </a> </li>
+        <li><a class="finish">design the storage slotution  info of ivp </a> </li>
+        <li><a class="finish">try to test code of decoder and encoder</a> </li>
+    <li><a class="">try to give status standard and code</a> </li>
+    <li><a class="finish">try to remember 10 minutes words</a> </li>
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+      <li><a class="">sole developer story 50 min </a></li>
+        <li class="">may 16<br/></li>
+        <li><a class="finish">try to understand ipython config</a> </li>
+          <li><a class="finish">ipython  tips</a> </li>
+        <li><a class="finish">python color solution</a> </li>
+        <li><a class="finish">try to design device status standard</a> </li>
+    <li><a class="finish">try to give registered list</a> </li>
+    <li><a class="finish">try to remember 10 minutes words</a> </li>
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+      <li><a class="finish">sole developer story 50 min </a></li>
+        <li class="anotherday">may 15<br/></li>
+        <li><a class="">try to remember 10 minutes words</a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="anotherday">sole developer story</a></li>
+        <li class="">may 13-14<br/></li>
+        <li><a class="">try to remember 10 minutes words</a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="anotherday">push-up 3 sets</a></li>
+      <li><a class="anotherday">bank affairs</a></li>
+        <li class="">may 12<br/></li>
+
+
+
+
+         <li><a class="finish">check my finance situation</a> </li>
+        <li><a class="finish">tidy software all kinds of aspects </a> </li>
+        <li><a class="finish">try to upload abroad course to taobao </a> </li>
+        <li><a class="finish">try to remember 10 minutes words</a> </li>
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+        <li><a class="finish">test pdftoword</a> </li>
+        <li class="anotherday">may 11<br/></li>
+        <li><a class="finish">try to study youtube bad subtitle</a> </li>
+<li><a class="finish">try to inverstigate chrome plugin develop</a> </li>
+<li><a class="finish">try to write api for remeber words software</a> </li>
+  <li><a class="anotherday">try to start microsoft work</a> </li>
+     <li><a class="anotherday">try to finish decoder work</a> </li>
+<li><a class="finish">start recite words 10 minutes</a> </li>
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+           <li class="anotherday">may 10<br/></li>
+<li><a class="replace">try to remember words 10 minuts</a> </li>
+<li><a class="finish">try to upload pdf2word to taobao</a> </li>
+<li><a class="finish">sell god and fund</a> </li>
+<li><a class="finish">try to finish remenber words timer part</a> </li>
+  <li><a class="finish">try to finish remember words count part</a> </li>
+<li><a class="finish">try to finish  remmeberwords delete words part</a> </li>
+<li><a class="finish">try to start ivp project decoder part</a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+           <li class="anotherday">may 9<br/></li>
+<li><a class="replace">try to inverstigate shanbei plan</a> </li>
+<li><a class="">try to start micsoft plan</a> </li>
+<li><a class="replace">try to start shanbei the first day plan</a> </li>
+  <li><a class="finish">try to set week plan</a> </li>
+<li><a class="finish">try to understand shanbei unfamiliar words familar</a> </li>
+<li><a class="anotherday">try to start ivp project encoder part</a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+
+           <li class="">may 8<br/></li>
+
+   <li><a class="">rethink the year and study and make a new plan</a> </li>
+  <li><a class="finish">try to set week plan</a> </li>
+<li><a class="">try to start microsoft contest preparation</a> </li>
+<li><a class="">try to start new course</a> </li>
+  <li><a class="">elon mask 10 pages</a> </li>
+     <li><a class="">remember words plan run five days </a> </li>
+     <li><a class="">finish ivp project</a></li>
+        <li><a class="">new finance plan</a></li>
+           <li class="">week plan test<br/></li>
+
+<li><a class="">try to digest/tidy  all stanfordbehavior words</a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+
+           <li class="">may 5<br/></li>
+
+
+<li><a class="finish">try to digest/tidy  all stanfordbehavior words</a> </li>
+<li><a class="">try to start ivp project encoder part</a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+
+           <li class="">may 4<br/></li>
+
+
+
+
+<li><a class="">fudan algorithm things</a> </li>
+<li><a class="">try to agian upload tabbao goods</a> </li>
+<li><a class="finish">try to organize the stanford teacher lecture notes</a> </li>
+<li><a class="finish">try to finish smip basic task</a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+
+           <li class="">may 3<br/></li>
+<li><a class="finish">try to extract  the words in stanford behavior</a> </li>
+<li><a class="finish">try to slove the all kinds of board position</a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+
+           <li class="">may 2<br/></li>
+
+<li class="">apr 29-may1 internation labour  day <br/></li>
+<li><a class="">try to debug this code about 181</a> </li>
+
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+
+
+           <li class="">apr 28<br/></li>
+<li><a class="">try to organize the  info from the smip for all ge</a> </li>
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+
+
+           <li class="">apr 27<br/></li>
+
+
+
+
+
+
+<li><a class="finish">try to organize the  info from the smip</a> </li>
+  <li><a class="finish">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+
+
+           <li class="finish">apr 26<br/></li>
+
+<li><a class="finish">try to lookup registerred api</a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+
+
+           <li><a class=anotherday"">apr 25</a></li>
+
+
+        <li><a class="finish">start new taobao </a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="anotherday">push-up 3 sets</a></li>
+      <li><a class="">try to start new course</a></li>
+
+
+           <li class="">apr 24<br/></li>
+
+           <li class="">apr 22-23<br/></li>
+
+<li><a class="anotherday">start new taobao </a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="">try to start new course</a></li>
+
+
+
+           <li class="">apr 21<br/></li>
+
+
+<li><a class="">start new taobao </a> </li>
+  <li><a class="">elon mask 2 pages</a> </li>
+        <li><a class="">try to finish to parse the info api ivp</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="anotherday">push-up 3 sets</a></li>
+      <li><a class="">try to start new course</a></li>
+ <li><a class="finish">try to move document to my disk</a></li>
+
+
+           <li class="">apr 20<br/></li>
+<li><a class="finish">try to read hn how to study</a> </li>
+  <li><a class="anotherday">elon mask 2 pages</a> </li>
+        <li><a class="finish">try to deal with the interview of in fudan.</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+      <li><a class="">try to start new plan</a></li>
+ <li><a class="finish">send affirm to fudan software school</a></li>
+
+
+           <li class="">apr 19<br/></li>
+
+
+      <li><a class="">elon mask 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="anotherday">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="finish">go fudan zhangjiangbranch to interview with database lab</a></li>
+ <li><a class="finish">go fudan to interview with tangyuan </a></li>
+
+
+           <li class="">apr 18<br/></li>
+
+         <li><a class="">elon mask 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class=" ">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="finish">send email to fudan advisor</a></li>
+
+
+
+           <li class="">apr 17<br/></li>
+
+
+         <li><a class="">elon mask 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class=" ">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="finish">send email to fudan advisor</a></li>
+
+
+
+           <li class="">apr 14<br/></li>
+ <li><a class="">elon mask 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+      <li><a class="">send email to fudan advisor</a></li>
+     <li><a class="">try to deal with database</a></li>
+     <li><a class="finish">try to lookup my document position</a></li>
+     <li><a class="finish">try to upload profile to taobao</a></li>
+     <li><a class="finish">turn on iphone screen assistive touch</a></li>
+           <li class="">apr 13<br/></li>
+
+
+
+
+      <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="finish">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+      <li><a class="finish">send email to fudan advisor</a></li>
+     <li><a class="">try to implement  register api</a></li>
+     <li><a class="finish">try to lookup my document position</a></li>
+
+           <li class="">apr 12<br/></li>
+
+
+
+            <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+      <li><a class="finish">send email to fudan advisor</a></li>
+     <li><a class="">try to implement  register api</a></li>
+
+
+           <li class="">apr 11<br/></li>
+            <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+      <li><a class="finish">send email to fudan advisor</a></li>
+     <li><a class="">try to implement  register api</a></li>
+
+
+           <li class="">apr 10<br/></li>
+        <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+
+           <li class="">apr 8<br/></li>
+      <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+     <li><a class="finish">try to finish ivp</a></li>
+           <li class="">apr 7<br/></li>
+
+
+
+           <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+     <li><a class="finish">try to finish ivp protocal and discuss with </a></li>
+           <li class="">apr 6<br/></li>
+        <li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">try to finish ivp protocal and discuss with </a></li>
+           <li class="">apr 5<br/></li>
+
+       <li class="">apr 2-4 qingming<br/></li>
+<li><a class="">com plexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+     <li><a class="finish">try to finish ivp protocal</a></li>
+
+
+       <li class="">apr 1<br/></li>
+
+           <li><a class="">complexity of math and engineering 2 pages</a> </li>
+        <li><a class="">finish fluent python 2 pages.</a> </li>
+     <li><a class="">try to finish grammar sentence  1 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+     <li><a class="">try to finish ivp protocal</a></li>
+
+
+       <li class="">march 31<br/></li>
+
+
+
+          <li><a class="finish">read restful api design.</a> </li>
+           <li><a class="">complexity of math and engineering 2 pages</a> </li>
+        <li><a class="finish">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  3 </a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+     <li><a class="finish">try to make ivp protocal</a></li>
+           <li><a class="">try to understand  ivp link  again</a> </li>
+
+       <li class="">march 30<br/></li>
+          <li><a class="">complexity of math and engineering 2 pages</a> </li>
+        <li><a class="finish">finish fluent python 2 pages.</a> </li>
+     <li><a class="finish">try to finish grammar sentence  3 </a> </li>
+     <li><a class="finish">try to choose network class</a></li>
+     <li><a class="">try to learn guitar</a></li>
+           <li><a class="finish">try to understand  ivp link </a> </li>
+
+       <li class="">march 29<br/></li>
+          <li><a class="replace">try to download web model</a> </li>
+     <li><a class="">try to finish grammar sentence  3 </a> </li>
+     <li><a class="finish">try to finish api of ivp</a></li>
+     <li><a class="finish">try to purchase guitar </a></li>
+           <li><a class="">try to finish taobao accounts apply</a> </li>
+
+       <li class="">march 28<br/></li>
+          <li><a class="finish">try to slove apple itunes</a> </li>
+     <li><a class="">try to finish grammar sentence  3 </a> </li>
+     <li><a class="">try to finish two ivp smip device map</a></li>
+     <li><a class="finish">try to purchase and configure mcloud service </a></li>
+           <li><a class="finish">try to finish heroku accounts manage</a> </li>
+
+       <li class="">march 27<br/></li>
+  <li class="">march 25-26<br/></li>
+         <li><a class="">try to finish cydex doc</a> </li>
+
+       <li class="">march 24<br/></li>
+         <li><a class="">try to in oj  to upload</a> </li>
+          <li><a class="">try to finish fd 2012.3</a> </li>
+      <li><a class="">try to finish fd 2012.2</a> </li>
+
+     <li><a class="">try to finish fd 2012.1</a> </li>
+     <li><a class="">try to finish fd 2011.3 </a> </li>
+     <li><a class="">try to finish fd 2011.2</a></li>
+     <li><a class="">finish fd 2011.1</a></li>
+      <li><a class="fudan">try to finish c basic </a></li>
+       <li class="">march 16-23<br/></li
+
+           <li><a class="">try to finish api  doc writting</a> </li>
+      <li><a class="">try to push art and engineering 1 pages</a> </li>
+
+     <li><a class="">try to start algorithm</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 1 in math</a></li>
+      <li><a class="replace">try to finish c library writting </a></li>
+       <li class="">march 15<br/></li
+
+     <li><a class="finish">try to xomment all api of ivp</a> </li>
+      <li><a class="">try to push art and engineering 3 pages</a> </li>
+     <li><a class="finish">try to read introduce pythoner to c</a> </li>
+     <li><a class="finish">try to start algorithm</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 2 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+       <li class="">march 14<br/></li>
+
+     <li><a class="finish">try to xomment all api of ivp</a> </li>
+      <li><a class="">try to push art and engineering 3 pages</a> </li>
+     <li><a class="finish">try to understan python inner</a> </li>
+     <li><a class=" ">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="replace">finish master 3 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+       <li class="">march 13<br/></li>
+
+      <li class="">march 11-12<br/></li>
+	       <li><a class="">try to finish ivp all invoke</a> </li>
+      <li><a class="">try to push art and engineering 3 pages</a> </li>
+     <li><a class="finish">try to understand rouly python interpreter</a> </li>
+     <li><a class=" ">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+       <li class="">march 10<br/></li>
+        <li><a class="finish">try to finish cydex ivp doc read</a> </li>
+      <li><a class="">try to push art and engineering 3 pages</a> </li>
+     <li><a class="finish">try to erad mit intro computing 10 pages in python</a> </li>
+     <li><a class=" ">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+       <li class="">march 9<br/></li>
+        <li><a class="replace">try to finish cydex auto test</a> </li>
+       <li><a class="">try to forward a introcs  video</a> </li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="">try to finish httlcs 10 pages</a> </li>
+     <li><a class="anotherday">medicine</a> </li>
+     <li><a class="finsish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+      <li class="">march 8<br/></li>
+        <li><a class="finish">try to finish python html subclassfiaction</a> </li>
+        <li><a class="fnish">try to finish caton document</a> </li>
+       <li><a class="replace">try to forward a algo video</a> </li>
+      <li><a class="replace">try to push art and engineering 3 page s</a> </li>
+     <li><a class="replace">try to finish python thread and proccess understand</a> </li>
+     <li><a class="finish">medicine</a> </li>
+     <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+       <li class="">march 7<br/></li>
+       <li><a class="">try to forward a algo video</a> </li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="finish">try to finish fluent python context manager</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+      <li class="">march 6<br/></li>
+       <li class="">march 4-5<br/></li>
+       <li><a class="">try to forward a algo video</a> </li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="finish">try to finish fluent python discriptor</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 1 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+       <li class="">march 3<br/></li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="replace">try to finish fluent python 10 pages</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+    <li class="">march 2<br/></li>
+      <li><a class="">try to auto boring thins a apge gui auto</a> </li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="">try to finish fluent python 10 pages</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+     <li class="">march 1<br/></li>
+
+
+      <li><a class="month">try to finish fluent python 100 pages</a></li>
+     <li><a class="month">try to finish python algorithm in mit</a></li>
+     <li><a class="month">finish 2002-2004 math </a></li>
+      <li><a class="month">understand python inter mechinism </a></li>
+     <li class="month">march <br/></li>
+      <li><a class="finish">try to auto boring thins a apge gui auto</a> </li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="">try to finish fluent python 10 pages</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+     <li class="">Feb 28<br/></li>
+      <li><a class="finish">try to auto boring thins a apge gui auto</a> </li>
+      <li><a class="">try to push art and engineering 3 page s</a> </li>
+     <li><a class="finish">try to finish fluent python 10 pages</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+      <li class="">Feb 27<br/></li>
+      <li class="">Feb 25-26<br/></li>
+      <li><a class="anotherday">try to get mysis verify code</a> </li>
+      <li><a class="finish">try to slove vpn problem</a> </li>
+     <li><a class="finish">try to finish caton doc</a> </li>
+     <li><a class="finish">try to finish fluent python 10 pages</a> </li>
+     <li><a class="finish">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise 0.5 pages </a></li>
+      <li class="">Feb 24<br/></li>
+     <li><a class="finish">try to slove flask authentication system</a> </li>
+     <li><a class="finish">try to slovebaiduyun password problem</a> </li>
+     <li><a class="replace">try to slove network esential konledge</a> </li>
+     <li><a class="finish">try to finish fluent python 10 pages</a> </li>
+     <li><a class="finish">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="replace">network pactise 0.5 pages </a></li>
+      <li class="finish">Feb 23<br/></li>
+     <li><a class="finish">try to finish flask authentication part</a> </li>
+     <li><a class="">try to finish fluent python 10 pages</a> </li>
+     <li><a class="finish">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise  1 pages </a></li>
+    <li class="">Feb 22<br/></li>
+     <li><a class="finish">try to finish fluent python 10 pages</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="">network pactise  1 pages </a></li>
+     <li class="">Feb 21<br/></li>
+     <li><a class="finish">try to finish fluent python chapter 1</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+     <li class="">Feb 20<br/></li>
+     <li class="">Feb 16-19<br/></li>
+     <li><a class="">try to read effictive python 5 item</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+      <li class="">Feb 15<br/></li>
+     <li><a class="">try to read effictive python 5 item</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+          <li class="">Feb 14<br/></li>
+     <li><a class="replace">try to explore python and network</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+     <li class="">Feb 13<br/></li>
+     <li class="">Feb 11-12<br/></li>
+     <li><a class="finish">try to finish sublime package install problem </a> </li>
+     <li><a class="finish">read how to think  acticle</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+     <li><a class="">try to finish docker private registry </a> </li>
+     <li class="">Feb 10<br/></li>
+    <li><a class="finish">change mrs chen  resume</a> </li>
+    <li><a class="finish">try to start docker</a> </li>
+     <li><a class="finish">try to adjust windows languge</a> </li>
+     <li><a class="finish">try to trade my property</a> </li>
+     <li><a class="">try to understand subnet work method</a> </li>
+     <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+     <li><a class="finish">try to understand vagrant work method</a> </li>
+     <li class="">Feb 9<br/></li>
+     <li><a class="finish">try to sweep my bedroom</a> </li>
+     <li><a class="finish">try to adjust connect to database mb and mysql</a> </li>
+     <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+     <li><a class="">try to understand cache</a> </li>
+     <li class="">Feb 8<br/></li>
+     <li><a class="finish">try to sweep my bedroom</a> </li>
+     <li><a class="">try to finish python log via config file</a> </li>
+     <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+         <li><a class="">try to use 5 anololy in learning</a></li>
+     <li><a class="">try to go to bed before 0:00 am</a> </li>
+     <li><a class="finish">try to finish python orm</a> </li>
+       <li class="">Feb 7<br/></li>
+     <li><a class="finish">try to finish python test entry</a> </li>
+     <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+         <li><a class="">try to use 5 anololy in learning</a></li>
+     <li><a class="finish">try to go to bed before 0:00 am</a> </li>
+     <li><a class="anotherday">try to get a dictionary</a> </li>
+     <li class="">Feb 6<br/></li>
+     <li class="">Feb 5<br/></li>
+
+     <li><a class="anotherday">try to issue a twitter about travel</a> </li>
+     <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+     <li><a class="">try to use 5 anololy in learning</a></li>
+
+   <li class="">Feb 4<br/></li>
+    <li><a class="replace">try to understand python google style and pep8</a> </li>
+    <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+     <li><a class="">try to use 5 anololy in learning</a></li>
+
+      <li class="">Feb 3<br/></li>
+    <li class="">Jan 24--Feb2 spring festival<br/></li>
+    <li><a class="replace">try to understand python unit test</a> </li>
+    <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+     <li><a class="">try to use 5 anololy in learning</a></li>
+    <li><a class="">try to understand what nginx and uwsgi ocuur </a></li>
+    <li class="">Jan 23<br/></li>
+    <li><a class="">try to issue a teitter about china</a> </li>
+    <li><a class="replace">try to understand python method and function type</a> </li>
+    <li><a class="">try to start data structure</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+    <li><a class="">try to use 5 anololy in learning</a></li>
+     <li><a class="">try to start career material reading part iii </a></li>
+    <li class="">Jan 22<br/></li>
+     <li class="">Jan 21<br/></li>
+
+    <li><a class="anotherday">try to start data structure</a> </li>
+    <li><a class="">try to slove golang db page problem</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+    <li><a class="">try to use 5 anololy in learning</a></li>
+    <li><a class="">try to start career material reading </a></li>
+     <li class="">Jan 20<br/></li>
+    <li><a class="">try to start data structure</a> </li>
+    <li><a class="">try to slove golang db page problem</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+    <li><a class="">try to use 5 anololy in learning</a></li>
+    <li><a class="">try to start career material reading </a></li>
+    <li class="">Jan 19<br/></li>
+    <li><a class="">try to start data structure</a> </li>
+    <li><a class="finish">try to slove golang db page problem</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+     <li><a class="">network pactise  2 pages </a></li>
+     <li class="">Jan 18<br/></li>
+    <li><a class="">try to start data structure</a> </li>
+    <li><a class="finish">try to modify golang interface with mr wang</a> </li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="finish">try to degsin another canvas to asynchron fetch data</a> </li>
+    <li><a class="">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+     <li><a class="finish">network pactise  2 pages </a></li>
+     <li><a class="">understand c compile  </a></li>
+    <li><a class="finish">slove git free password problem </a></li>
+   <li class="">Jan 17<br/></li>
+    <li><a class="finish">try to start data structure</a> </li>
+    <li><a class="finish">try to finish golang test</a> </li>
+     <li><a class="anotherday">medicine</a> </li>
+    <li><a class="replace">try to understand python project introduce</a> </li>
+    <li><a class="finish">try to finish web fetch data apply to canvas</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+      <li><a class="finish">network pactise  2 pages </a></li>
+  <li class="">Jan 16<br/></li>
+  <li class="">Jan 14-15<br/></li>
+     <li><a class="">medicine</a> </li>
+    <li><a class="finish">try to understand python article</a> </li>
+    <li><a class="">try to finish flask step forward a section</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="anotherday">finish master 2 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+<li class="">Jan 13<br/></li>
+     <li><a class="finish">deal with cridit ca</a> </li>
+     <li><a class="">medicine</a> </li>
+     <li><a class="">try to gather info fami-teacher</a> </li>
+    <li><a class="finish">try to understand python article</a> </li>
+    <li><a class="">try to finish flask step forward a section</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+<li class="">Jan 12<br/></li>
+     <li><a class="finish">try to add flask to github</a> </li>
+     <li><a class="finish">try to finish caton server cydex english translate</a> </li>
+    <li><a class="finish">try to understand python super</a> </li>
+    <li><a class="">try to finish flask step forward a section</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+<li class="">Jan 11<br/></li>
+     <li><a class="finish">try to finish caton cydex english translate</a> </li>
+    <li><a class="finish">try to understand continue</a> </li>
+    <li><a class="">try to finish flask step forward a section</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="">try js ajax page partly load</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+<li class="">Jan 10<br/></li>
+
+    <li><a class="">try to finish mysql data test again</a> </li>
+    <li><a class="finish">try to get canvas done </a> </li>
+    <li><a class="">try to finish flask step forward a section</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="finish">try js ajax send http and get data</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anoatherday">network pactise  2 pages </a></li>
+<li class="">Jan 9<br/></li>
+<li class="">Jan 7-8<br/></li>
+    <li><a class="finish">try to setup samba server in tencent cloud</a> </li>
+    <li><a class="finish">try to change baidu passwd</a> </li>
+    <li><a class="finish">try to finish flask tutorial</a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="anotherday">try js ajax forward  a post</a> </li>
+     <li><a class="anotherday">push-up 3 sets</a></li>
+     <li><a class="anotherday">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  2 pages </a></li>
+ <li class="anotherday">Jan 6<br/></li>
+    <li><a class="finish">try to setup python httpserver</a> </li>
+    <li><a class="finish">try to deal with tecent server</a> </li>
+    <li><a class="anotherday">try to finish finanace compute</a> </li>
+    <li><a class="replace">try to understand python magical method</a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="replace">try js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  2 pages </a></li>
+ <li class="anotherday">Jan 5<br/></li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="replace">try js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  2 pages </a></li>
+<li class="anotherday">Jan 4<br/></li>
+    <li><a class="anotherday">try to use python vitualenv</a> </li>
+    <li><a class="">try to select python project</a> </li>
+    <li><a class="finish">try to finish db backup all task </a> </li>
+    <li><a class="anotherday">try to use learning tech </a> </li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="replace">try js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+<li class="">Jan 3<br/></li>
+    <li><a class="">try to use learning tech </a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+      <li><a class="replace">try js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="">network pactise  2 pages </a></li>
+<li class="">Jan 1-2<br/></li>
+ <li class="">2017 <br/></li>
+
+    <li><a class="">try to use learning tech </a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+    <li><a class="replace">try to understand  python __ ___ </a> </li>
+      <li><a class="finish">try to finish a rpm package</a> </li>
+      <li><a class="replace">try js ajax forward  a post</a> </li>
+    <li><a class="">try to Understand  opensource </a> </li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+    <li><a class="anotherday">try to understand  python with </a> </li>
+      <li><a class="finish">try to finish a rpm package</a> </li>
+      <li><a class="">try js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  2 pages </a></li>
+<li class="">Dec 30<br/></li>
+    <li><a class="">try to use learning tech </a> </li>
+    <li><a class="">try to finish a sentence in  english grammar </a> </li>
+    <li><a class="replace">try to understand  python __ ___ </a> </li>
+      <li><a class="finish">try to finish a rpm package</a> </li>
+      <li><a class="relace">try js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  2 pages </a></li>
+<li class="">Dec 29<br/></li>
+    <li><a class="anotherday">try to finish a sentence in  english grammar </a> </li>
+    <li><a class="finish">try to learn python decoraotr </a> </li>
+      <li><a class="finish">try to make a rpm package</a> </li>
+      <li><a class="replace">js ajax forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  2 pages </a></li>
+    <li class="anotherday">Dec 28<br/></li>
+    <li><a class="finish">try to finish a sentence in  english grammar </a> </li>
+    <li><a class="replace">try to learn python generator </a> </li>
+      <li><a class="finish">try to make a rpm package</a> </li>
+      <li><a class="finish">js forward  a post</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 2 in math</a></li>
+      <li><a class="anotherday">network pactise  1 pages </a></li>
+        <li class="anotherday">Dec 27<br/></li>
+      <li><a class="finish">try to make a rpm package</a> </li>
+      <li><a class="finish">js forward  a post</a> </li>
+     <li><a class="anotherday">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 1 in math</a></li>
+      <li><a class="anotherday">network pactise  1 pages </a></li>
+     <li class="anotherday">Dec 26<br/></li>
+
+      dec21-25 master test
+      <li><a class="">try to finish alo part</a> </li>
+      <li><a class="replace">try to understand python yield and generator</a> </li>
+      <li><a class="">try to design backup resend machanism</a> </li>
+
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="">push-up 3 sets</a></li>
+     <li><a class="">finish master 3 in math</a></li>
+    <li><a class="">network pactise  3 pages </a></li>
+           dec21
+      <li><a class="">try to finish 0.5 computer basic in mse  </a> </li>
+      <li><a class="">try to finish 0.5 algrithm   in mse</a> </li>
+      <li><a class="finish">package code and distribute to pypi </a> </li>
+      <li><a class="finish">try to finish job with mr jing</a> </li>
+
+     <li><a class="">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="">network pactise  3 pages </a></li>
+          dec20
+      <li><a class="finish">try to understand python moudle </a> </li>
+      <li><a class="finish">try to finish job with mr jing</a> </li>
+
+     <li><a class="replace">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="">network pactise  3 pages </a></li>
+           dec19
+          dec 17-18
+      <li><a class="finish">try to understand that how python interpreter works</a> </li>
+      <li><a class="finish">try to finish job with mr jing</a> </li>
+
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="anotherday">network pactise  3 pages </a></li>
+      dec16
+      <li><a class="finish">try to understand python object</a> </li>
+      <li><a class="anotherday">use map filter lambda and comprehension-list in project</a> </li>
+      <li><a class="">try to reserve port and path for syn</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+     dec15
+      <li><a class="finish">try to understand python audio install</a> </li>
+      <li><a class="finish">try to finish center server load automatically</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+
+
+
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+          dec14
+      <li><a class="finish">try to understand python built object and function</a> </li>
+      <li><a class="finish">try to finish center server load automatically</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+       dec13
+      <li><a class="finish">try to understand python gil lock</a> </li>
+      <li><a class="finish">try to finish center server load</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="anotherday">network pactise  3 pages </a></li>
+           dec12
+       dec10-11
+      <li><a class="">make a step of python threading</a> </li>
+      <li><a class="finish">try to finish center server load</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 3 sets</a></li>
+     <li><a class="anotherday">finish master 3 in math</a></li>
+    <li><a class="anotherday">network pactise  3 pages </a></li>
+    dec9
+      <li><a class="finish">try to understand class doc in my python</a> </li>
+      <li><a class="finish">read again mysql doc about increment backup</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class="finish">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+         dec8
+      <li><a class="">finish schema verify work</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+      dec7
+      <li><a class="finish">finish ftp upload</a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+   dec6
+      <li><a class="finish">finish linux shell script basic </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">network pactise  3 pages </a></li>
+      dec5
+      <li><a class="anotherday">try to finish automacial backup </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 5 sets</a></li>
+     <li><a class="anotherday">finish master 3 in math</a></li>
+    <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+dec2
+      <li><a class="fisnih">try to finish automacial backup </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 5 sets</a></li>
+     <li><a class="anotherday">finish master 3 in math</a></li>
+    <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+ dec1
+      <li><a class="finish">try to finish  database migrate schema </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 5 sets</a></li>
+     <li><a class="finish">finish master 3 in math</a></li>
+    <li><a class="finish">pragmatic thinking and  learning forward 3 pages </a></li>
+    nov30
+      <li><a class="">try to finish  database migrate schema </a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class="replace">review zhangyu's note outlines</a></li>
+    <li><a class="finish">pragmatic thinking and  learning forward 3 pages </a></li>
+       nov29
+      <li><a class="finish">try to finish  database migrate schema </a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class="replace">review zhangyu's note outlines</a></li>
+    <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+        nov28
+      <li><a class="">try to finish  database migrate schema </a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class="replace">try to 5  of a set of master math 2</a></li>
+    <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+       nov25
+      <li><a class="">try to finish  database migrate schema </a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class="replace">try to 5  of a set of master math 2</a></li>
+    <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+       nov24
+      <li><a class="finish">try to finish  database migrate schema </a> </li>
+    <li><a class="finish">migrate someone 10 entries</a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class=" ">try to 5  of a set of master math 2</a></li>
+    <li><a class="finish">pragmatic thinking and  learning forward 3 pages </a></li>
+       nov23
+      <li><a class="finish">try to finish  database migrate schema </a> </li>
+    <li><a class="anotherday">migrate someone 10 entries</a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class=" ">try to 5  of a set of master math 2</a></li>
+    <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+     nov22
+       <li><a class="finish">slove wiki cross platform schema </a> </li>
+      <li><a class="finish">try to inverstigate  database migrate schema </a> </li>
+    <li><a class=" ">try to finish go ini() </a> </li>
+    <li><a class=" ">comment 20 function </a> </li>
+     <li><a class=" ">start read software enginerring 2 pages</a> </li>
+     <li><a class=" ">push-up 20 sets</a></li>
+     <li><a class=" anotherday">try to 5  of a set of master math 2</a></li>
+    <li><a class="finish">pragmatic thinking and  learning forward 3 pages </a></li>
+     nov22
+      <li><a class="finish">inverstigate  database migrate schema </a> </li>
+    <li><a class="finish">comment 20 function </a> </li>
+    <li><a class="finish">try to finish  a databaselookuptool</a> </li>
+     <li><a class="">start read software enginerring 2 pages</a> </li>
+     <li><a class="">push-up 20 sets</a></li>
+     <li><a class="anotherday">try to 5  of a set of master math 2</a></li>
+    <li><a class="finish">pragmatic thinking and  learning forward 3 pages </a></li>
+     nov21
+     nov19-20
+     <li><a class="finish">try to master the struct of python</a> </li>
+    <li><a class="finish">communicate with chengdu souchuang Home buyers</a> </li>
+   <li><a class="finish">try tocomment  20 function in jin code </a> </li>
+    <li><a class="finish">try to finish  a databaselookuptool</a> </li>
+     <li><a class="anotherday">start read software enginerring 1 pages</a> </li>
+     <li><a class="anotherday">push-up 20 sets</a></li>
+     <li><a class="anotherday">try to test 5 questions of a set of master math 2 </a></li>
+           <li><a class="anotherday">pragmatic thinking and  learning forward 3 pages </a></li>
+         Nov18<br/>
+    <li><a class="finish">try to slove github problem</a> </li>
+   <li><a class="finish">try to figure out database filed </a> </li>
+    <li><a class="">try to finish  a databaselookuptool</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="">push-up 20 sets</a></li>
+     <li><a class="">try to test 10 questions of a set of master math 2 10</a></li>
+           <li><a class="replace">pragmatic thinking and  learning forward 6 pages </a></li>
+         Nov17<br/>
+    <li><a class="finish">try to slove github problem</a> </li>
+    <li><a class="">try to slove linux vpn</a> </li>
+   <li><a class="finish">try to figure out database filed </a> </li>
+    <li><a class="finish">try to finish  a databaselookuptool</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="">push-up 20 sets</a></li>
+     <li><a class="">try to test half of a set of master math 2</a></li>
+           <li><a class="replace">pragmatic thinking and  learning forward 6 pages </a></li>
+      Nov16<br/>
+    <li><a class="">try to slove linux vpn</a> </li>
+    <li><a class="finish">try to develop a gui to connect with cydex server</a> </li>
+    <li><a class="">backup cydex code</a> </li>
+    <li><a class="">try to finish  a databaselookuptool</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="">try to test half of a set of master math 2</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+  Nov15<br/>
+    <li><a class="">backup cydex code</a> </li>
+    <li><a class="">try to finish  a databaselookuptool</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="finish">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's instruction 3 pages</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+            Nov14<br/>
+       nov12-13<br/>
+       <li><a class="finish">translate tech document </a></li>
+       <li><a class="finish">master login erollment </a></li>
+      nov9-11<br/>
+    <li><a class="">try to finish cyde transfernotify -->database part </a> </li>
+    <li><a class="">make a databaselookuptool</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="finish">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's instruction 3 pages</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+                Nov8<br/>
+    <li><a class="finish">try to finish cyde transfernotify -->database part </a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="finish">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's instruction 3 pages</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+           Nov 7<br/>
+    <li><a class="">try to github pages solve</a> </li>
+    <li><a class="finish">try to finish cyde transfernotify part </a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="anotherday">review Mr zhang's instruction 3 pages</a></li>
+           <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+       Nov 4<br/>
+    <li><a class="">try to github pages solve</a> </li>
+    <li><a class="finish">try to finish cydex task ,job,transfernotify part </a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="anotherday">review Mr zhang's instruction 3 pages</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+                 Nov 3<br/>
+    <li><a class="finish">try to github pages solve</a> </li>
+    <li><a class="finish">try to finish cydex server infomation communication mechain </a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="anotherday">push-up 20 sets</a></li>
+     <li><a class="anotherday">review Mr zhang's instruction 3 pages</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+         Nov 2<br/>
+    <li><a class="">try to github pages solve</a> </li>
+    <li><a class="finish">try to slove ws and ts-client client -node info flow</a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's instruction 1 hour</a></li>
+           <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+        Nov 1<br/>
+    <li><a class="">try to github pages solve</a> </li>
+    <li><a class="finish">try to slove ws and ts-client client -node info flow</a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's instruction 1 hour</a></li>
+           <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+         october 31<br/>
+         october 29-30<br/>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+     <li><a class="">start read software enginerring 4 pages</a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's limition 1 hour</a></li>
+         <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+        october 28<br/>
+    <li><a class="">study github pages</a> </li>
+    <li><a class="finish">fetch my bank card</a> </li>
+    <li><a class="">try to slove another problem in fudantest</a> </li>
+      <li><a class="replace">try to lookup database info</a> </li>
+     <li><a class="">start read software enginerring 10 pages</a> </li>
+     <li><a class="">try grasp every packet to server</a></li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's limition 1 hour</a></li>
+         <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+      october 27<br/>
+    <li><a class="anotherday">communicate with souchuang</a> </li>
+    <li><a class="anotherday">try to  lookup my master eroll situation</a> </li>
+      <li><a class="finish">try to complie ts </a> </li>
+     <li><a class="">start read software enginerring 10 pages</a> </li>
+     <li><a class="finish">try ts source code main and pkg package</a></li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">review Mr zhang's limition 1 hour</a></li>
+         <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+     october 26<br/>
+    <li><a class="finish">redsign python and golang blog system</a> </li>
+    <li><a class="">try to start to time-box my fiveyear plan</a> </li>
+      <li><a class="">try to start fdtest another part a test</a> </li>
+     <li><a class="">start datastructure a point in fudan test</a> </li>
+     <li><a class="finish">try ts source code main and pkg package</a></li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="anotherday">review Mr zhang's jifen 1 hour</a></li>
+         <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+       october 25<br/>
+    <li><a class="">try to start to time-box my fiveyear plan</a> </li>
+      <li><a class="">try to start fdtest another part a test</a> </li>
+     <li><a class="finish">start datastructure a point in fudan test</a> </li>
+     <li><a class="finish">try ts source code main and pkg package</a></li>
+     <li><a class="">push-up 20 sets</a></li>
+     <li><a class="replace">review Mr zhang's limition</a></li>
+         <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+      october 24<br/>
+     october 22-23<br/>
+     <li><a class="">start datastructure a point in fudan test</a> </li>
+     <li><a class="anotherday">souchuang communication</a></li>
+     <li><a class="replace">try to version manage</a></li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">Mr zhang's forward 30 minutes video</a></li>
+     <li><a class="">pragmatic thinking and  learning forward 4 pages </a></li>
+     october 21<br/>
+     <li><a class="finish">start datastructure a point in fudan test</a> </li>
+     <li><a class="">try to fudan master registered</a></li>
+     <li><a class="replace">try to version manage</a></li>
+     <li><a class="">study fudan's test stufff </a> </li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="finish">Mr zhang's forward 30 minutes video</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+     october 20<br/>
+     <li><a class="finish">start datastructure a point in fudan test</a> </li>
+     <li><a class="finish">try to finish golang slice schema 3</a></li>
+     <li><a class="finish">study fudan's test stufff </a> </li>
+     <li><a class="replace">run to home</a></li>
+     <li><a class="finish">Mr zhang's forward 30 minutes video</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+     october 19<br/>
+     <li><a class="finish">start datastructure a point in fudan test</a> </li>
+     <li><a class="finish">try to finish golang slice schema 3</a></li>
+     <li><a class="">study fudan's test stufff </a> </li>
+     <li><a class="finish">prammer 45 habit 20 pages</a> </li>
+     <li><a class="">run to home</a></li>
+     <li> <a class="finish">Mr zhang's forward 30 minutes video</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+      <li><a class="anotherday">prepare bachelor degree stuff</a></li>
+         october 18<br/>
+     <li><a class="finish">lookup fudan's </a> </li>
+     <li><a class="finish">try golang slice schema 2</a></li>
+     <li><a class="replace">datastructure 1 set choices  </a> </li>
+     <li><a class="finish">prammer 45 habit 20 pages</a> </li>
+     <li><a class="replace">run to home</a></li>
+     <li><a class="finish">Mr zhang's forward 30 minutes video</a></li>
+     <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+      <li><a class="finish">study fudan's mse test stuff</a></li>
+     october 17<br/>
+     october 15-16<br/>
+     <li><a class="finish">deal with credit card 1</a> </li>
+     <li><a class="finish">try golang slice schema </a></li>
+     <li><a class="anotherday">add edu_web some quote</a> </li>
+     <li><a class="">try 0.5 cs_test a big problem</a> </li>
+     <li><a class="finish">prammer 45 habit 20 pages</a> </li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="finish">Mr zhang's forward 0.5 big video</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+    <li><a class="">search the stuff about how internetwork run</a></li>
+          october 14<br/>
+     <li><a class="finish">deal with credit card</a> </li>
+     <li><a class="replace">start service version manage</a></li>
+     <li><a class="finish">adjust to edu_web</a> </li>
+     <li><a class="finish">try 0.5 cs_test a big problem</a> </li>
+     <li><a class="finish">prammer 45 habit 20 pages</a> </li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="finish">Mr zhang's forward 0.5 big video</a></li>
+     <li><a class="">pragmatic thinking and  learning forward 6 pages </a></li>
+    <li><a class="finish">understand that how  tcp/ip works  1 para</a></li>
+       october 13<br/>
+     <li><a class="finish">finish port manage</a> </li>
+     <li><a class="anotherday">compare edu_web and origin web</a>
+     <li><a class="replace">finish master internetwork_eroll</a>
+     <li><a class="anotherday">try cs_test a big problem</a>
+     <li><a class="anotherday">prammer 45 habit 20 pages</a>
+     <li><a class="replace">run to home</a></li>
+     <li><a class="finish">Mr zhang's forward 0.5 big video</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+    <li><a class="giveup">understand that how  tcp/ip works  1 para</a></li>
+        october 12<br/>
+     <li><a class="">design aglie time for my fivedream</a></li>
+     <li><a class="finish">try edu-web image insertion</a>
+     <li><a class="anotherday">prepare master eroll</a>
+     <li><a class="">try cs_test a big problem</a>
+     <li><a class="finish">prammer 45 habit 20 pages</a>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="finish ">Mr zhang's forward 0.5 big video</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages </a></li>
+    <li><a class="finish">understand that how  tcp/ip works  1 para</a></li>
+             october 11<br/>
+     <li><a class="replace">education_jwt header desigin try</a></li>
+     <li><a class="finish">give my uncle a call about home purchase</a>
+     <li><a class="">try cs_test a big problem</a>
+     <li><a class="finish">prammer 45 habit 20 pages</a>
+     <li><a class="replace">run to home</a></li>
+     <li><a class="finish">Mr zhang's forward 0.5 big video</a></li>
+     <li><a class="finish">pragmatic thinking and  learning forward 6 pages </a></li>
+    <li><a class="finish">understand that how  tcp/ip works  1 para</a></li>
+        october 10<br/>
+     <li><a class="finish">prammer 45 habit 20 pages</a></li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's forward 0.5 big video</a></li>
+     <li><a class="finish">pragmatic thinking and  learning forward 3 ps </a></li>
+    <li><a class="finish">understand that how  tcp/ip works  1 para</a></li>
+            october 9<br/>
+     <li><a class="finish">update someone</a></li>
+     <li><a class="replace">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's forward 1 big videos </a></li>
+     <li><a class="">computer orgnization 1  video  forward </a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages</a></li>
+    <li><a class="finish">understand that how  tcp/ip works  1 para</a></li>
+          october 8<br/>
+     September 28->october 7<br/>
+     <li><a class="">finish httpstat basic</a></li>
+     <li><a class="finish">finish wireshark basic</a></li>
+     <li><a class="">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's forward 1 big videos </a></li>
+     <li><a class="">computer orgnization 1  video  forward </a></li>
+     <li><a class="">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="">understand that how  cpu works </a></li>
+           September 27<br/>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's forward 1 big videos </a></li>
+     <li><a class=" ">computer orgnization 1  video  forward </a></li>
+     <li><a class="replace">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="finish">understand that how  internet work </a></li>
+           September 26<br/>
+     <li><a class="finish">push-up 20 sets</a></li>
+     <li><a class="replace">Mr zhang's limition forward 1 big videos </a></li>
+     <li><a class=" ">computer orgnization 1  video  forward </a></li>
+     <li><a class=" ">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="finish">Finish Floyd algorithm</a></li>
+      September 25<br/>
+     <li><a class="finish">push-up 20 sets</a></li>
+     <li><a class="anotherday">Mr zhang's big video forward 1 videos </a></li>
+     <li><a class="replace">computer orgnization 1  video  forward </a></li>
+     <li><a class="">pragmatic thinking and  learning forward 6 pages</a></li>
+      <li><a class="finish">Finish Dijkstra algorithm</a></li>
+     September 24<br/>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's limition forward 1.5 videos </a></li>
+     <li><a class="anotherday">finish BFS</a></li>
+     <li><a class="finish">pragmatic thinking and  learning forward 6 pages</a></li>
+      <li><a class="anotherday">Finish DFS</a></li>
+      <li class="anotherday"> September 23<br/></li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="finish">Mr zhang's limition forward 1 videos </a></li>
+     <li><a class="finish">finish merge sort</a></li>
+     <li><a class="finish">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="anotherday">Tsinghua os 12</a></li>
+      <li class="finish">September 22<br/></li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's limition forward 1 videos </a></li>
+     <li><a class="finish">finish bubble sort</a></li>
+     <li><a class="finish">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="anotherday">Tsinghua os 11</a></li>
+      <li class="anotherday">September 21<br/></li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's limition forward 3 videos </a></li>
+     <li><a class="replace">finish shell sort</a></li>
+     <li><a class="finish">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="anotherday">Tsinghua os 10</a></li>
+      <li class="finish">September 20<br/></li>
+     <li><a class="finish">run to home</a></li>
+     <li><a class="anotherday">Mr zhang's limition forward 3 videos </a></li>
+     <li><a class="finish">Realese a new version of logserver</a></li>
+     <li><a class="finish">deal with jwt-token's expiration time</a></li>
+     <li><a class="finish">finish insert sort</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 6 pages</a></li>
+     <li><a class="anotherday">Tsinghua os 9</a></li>
+     <li><a class="finish"> September 19<br/></a></li>
+     <li><a class="finish">try to fix vpn </a></li>
+     <li><a class="anotherday">understand golang interface</a></li>
+     <li><a class="replace">push-up 20 sets</a></li>
+     <li><a class="anotherday">Mr zhang's limition forward 3 videos </a></li>
+     <li><a class="finish">finish log-server online and digest</a></li>
+     <li><a class="anotherday">finish quick sort</a></li>
+     <li><a class="anotherday">pragmatic thinking and  learning forward 10 pages</a></li>
+     <li><a class="anotherday">Tsinghua os 8</a></li>
+     <li class="anotherday">September 18<br/></li>
+     <li><a class="finish">push-up 20 sets</a></li>
+     <li><a class="finish">everyday plan's design</a></li>
+     <li><a class="finish">pragmatic thinking and learning forward 10 pages</a></li>
+     <li><a class="finish">clear room and cloth</a></li>
+     <li><a class="finish">Tsinghua os 7</a></li>
+     <li><a  class="finish">mr zhang's limition 1/2</a></li>
+     <li><a class="finish">Tsinghua os 6</a></li>
+     <li class="finish">September 17<br/></li>
+
+
+    </ul>
+      <p class="footer">
+        by <a>yangming</a> | <a href="yang756260386@gmail.com">feedback</a> | <a href="https://github.com/oxfordyang2016/">source</a> | <a href="https://yangmingweatherapp.herokuapp.com">page</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yangming's dream</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+.color{
+
+color:red
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+/* Syntax highlighting */
+body .hll { background-color: #ffffcc }
+body .err { border: 1px solid #FF0000 }         /* Error */
+body .c  { color: #408080; font-style: italic } /* Comment */
+body .k  { color: #954121 }                     /* Keyword */
+body .o  { color: #666666 }                     /* Operator */
+body .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+body .cp { color: #BC7A00 }                     /* Comment.Preproc */
+body .c1 { color: #408080; font-style: italic } /* Comment.Single */
+body .cs { color: #408080; font-style: italic } /* Comment.Special */
+body .gd { color: #A00000 }                     /* Generic.Deleted */
+body .ge { font-style: italic }                 /* Generic.Emph */
+body .gr { color: #FF0000 }                     /* Generic.Error */
+body .gh { color: #000080; font-weight: bold }  /* Generic.Heading */
+body .gi { color: #00A000 }                     /* Generic.Inserted */
+body .go { color: #808080 }                     /* Generic.Output */
+body .gp { color: #000080; font-weight: bold }  /* Generic.Prompt */
+body .gs { font-weight: bold }                  /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold }  /* Generic.Subheading */
+body .gt { color: #0040D0 }                     /* Generic.Traceback */
+body .kc { color: #954121 }                     /* Keyword.Constant */
+body .kd { color: #954121 }                     /* Keyword.Declaration */
+body .kn { color: #954121 }                     /* Keyword.Namespace */
+body .kp { color: #954121 }                     /* Keyword.Pseudo */
+
+
+body .vc { color: #19469D }                     /* Name.Variable.Class */
+body .vg { color: #19469D }                     /* Name.Variable.Global */
+body .vi { color: #19469D }                     /* Name.Variable.Instance */
+body .il { color: #666666 }                     /* Literal.Number.Integer.Long */
+.g23,.g24,.g15,.g37,.g41,.g42,.g3,.finish,.replace,.finish20160909{
+    text-decoration: line-through;
+    background: red;
+
+
+}
+
+.project{
+    text-decoration: line-through;
+    background: green;
+
+
+}
+
+
+
+.giveup{
+    text-decoration: line-through;
+    background: yellow;
+
+
+}
+.subproject{
+    text-decoration: line-through;
+    background: blue;
+
+
+}
+
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's GTD project<2016-2021> </a></h2>
+  
+
+      <p>
+        <em>yangming's dream</em> ----
+                 <a href="https://yangmingweatherapp.herokuapp.com/everyday/">Everyday</a>
+              <a href="https://yangmingweatherapp.herokuapp.com/dream/" >yang's fiveyear</a>
+              <a href="https://yangmingweatherapp.herokuapp.com/project/" >yang's project</a>
+         <a href="https://yangmingweatherapp.herokuapp.com/in/" >yang's drawer</a>
+      </p>
+
+      <ul>
+
+   <li><a class='project'>producitivity development pj</a></li>
+  
+    <li><a class=''>read a conlusion of gettting things done </a></li>
+   <li><a class=''>try to ask what is the next action</a></li>
+   <li><a class=''>try to week review</a></li>
+    <li><a class='finish'>0.finish gtd book reading</a></li>
+      
+       <li><a class='giveup'>2.try to undertsand https and http for weatherapp</a></li> 
+       <li><a class='giveup'>3.try to know windows develop apple app</a></li>
+
+
+
+	  <li><a class='project'>nz beauty project</a></li>
+    <li><a class='subproject'>mailbox</a></li>
+    <li><a class='replace'>0.try to set private mailbox</a></li>
+<li><a class='finish'>1.try to get python send email resource </a></li>
+<li><a class='finish'>2.try to wirte send email demo</a></li>
+<li><a class='finish'>3.try to get form data to server </a></li>
+<li><a class="finish">4.try to send data to email</a></li>
+<li><a class='finish'>5.try to test form data test</a></li>
+<li><a class='finish'>6.replace with my mail acounts in server</a></li>
+ <li><a class='subproject'>redisgn the front page</a></li>
+ <li><a class='giveup'>1.try to learn media css </a></li>
+<li><a class='giveup'>2.try to adjust all pages</a></li>
+<li><a class='giveup'>3.try to merge all pages</a></li>
+
+
+    <li><a class='project'>rmb 620 order</a></li>
+    <li><a class='subproject'>about burn device</a></li>
+    <li><a class='giveup'>0.try to use changxin device to burn</a></li>
+<li><a class='giveup'>1.try to use lab device to burn </a></li>
+<li><a class='finish'>2.try to purchase burn device</a></li>
+<li><a class='finish'>3.try to burn device by my device </a></li>
+<li><a class='finish'>4.download all videos</a></li>
+<li><a class='finish'>5.use express to mail to client</a></li>
+
+
+    <li><a class='project'>lab freshman project</a></li>
+    <li><a class='subproject'>set env</a></li>
+    <li><a class='finish'>0.try to login the git accounts</a></li>
+    <li><a class='giveup'>1.try to deploy the backend code </a></li>
+    <li><a class='giveup'>2.try to run the code</a></li>
+   <li><a>3.try to install understand software</a></li>
+    <li><a>4.try to install virtual machine</a></li>
+    <li><a>5.read the first paper given by prof li</a></li>
+    <li><a class='finish'>6.try to communicate with fudan info office about server</a></li>
+  <li><a class='finish'>7.communicate zhangjiang xiaohonglou  research secretery</a></li>
+
+
+   <li><a class='project'>shanghai jianyi project</a></li>
+    <li><a class='finish'>0.start to start ml course </a></li>
+   <li><a class='finish'>1.start to build a git resipotory </a></li>
+   <li><a class='finish'>2.inverstigate python draw graphy liabray</a></li>
+    <li><a class=''>3.write the ppt for it</a></li>
+    <li><a class=''>4.wcommunicate wtth pre-check system</a></li>
+
+
+
+
+
+   <li><a class='project'>lab env develop project</a></li>
+  
+    <li><a class='finish'>0.try to buy machine cat</a></li>
+    <li><a class='finish'>1.bring book shell to lab</a></li>
+    
+   
+
+
+   <li><a class='project'>Memories for myself</a></li>
+    <li><a class='finish'>0.try to find my photos in baiduyun</a></li>
+    <li><a class=''>1.download my photos to pc</a></li>
+     <li><a class='finish'>1.move 2015 and after to sep folder</a></li>
+     <li><a class='finish'>1.move 2014 to sep folder</a></li>
+     <li><a class='finish'>1.move 2013 to sep folder</a></li>
+     <li><a class='finish'>1.move 2012 and before to sep folder</a></li>
+    <li><a class=''>1.download my photos in qq  to pc</a></li>
+    <li><a class=''>1.delete all photos in baiduyun</a></li>
+
+
+  <li><a class='project'>yangmingweahterapp develop plan</a></li>
+    <li><a class='finish'>0.merge all pages to one page</a></li>
+    <li><a class='finish'>1.try to refresh pages automatically</a></li>
+    <li><a class=''>1.try to backup my website</a></li>
+    <li><a class=''>1.try to  build wechat public hao service</a></li>
+    <li><a class=''>1.try to  build wechat mini program</a></li>
+<li><a class='finish'>1.try to  connect with google calendar api</a></li>
+<li><a class='giveup'>write a pachong to slove the probelm</a></li>
+<li><a class=''>install mryang package to macos</a></li>
+<li><a class=''>how to upload something to document</a></li>
+<li><a class=''>try to test load data in django html code</a></li>
+
+
+
+
+  <li><a class='project'>english develop project</a></li>
+    <li><a class=''>0.try to explore about english program</a></li>
+      <li><a class=''>1.try to build friendship with someone in foreign</a></li> 
+       <li><a class=''>2.try to look for english parter from youtube</a></li> 
+<li><a class=''>3.publish english guide service</a></li>
+<li><a class=''>4.try to english accent problem </a></li>
+
+
+
+
+<li><a class='project'>shanghaibank game</a></li>
+    <li><a class='finish'>0.firgure out waht main probelm in bank industry</a></li>
+      <li><a class='finish'>1.look up hacker news blockchain</a></li> 
+     
+
+
+
+
+
+<li><a class='project'>document project</a></li>
+    <li><a class=''>0.ask where my doc of mid school from cx</a></li>
+      <li><a class=''>1.ask feng about doc in mianyang</a></li> 
+
+
+
+<li><a class='project'>fudan course career</a></li>
+    <li><a class=''>0.ask course situation</a></li>
+  
+
+
+
+
+ <li><a class='project'>startup  project</a></li>
+    <li><a class='finish'>0.read startup website1 in reading list</a></li>
+      <li><a class=''>1.try to meet with mrgu</a></li> 
+       <li><a class='finish'>2.try to communicate with mrchangixn in gtd</a></li> 
+<li><a class=''>1.try to understand beian in china</a></li> 
+<li><a class='finish'>try to learn ios development course</a></li> 
+
+
+ <li><a class='project'>invest</a></li>
+  
+
+
+
+
+
+
+
+
+
+      </ul>
+      <p class="footer">
+        by <a>yangming</a> | <a href="yang756260386@gmail.com">feedback</a> | <a href="https://github.com/oxfordyang2016/">source</a> |<a href="https://yangmingweatherapp.herokuapp.com">page</a>
+      </p>
+    </div>
+  </bod>ychen
+</html>
+-

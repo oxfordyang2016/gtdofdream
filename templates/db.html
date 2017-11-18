@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yangming's db</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+/* Syntax highlighting */
+body .hll { background-color: #ffffcc }
+body .err { border: 1px solid #FF0000 }         /* Error */
+body .c  { color: #408080; font-style: italic } /* Comment */
+body .k  { color: #954121 }                     /* Keyword */
+body .o  { color: #666666 }                     /* Operator */
+body .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+body .cp { color: #BC7A00 }                     /* Comment.Preproc */
+body .c1 { color: #408080; font-style: italic } /* Comment.Single */
+body .cs { color: #408080; font-style: italic } /* Comment.Special */
+body .gd { color: #A00000 }                     /* Generic.Deleted */
+body .ge { font-style: italic }                 /* Generic.Emph */
+body .gr { color: #FF0000 }                     /* Generic.Error */
+body .gh { color: #000080; font-weight: bold }  /* Generic.Heading */
+body .gi { color: #00A000 }                     /* Generic.Inserted */
+body .go { color: #808080 }                     /* Generic.Output */
+body .gp { color: #000080; font-weight: bold }  /* Generic.Prompt */
+body .gs { font-weight: bold }                  /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold }  /* Generic.Subheading */
+body .gt { color: #0040D0 }                     /* Generic.Traceback */
+body .kc { color: #954121 }                     /* Keyword.Constant */
+body .kd { color: #954121 }                     /* Keyword.Declaration */
+body .kn { color: #954121 }                     /* Keyword.Namespace */
+body .kp { color: #954121 }                     /* Keyword.Pseudo */
+body .kr { color: #954121; font-weight: bold }  /* Keyword.Reserved */
+body .kt { color: #B00040 }                     /* Keyword.Type */
+body .m  { color: #666666 }                     /* Literal.Number */
+body .s  { color: #219161 }                     /* Literal.String */
+body .na { color: #7D9029 }                     /* Name.Attribute */
+body .nb { color: #954121 }                     /* Name.Builtin */
+body .nc { color: #0000FF; font-weight: bold }  /* Name.Class */
+body .no { color: #880000 }                     /* Name.Constant */
+body .nd { color: #AA22FF }                     /* Name.Decorator */
+body .ni { color: #999999; font-weight: bold }  /* Name.Entity */
+body .ne { color: #D2413A; font-weight: bold }  /* Name.Exception */
+body .nf { color: #0000FF }                     /* Name.Function */
+body .nl { color: #A0A000 }                     /* Name.Label */
+body .nn { color: #0000FF; font-weight: bold }  /* Name.Namespace */
+body .nt { color: #954121; font-weight: bold }  /* Name.Tag */
+body .nv { color: #19469D }                     /* Name.Variable */
+body .ow { color: #AA22FF; font-weight: bold }  /* Operator.Word */
+body .w  { color: #bbbbbb }                     /* Text.Whitespace */
+body .mf { color: #666666 }                     /* Literal.Number.Float */
+body .mh { color: #666666 }                     /* Literal.Number.Hex */
+body .mi { color: #666666 }                     /* Literal.Number.Integer */
+body .mo { color: #666666 }                     /* Literal.Number.Oct */
+body .sb { color: #219161 }                     /* Literal.String.Backtick */
+body .sc { color: #219161 }                     /* Literal.String.Char */
+body .sd { color: #219161; font-style: italic } /* Literal.String.Doc */
+body .s2 { color: #219161 }                     /* Literal.String.Double */
+body .se { color: #BB6622; font-weight: bold }  /* Literal.String.Escape */
+body .sh { color: #219161 }                     /* Literal.String.Heredoc */
+body .si { color: #BB6688; font-weight: bold }  /* Literal.String.Interpol */
+body .sx { color: #954121 }                     /* Literal.String.Other */
+body .sr { color: #BB6688 }                     /* Literal.String.Regex */
+body .s1 { color: #219161 }                     /* Literal.String.Single */
+body .ss { color: #19469D }                     /* Literal.String.Symbol */
+body .bp { color: #954121 }                     /* Name.Builtin.Pseudo */
+body .vc { color: #19469D }                     /* Name.Variable.Class */
+body .vg { color: #19469D }                     /* Name.Variable.Global */
+body .vi { color: #19469D }                     /* Name.Variable.Instance */
+body .il { color: #666666 }                     /* Literal.Number.Integer.Long */
+.classfication{color:blue; !important;}
+	
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's db</a></h2>
+      
+
+
+      <ul>
+
+<li><a class="classfication">Preface and Legal Notices</a></li>
+ <li><a href="http://www.2daygeek.com/start-stop-restart-enable-reload-mysql-mariadb-server-service-in-linux/#">How to start / stop / restart / enable / reload the MySQL & MariaDB server in Linux</a></li>
+
+<li><a href="https://rethinkdb.com/">170120 Rethinkdb realtime</a></li>
+
+
+
+<li><a class="classfication">General Information</a></li>
+<li><a class="classfication">Installing and Upgrading MySQL</a></li>
+ <li><a href="https://www.linode.com/docs/databases/mysql/how-to-install-mysql-on-centos-6 ">Centos 6 insatll mysql</a></li>
+<li><a href="https://www.tutorialspoint.com/mysql/mysql-update-query.htm">170522 mysql update a row </a></li>
+ <li><a href="http://www.w3schools.com/sql/sql_join_inner.asp">170118 SQL INNER JOIN Keyword</a></li>
+<li><a href="http://www.mysqltutorial.org/mysql-limit.aspx">170118 mysql limit and offset</a></li>
+<li><a href="https://www.linode.com/docs/databases/mysql/how-to-install-mysql-on-centos-7">Centos 7 insatll mysql</a></li>
+ <li><a href="https://opensourcedbms.com/dbms/installing-mysql-5-7-on-centosredhatfedora/">Installing MySQL 5.7 on CentOS 6&7/RedHat EL 6/Fedora with Yum</a></li>
+ <li><a href="http://www.tutorialspoint.com/mysql/mysql-like-clause.htm">170118 mysql like clause</a></li>
+ <li><a href="https://github.com/andymccurdy/redis-py">1700524 redis client </a></li>
+  <li><a href="https://www.tutorialspoint.com/mysql/mysql-create-tables.htm">170118 mysql create table</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-drop-table.htm">170118 mysql delete table</a></li>
+<li><a href="https://www.techonthenet.com/sql/count.php">170118 sql count</a></li>
+<li><a href="https://www.digitalocean.com/community/questions/mysql-5-7-7-centos-7-el7-access-denied">170119 mysql sercure install problem MySQL 5.7.7 - Centos 7 el7 - Access denied</a></li>
+<li><a href="http://www.w3schools.com/sql/sql_top.asp">SQL SELECT TOP Clause limit clause</a></li>
+<li><a href="http://serverfault.com/questions/738052/how-to-view-mariadb-log">170119 mysql mariadb log </a></li>
+
+
+<li><a class="classfication">Using MySQL as a Document Store</a></li>
+<li><a class="classfication">Tutorial</a></li>
+<li><a href="http://stackoverflow.com/questions/1082130/how-do-i-remove-a-mysql-database">mysql remove a database</a></li>
+<li><a class="classfication">MySQL Programs</a></li>
+              <li><a class="classfication">
+MySQL Server Administration</a></li>
+<li><a href="http://stackoverflow.com/questions/16747035/mysql-creating-a-user-with-root-privileges">MySQL: creating a user with root privileges [closed]</a></li>
+       <li><a class="classfication">
+Security</a></li>
+<br/>
+<li><a class="classfication">Backup and Recovery</a></li>
+    <li><a class="classfication">Database Backup Schema</a></li>
+    <li><a href="https://github.com/oxfordyang2016/caton_time/tree/master/databasebackupschma">mysql incre and full backup schema</a></li>
+        <li><a href="https://www.percona.com/doc/percona-xtrabackup/2.4/index.html">xtrabackup document</a></li>
+       <li><a href="https://www.percona.com/doc/percona-xtrabackup/2.4/installation/yum_repo.html">install xtrabackup</a></li>
+       <li><a href="https://www.youtube.com/watch?v=6IoeITBDXHo">mysqldump</a></li>
+       <li><a href="http://dev.mysql.com/doc/refman/5.7/en/recovery-from-backups.html">mysqldump increment backup document</a></li>
+        <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/mysqldump.txt">mysqldump code ins</a></li>
+        <li><a href="https://geeksww.com/tutorials/database_management_systems/mysql/tips_and_tricks/fast_parallel_restore_from_sql_dumps_mysqldump_for_mysql.php">mysqldump Fast, parallel restore from SQL dumps (mysqldump) for MySQL</a></li>
+          <li><a class="classfication">
+Optimization</a></li>
+           <li><a class="classfication">
+Language Structure</a></li>
+            <li><a class="classfication">Globalization</a></li>
+             <li><a class="classfication">
+Data Types</a></li>
+<li><a class="classfication">Functions and Operators</a></li>
+<br/>
+<li><a class="classfication">SQL Statement Syntax</a></li>
+<li><a href="http://notes.jerzygangi.com/how-to-delete-all-rows-in-a-mysql-or-oracle-table/">Delete table's all rows</a></li>
+ <li><a href="http://www.tech-recipes.com/rx/378/add-a-column-to-an-existing-mysql-table/">insert column in mysql</a></li>
+ <li><a href="http://www.mysqltutorial.org/mysql-insert-statement.aspx">insert row to table in mysql</a></li>
+ <li><a href="http://stackoverflow.com/questions/4241621/mysql-insert-into-table-data-from-another-table">insert a table from another table</a></li>
+
+ <li><a href="https://www.techonthenet.com/mysql/tables/drop_table.php">170508 delte a table in mysql</a></li>
+
+
+
+ <li><a href="https://mariadb.com/kb/en/mariadb/mysqldump/">mysqldump specify  database/table --databases cydex cydex-user</a></li>
+  <li><a href="http://dev.mysql.com/doc/refman/5.7/en/mysqlbinlog.html">mysqlbinlog specify database</a></li>
+<li><a href="http://www.w3schools.com/sql/sql_unique.asp">set unique</a></li>
+<li><a href="http://stackoverflow.com/questions/1356866/how-do-i-change-the-data-type-for-a-column-in-mysql">change the datatype in column</a></li>
+<li><a href="http://stackoverflow.com/questions/4329396/mysql-select-10-random-rows-from-600k-rows-fast">170508 select random rows in mysql</a></li>
+<li><a href="https://mariadb.com/kb/en/mariadb/configuring-mariadb-for-remote-client-access/">170208 mariadb allow remote visit</a></li>
+<li><a href="http://stackoverflow.com/questions/8348506/grant-remote-access-of-mysql-database-from-any-ip-address">170208 mariadb allow remote visit by yangming stackoverflow</a></li>
+<li><a href="http://www.tech-recipes.com/rx/378/add-a-column-to-an-existing-mysql-table/">insert column in msql</a></li>
+<li><a href="http://stackoverflow.com/questions/31067135/in-centos7-can-not-start-mysql">170418 centos7 start mysql /mariadb or cannot find unit</a></li>
+<li><a href="https://www.tutorialspoint.com/mysql/mysql-delete-query.htm">170509 delete a row in mysql</a></li>
+
+<li><a class="classfication">The InnoDB Storage Engine</a></li>
+<li><a class="classfication">
+High Availability and Scalability</a></li>
+<li><a class="classfication">Replication</a></li>
+<li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/master-slave.txt">master and slave replication</a></li>
+<li><a href="http://www.tecmint.com/how-to-setup-mysql-master-slave-replication-in-rhel-centos-fedora/">How to Setup MySQL (Master-Slave) Replication in RHEL, CentOS, Fedora</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/5.7/en/replication-multi-source-tutorials.html"> Multi-Source Replication Tutorials</a></li>
+            <li><a class="classfication">
+MySQL NDB Cluster 7.5</a></li>
+             <li><a class="classfication">
+Partitioning</a></li>
+              <li><a class="classfication">Stored Programs and Views</a></li>         
+             <li><a class="classfication">
+MySQL Performance Schema</a></li> 
+              <li><a class="classfication">MySQL sys Schema</a></li> 
+               <li><a class="classfication">
+Connectors and APIs</a></li> 
+<li><a class="classfication">Extending MySQL</a></li> 
+                 <li><a class="classfication">MySQL Enterprise Edition</a></li> 
+                  <li><a class="classfication">MySQL 5.7 Frequently Asked Questions</a></li>   
+                   <li><a class="classfication">
+Errors, Error Codes, and Common Problems</a></li> 
+                    <li><a class="classfication">
+Restrictions and Limits</a></li> 
+                     <li><a class="classfication">
+Indexes</a></li> 
+      <li><a href="http://shlomi-noach.github.io/awesome-mysql/"></a></li>
+       <li><a href="http://dev.mysql.com/doc/refman/5.7/en/connecting.html">Connecting to the MySQL Server --host</a></li>
+
+      <li><a href="https://yangmingweatherapp.herokuapp.com/sql">Frequent sql</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Connection_pool">connection pool</a></li> 
+        <li><a href="http://stackoverflow.com/questions/13706911/redis-error-err-operation-not-permitted">redis (error) ERR operation not permitted
+</a></li>
+<li><a class="classfication">Database user and permission manage</a></li>
+<li><a href="http://superuser.com/questions/660768/where-are-logs-of-mysql-fedora">mysql log</a></li>
+<li><a href="http://dev.mysql.com/doc/refman/5.7/en/flush.html">mysql flush-log specify database</a></li>
+             <li><a href="http://stackoverflow.com/questions/8537254/redis-connect-to-remote-server">redis allow remote access</a></li>
+              
+              <li><a href="http://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y">ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES/No)</a></li>
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=137365"> [ERROR] Can't open the mysql.plugin table. Please run mysql_upgrade to create it.</a></li>
+
+
+
+              <li><a href="https://www.liberiangeek.net/2014/10/reset-root-password-mariadb-centos-7/">ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES/No) and reset password</a></li>
+             <li><a href="http://stackoverflow.com/questions/30692812/mysql-user-db-does-not-have-password-columns-installing-mysql-on-osx">ERROR 1054 (42S22): Unknown column 'password' in 'field list'</a></li>
+             <li><a href="http://stackoverflow.com/questions/3818759/what-is-innodb-and-myisam-in-mysql">What is InnoDB and MyISAM in MySQL?</a></li>
+              <li><a href="http://blog.yannickjaquier.com/mysql/mysql-utilities-versus-master-high-availability-manager-and-tools-for-mysql-mha.html">ERROR 1776 (HY000): Parameters MASTER_LOG_FILE, MASTER_LOG_POS, RELAY_LOG_FILE and RELAY_LOG_POS cannot be set when MASTER_AUTO_POSITION is active.</a></li>
+              <li><a href="http://stackoverflow.com/questions/33467337/reset-mysql-root-password-using-alter-user-statement-after-install-on-mac">ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.</a></li>
+             <li><a href="http://stackoverflow.com/questions/8987679/how-to-get-the-version-of-a-mysql-database">check mysql version</a></li>
+             <li><a href="http://www.databasejournal.com/features/mysql/article.php/3382171/Transactions-in-MySQL.htm">mysql Transactions </a></li>
+         
+          <li><a href="https://www.quora.com/How-does-a-database-driver-work">database driver</a></li>
+          <li><a href="https://www.liquidweb.com/kb/change-a-password-for-mysql-on-linux-via-command-line/  ">reset database password</a></li>
+        <li><a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial">mysql basic tutorial</a></li>
+         <li><a href="https://www.tutorialspoint.com/redis/redis_quick_guide.htm">redis basic tutorial</a></li>
+         <li><a href="https://www.tutorialspoint.com/mysql/mysql-transactions.htm">mysql transactions </a></li>
+           <li><a href="http://stackoverflow.com/questions/5010042/mysql-get-column-name-or-alias-from-query">python get mysql column name</a></li>
+         <li><a href="http://stackoverflow.com/questions/5252099/redis-command-to-get-all-available-keys">redis get all keys</a></li>
+        <li><a href="https://redis.io/topics/quickstart">170524 redis quick start</a></li>
+
+
+
+        <li><a href="http://stackoverflow.com/questions/12650370/rename-a-table-in-mysql">rename mysql table</a></li>
+       <li><a href="http://stackoverflow.com/questions/8348506/grant-remote-access-of-mysql-database-from-any-ip-address">mysql Allow any ip to access</a></li>
+       <li><a href="https://github.com/oxfordyang2016/caton_time/tree/master/hodgepodge">Database access and write in golang</a></li>
+        <li><a href="http://stackoverflow.com/questions/4448467/cant-connect-to-local-mysql-server-through-socket-var-lib-mysql-mysql-sock">Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)</a></li>
+      
+          <li><a href="https://www.howtoforge.com/setting-changing-resetting-mysql-root-passwords">mysql password</a></li>
+        <li><a href="exit">Exit</a></li>
+         <li><a href="https://www.howtoforge.com/setting-changing-resetting-mysql-root-passwords">mysql password</a></li>
+         <li><a href="https://dev.mysql.com/doc/refman/5.7/en/connecting.html">mysql specify port</a></li>
+     
+        <li><a href="http://www.microshell.com/database/mysql/mysql-too-many-connection-errors/">MySQL : Too many connection errors.</a></li>
+        <li><a href="https://www.tutorialspoint.com/redis/connection_auth.htm">redis login auth password</a></li>
+         <li><a href="http://stackoverflow.com/questions/9150370/select-the-top-n-rows-from-a-table">select the TOP N rows from a table</a></li>
+          <li><a href="http://dev.mysql.com/doc/refman/5.7/en/backup-methods.html">Database Backup Methods</a></li>
+        <li><a href="https://www.tutorialspoint.com/redis/connection_auth.htm">(error) ERR Client sent AUTH, but no password is set</a></li>
+        <li><a href="http://stackoverflow.com/questions/3665649/querying-multiple-mysql-tables-simultaneously">Querying multiple mySQL tables simultaneously</a></li>
+         <li><a href="http://stackoverflow.com/questions/5967130/mysql-select-one-column-distinct-with-corresponding-other-columns">mySQL select one column DISTINCT, with corresponding other columns</a></li>
+          <li><a href="http://qiita.com/liubin/items/3722ab10a73154863bd4">ERROR 1819 (HY000): Your password does not satisfy the current policy requirements</a></li>
+          <br/>
+      
+
+
+      </ul>
+      <p class="footer">
+        by <a href="">yangming</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+  </body>
+</html>

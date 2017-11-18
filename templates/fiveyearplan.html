@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yangming's dream</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+.color{
+
+color:red
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+/* Syntax highlighting */
+body .hll { background-color: #ffffcc }
+body .err { border: 1px solid #FF0000 }         /* Error */
+body .c  { color: #408080; font-style: italic } /* Comment */
+body .k  { color: #954121 }                     /* Keyword */
+body .o  { color: #666666 }                     /* Operator */
+body .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+body .cp { color: #BC7A00 }                     /* Comment.Preproc */
+body .c1 { color: #408080; font-style: italic } /* Comment.Single */
+body .cs { color: #408080; font-style: italic } /* Comment.Special */
+body .gd { color: #A00000 }                     /* Generic.Deleted */
+body .ge { font-style: italic }                 /* Generic.Emph */
+body .gr { color: #FF0000 }                     /* Generic.Error */
+body .gh { color: #000080; font-weight: bold }  /* Generic.Heading */
+body .gi { color: #00A000 }                     /* Generic.Inserted */
+body .go { color: #808080 }                     /* Generic.Output */
+body .gp { color: #000080; font-weight: bold }  /* Generic.Prompt */
+body .gs { font-weight: bold }                  /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold }  /* Generic.Subheading */
+body .gt { color: #0040D0 }                     /* Generic.Traceback */
+body .kc { color: #954121 }                     /* Keyword.Constant */
+body .kd { color: #954121 }                     /* Keyword.Declaration */
+body .kn { color: #954121 }                     /* Keyword.Namespace */
+body .kp { color: #954121 }                     /* Keyword.Pseudo */
+
+
+body .vc { color: #19469D }                     /* Name.Variable.Class */
+body .vg { color: #19469D }                     /* Name.Variable.Global */
+body .vi { color: #19469D }                     /* Name.Variable.Instance */
+body .il { color: #666666 }                     /* Literal.Number.Integer.Long */
+.g23,.g24,.g15,.g37,.g41,.g42,.g3,.finish,.finish20160909{
+    text-decoration: line-through;
+    background: red;
+
+
+}
+
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's five_year_dream_100_things<2016-2021> </a></h2>
+    
+
+      <p>
+        <em>yangming's dream</em> ----
+          
+                      <a href="https://yangmingweatherapp.herokuapp.com/everyday/">Everyday</a>
+              <a href="https://yangmingweatherapp.herokuapp.com/dream/" >yang's fiveyear</a>
+              <a href="https://yangmingweatherapp.herokuapp.com/project/" >yang's project</a>
+         <a href="https://yangmingweatherapp.herokuapp.com/in/" >yang's drawer</a>
+      </p>
+
+      <ul>
+
+	  <li><a>The plan of  Five year </a></li>
+<li><a>The project </a></li>
+<li><a>0.Stop masturbation</a></li>
+<li><a>1.read the psychonology of prostorcation book again </a></li>
+<li><a>2.read a book about people action/enroll a lecture</a></li>
+<li><a class='g3'>3.Gift for mother</a></li>
+<li><a class='finish'>4.Get CS/SE master  degree in fudan</a></li>
+<li><a>5.travel in canas </a></li>
+<li><a>6.Read an English computer network monograph</a></li>
+<li><a>7.Read jinggang bible again</a></li>
+<li><a class='finish'>8.Grasp git basic</a></li>
+<li><a class="finish">9.Eating with family</a></li>
+<li><a>10.the volume of vocabulary up to 20000</a></li>
+<li><a class='finish'>11.buy a piece of levis's shirt</a></li>
+<li><a>12.all Climbing tiger in my hometown</a></li>
+<li><a>13.all flowers in my home</a></li>
+<li><a class='finish'>14.Try to inverst in stock ,fund,gold</a></li>
+<li><a class="finish">15.read  dechuanjiakang for the second time</a></li>
+<li><a>16.go jiuzaigou </a></li>
+<li><a>17.Study a set of english computernetwork course</a></li>
+<li><a class="finish">18.read an full_english_tech book </a></li>
+<li><a class='finish'>19.give grandfather some fee</a></li>
+<li><a class='finish'>20.become a intern in tech-company</a></li>
+<li><a>21.try and digest server frame</a></li>
+<li><a>22.full five years english env of studying and working </a></li>
+<li><a class="finish">23.Digest a set of operating system screencast</a></li>
+<li><a>24.read daodejing</a></li>
+<li><a class="finish">25.Buy a piece of white shirt</a></li>
+<li><a>26.Annual income to 300000</a></li>
+<li><a  href="" class="finish">27.finish the art of insight in science and engineering</a></li>
+<li><a>28.Buy a gift for grandfather</a></li>
+<li><a class='finish'>29.finish a django app</a></li>
+<li><a>30.Master a kind  of music instrument </a></li>
+<li><a>31.Grasps mysql basic</a></li>
+<li><a class='finish'>32.Develop my first website</a></li>
+<li><a class='finish'>33.Get an IT R & D offer</a></li>
+<li><a>34.Read The Little Go Book</a></li>
+<li><a>35.experience music concert</a></li>
+<li><a>36.experice  a  drama</a></li>
+<li><a>37.experience a ballet </a></li>
+<li><a>38.develop a canvas demo </a></li>
+<li><a>39.Digest python basic of python core programming</a></li>
+<li><a>40.Read an english novel</a></li>
+<li><a class="finish">41.finish Practices of an Agile Developer</a></li>
+<li><a class="finish">42.Read The pragmatic thinking and learning</a></li>
+<li><a >43.finish math test suit</a></li>
+<li><a>44.Read the pragmatic programmer:fromjourneymantomaster</a></li>
+<li><a>45.Finish the django book and implement it</a></li>
+<li><a>46.Participate in an entrepreneurial activity</a></li>
+<li><a class='finish'>47.Finish front connect with server without refreshing page</a></li>
+<li><a>47.Digest a set of opensource technology</a></li>
+<li><a>48.Parachute a luxry watch</a></li>
+<li><a>49.Get tourist certificate</a></li>
+<li><a>50.guide a foreign tour </a></li>
+<li><a>51.set a twitter to introduce china </a></li>
+<li><a>52.Finish fluent python </a></li>
+<li><a>53.Finish the reading of ELon musk</a></li>
+<li><a>54.tidy the books i have read</a></li>
+<li><a>55.Finish stanford startup course </a></li>
+<li><a>56.try to parachute</a></li>
+<li><a class='finish'>57.Read a mind for number </a></li>
+<li><a>58.try to finish python kernel course </a></li>
+<li><a>59.Finish the reading of the power of habit </a></li>
+<li><a>60.Finish the reading of getting things done </a></li>
+<li><a>61.Finish the reading of strcuture and interpretation of computer program </a></li>
+<li><a>62.Grasp the python youtube-dl open source</a></li>
+<li><a>63.Finish python kernel course</a></li>
+<li><a class='finish'>64.Finish the reading of zero to one book</a></li>
+      </ul>
+      <p class="footer">
+        by <a>yangming</a> | <a href="yang756260386@gmail.com">feedback</a> | <a href="https://github.com/oxfordyang2016/">source</a> |<a href="https://yangmingweatherapp.herokuapp.com">page</a>
+      </p>
+    </div>
+  </body>
+</html>

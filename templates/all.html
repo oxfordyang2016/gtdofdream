@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+</head>
+
+<script>
+     var time = new Date().getTime();
+     $(document.body).bind("mousemove keypress", function(e) {
+         time = new Date().getTime();
+     });
+
+     function refresh() {
+         if(new Date().getTime() - time >= 300000) 
+             window.location.reload(true);
+         else 
+             setTimeout(refresh, 10000);
+     }
+
+     setTimeout(refresh, 10000);
+</script>
+<frameset cols="33%,*,33%">
+<!-- i use the fellowing grammar to discribe merge page ,but it does not work in server but work in  locally ->
+<!--
+  <frame src="./everyday.html">
+  <frame src="./in.html">
+  <frame src="./project.html">
+-->
+<!--so i will use the fellowing,i donot understand the mechinism-->
+  <frame src="../everyday">
+  <frame src="../in">
+  <frame src="../project">
+</frameset>
+
+</html>

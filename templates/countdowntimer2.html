@@ -1,0 +1,89 @@
+<!-- Display the countdown timer in an element -->
+<!--
+the front page structure is
+html=======the page content
+css========all tab positions   
+js----------control all tab actions,such ad show elements.
+-->
+
+
+
+
+<body>
+ 
+<p id="demo"></p>
+<p id="demo1"></p>
+</body>
+
+<STYLE TYPE="text/css">
+  #demo {
+  font-size: 500%;
+  color: red ; 
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 40%;}
+  #demo1 {
+  font-size: 500%;
+  color: red ; 
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 25%;}
+
+
+
+</STYLE>
+
+<script>
+// Set the date we're counting down to
+var countDownDate1 = new Date("May 25, 2017 15:37:25").getTime();
+
+//set a var to store 25 minutes for me 
+//var tomato=25;
+//set a var to store the time when the page is loaded
+//var loadtime = new Date().getTime();
+//var countDownDate=moment(loadtime).add(30,'m');
+
+//try to slove the problem
+var d = new Date(); d.setMinutes(d.getMinutes()+25); 
+var countDownDate=d.getTime()
+document.body.style.background = "green";
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+ // document.getElementById("demo").innerHTML = days+"d"+ hours + "h"+ minutes + "m " + seconds + "s ";
+document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    //var d = new Date(); d.setMinutes(d.getMinutes()+1); 
+   // var countDownDate=d.getTime()；
+    clearInterval(x);
+    //document.getElementById("demo1").innerHTML = "";
+    //document.getElementById("demo").style.left=0.35;
+    document.getElementById("demo").innerHTML = "STOP";
+    document.body.style.background = "yellow";
+
+   //setInterval(rest(),500);
+
+  }
+
+
+  
+}, 500);
+
+
+
+</script>

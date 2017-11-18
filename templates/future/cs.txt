@@ -1,0 +1,593 @@
+----------
+cs ajax
+--------
+ajax is for communication
+-------
+cs
+-------
+you need to understand in front ,embed script what time work?
+-------
+linux
+--------
+use yum -y install package to install package
+--------
+cs tech
+----------
+	An R package which converts markdown files into mindmaps (github.com)
+
+python gui
+-------
+https://kivy.org/#home
+-------
+cs
+-------
+ i need to mastered words methods.
+ from the situation of now ,i need to understand the front and how to write front code
+
+-------
+someone
+-------
+i feel that i cannot open too much thread at the same time.or
+i will get nothings.
+------
+someone
+----------
+i think that i have no need to learn new things because
+i need to digest the old things in the weekend.the views is
+mentioned in zhihu
+---------
+someone
+-------
+my palm  always have sweats.
+-----
+someone
+-------
+i find that  i can not grasp  what others said
+
+
+--------
+someone
+----------
+i think the resonable plan should be that i can find a  job that i can deal with my home
+debt in two year and startup
+
+
+--------
+soemeone
+---------
+facing real myself
+--------
+ai lab speech
+----------------
+a.how alphago work
+https://www.dcine.com/2016/01/28/alphago/
+https://www.youtube.com/watch?v=TKYe8H2J13w(what is go rule?)
+https://www.tastehit.com/blog/google-deepmind-alphago-how-it-works/
+https://deepmind.com/blog/alphago-zero-learning-scratch/
+https://www.youtube.com/watch?v=UXW2yZndl7U
+https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
+https://medium.com/technology-invention-and-more/how-to-build-a-multi-layered-neural-network-in-python-53ec3d1d326a
+
+
+
+--------
+machine learning course
+----------
+https://www.youtube.com/watch?v=ZiKMIuYidY0&list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&t=7437
+
+
+machine learning is about a course,that is,select dataset,select model,train the model and use model valuation function to judge the model and affairm the model,the last step is preidct using the selected model!
+
+
+
+f!d@i#o$e%b^
+
+1.Value network
+Then, a value network was trained on 30 million game positions obtained while the policy network played against itself. As a reminder, the value network is supposed to predict the likelihood of a win, give the current game-state. It is therefore similar to an evaluation function, with the difference that the value network is learned instead of designed
+
+2.network 
+ network was used to guide the next step,the first priod the net was trained by 
+ the human  expert knowledge,but later,it use the machine-self -play outcome to train. 
+
+
+
+3.Putting all pieces together: Tree search
+AlphaGo's tree search procedure is somewhat similar to MCTS, but is guided by all three types of networks in an innovative manner. I will not go into too much detail here, as the full approach is somewhat involved.
+
+Similarly to Deep Blue, AlphaGo uses an evaluation function to give a value estimate of a given state. AlphaGo uses a mixture of the output of the value network and the result of a self-play simulation of the fast policy network:
+
+value of a state = value network output + simulation result.
+
+This is interesting because it suggests a mixture of intuition and reflection. The value network provides the intuition, whereas the simulation result provides the reflection. The AlphaGo team also tried to use only the value network output, or only the simulation result, but those provided worse results than the combination of the two. It is also interesting that the value network output and the simulation result seem to be equally important.
+
+The slow policy network is also used to guide the tree search. Here, the exploration/exploitation trade-off we previously mentioned is kept in mind. Given a game state, the policy network outputs a probability value for each legal move. This output is then divided by the number of times this move was taken in this state in the simulation. This encourages exploration by penalizing actions that were chosen often.
+
+
+3.why need the value network
+
+--------
+someone
+--------
+facing real yourself is very difficult thing!!!! 
+
+--------
+someone
+-------
+looking for soulmate is very diffcult thing 
+i need to rethink what is wrong?
+
+
+--------
+someone
+--------
+my skill set is the fwllowing:
+1.use the videos to learn quickly
+2.use english tutorial to complement the video and all kinds of tech probelm
+3.use cs as tools to build all kinds of tools to help me in many all respects
+
+--------
+someone
+---------
+about my sex and health 
+
+
+
+-------
+someone
+----------
+when u no flinch ,u must face the complex problem ,that is also difficlut
+
+
+
+
+--------
+someone
+---------
+i understand the ai is to get the function ,and pass the parameters and get results
+
+---
+python pep8
+-----
+1.always use import in .py file head.
+2.even in same dir,you should aviod to use import bar
+  should use from .  import bar(if must).when you should
+  use form bar import bar
+about pep8 ,imho,you ned tool to format and read more  about
+matrerail
+
+PYTHON's unicode decode and encode is a pile of shit.
+about a=b a and b all refer to same object
+about c=a[2:3],c is a new list.from now, i think only a=b,a is b
+all other situations,not same object,may values is same
+item 5 is  ok ,i master.
+
+
+
+
+
+-------
+python logging module
+---------
+https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
+
+-------
+sublime open remote server file
+----------
+https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3
+
+-------
+ffmpeg in windows install and download
+--------
+http://www.wikihow.com/Install-FFmpeg-on-Windows
+
+-------
+someone
+---------
+i wanna write a game to get finnace success
+
+
+------
+someone
+--------
+may i can buy a popular game to get what happen?
+
+
+---
+python
+-----
+i need to read python pep8 example to format my python code
+----
+python runtime env
+-----
+thiis is that the env that make python code to machine code
+you can use following code to lokk up:
+import sys
+print(sys.version_info)
+print(sys.version)
+-----
+python
+------
+python reserved some word ,we called keywords.
+------
+
+make a cryptocurrency
+-----------
+https://github.com/conradoqg/naivecoin
+https://cranklin.wordpress.com/2017/07/11/lets-create-our-own-cryptocurrency/
+https://github.com/ethereum/pyethereum
+https://github.com/Max00355/zCoin
+https://github.com/zack-bitcoin/basiccoin
+https://www.coursera.org/learn/cryptocurrency/lecture/rJ8KJ/a-simple-cryptocurrency
+---
+python
+----
+imho,python is simpile ,python use list ,dictionary,set
+as basic datatype ,in other worlds ,i just am familiar with these,
+i understand python decorator is a packager that package gift
+but gift does not chnage .origin function allso all ulity
+,but origin function need to have have return value ,the return
+value will be used to make somthings.for example ,i write a decorater
+function to print decorated function got arguments.i think that
+youtube and twitter or internet have good resource to help
+you become more great pythoner .python also have a view,that is,
+your code is pythonic..........from where i stand,i find that if you
+can not make use of anonoly to compare .after this time,you will forgrt
+what you have understand........
+python
+------
+python all object was inplemented by class ideal by doctor zhang
+-----
+python
+-----
+python interpreter run  a .py file located in disk and ask os to allocate space in
+memory to run the program.before compiling,there is a paser ,it will parser grammar
+to syntax tree,comiple the tree to bytecode.there  are more discuss,in compile,that is
+,.py------>.pyc that is,in fact,import sector will convert to .pyc .for example.a.by
+include import b(b.py),that is ,b.py-------b.pyc.but a will not compile.but in the runtime a.py will be compile to .pyc in memory.........but when you exit ,it will
+delete .pyc file..
+
+
+
+
+
+
+
+```
+
+
+
+# cs
+```
+------
+algorithm
+--------
+i understand algorithm is about :sort ,search,heap,queqe,stack,link list,graph,my view is form
+yanweimin,i can remember sort is very importtant ,sort algorithm has so many types:bubble sort,
+bucket sort,heap sort ,iterate sort,or so on, i canot remember ,bubble sort 's principle is very simple,in ervery iteration,you need  to make the corresponding element to correct position.if there is 1,3,4,2,5'
+for 5>2,you left position ,for 2<4,2 will be in 4  origin postion ,for 2<3,2 will  be in 3's position ,for
+2>1, i will go 1,i 's left position has no number .first sort is ok!!!!!iin algorithm ,i dislike complixity
+analysis.for i feel that i cannot grasp math and logic in these algorithm.i believe 5,4,3,2,1 is the
+shit  case of bubble sort.this is o(n*n)! i remember there is another and usual sort algorithm............
+
+
+
+---
+python pep8
+-----
+1.always use import in .py file head.
+2.even in same dir,you should aviod to use import bar
+  should use from .  import bar(if must).when you should
+  use form bar import bar
+about pep8 ,imho,you ned tool to format and read more  about
+matrerail
+
+PYTHON's unicode decode and encode is a pile of shit.
+about a=b a and b all refer to same object
+about c=a[2:3],c is a new list.from now, i think only a=b,a is b
+all other situations,not same object,may values is same
+item 5 is  ok ,i master.
+
+---
+python
+-----
+i need to read python pep8 example to format my python code
+----
+python runtime env
+-----
+thiis is that the env that make python code to machine code
+you can use following code to lokk up:
+import sys
+print(sys.version_info)
+print(sys.version)
+-----
+python
+------
+python reserved some word ,we called keywords.
+------
+-----
+python
+-------
+in the inner of class ,you call class method,you should use self.method()
+it is a good way ,class method also return self.
+------
+python
+-------
+i understand python context manager ,that is,it is used to manage context,it is
+when you open a file ,you need to ,close a file,when you open a database connect ,you should close a connect.contexanager is to say ,oh ,if you are in north ,you need to open
+a door and you need to close a door.and the context manager will use the __enter__ and
+the __exit__ method to implement it .and you can use with door() this form to do this things
+# python
+```
+---
+python
+----
+imho,python is simpile ,python use list ,dictionary,set
+as basic datatype ,in other worlds ,i just am familiar with these,
+i understand python decorator is a packager that package gift
+but gift does not chnage .origin function allso all ulity
+,but origin function need to have have return value ,the return
+value will be used to make somthings.for example ,i write a decorater
+function to print decorated function got arguments.i think that
+youtube and twitter or internet have good resource to help
+you become more great pythoner .python also have a view,that is,
+your code is pythonic..........from where i stand,i find that if you
+can not make use of anonoly to compare .after this time,you will forgrt
+what you have understand........
+python
+------
+python all object was inplemented by class ideal by doctor zhang
+-----
+python
+-----
+python interpreter run  a .py file located in disk and ask os to allocate space in
+memory to run the program.before compiling,there is a paser ,it will parser grammar
+to syntax tree,comiple the tree to bytecode.there  are more discuss,in compile,that is
+,.py------>.pyc that is,in fact,import sector will convert to .pyc .for example.a.by
+include import b(b.py),that is ,b.py-------b.pyc.but a will not compile.but in the runtime a.py will be compile to .pyc in memory.........but when you exit ,it will
+delete .pyc file..
+-----
+python
+------
+form now,i feel that python all kinds of methods implemented by class method
+aalso,class method main include magical method,this is main method to implement
+such as len(), d[k],in so on .yeah .of course,i doubt that string ,list ,dict is
+some subclass ,just  a guess ,such as ,collection,object .......balbala.about class method ,there is a mechinism called fall back to ,it is, when you invoke a method ,the method doesnot exist ,it will invoke another method.
+
+--------
+python setup.py
+---------
+http://python-packaging.readthedocs.io/en/latest/minimal.html
+
+------
+torrents website
+----------
+https://torrents.me/
+
+
+------
+someone
+--------
+in the future,i will face two risk,i will not join great
+giant ,such as ,google ,microsoft .another risk,that is,
+i have no get the success in startup
+
+
+-------
+someone
+---------
+i find that when i leave tomato time working method,i will lose a critical standard.
+when i feel like doing a things ,i work perfect.but wehn i dislike a things,the producity
+will be very bad
+
+
+
+
+
+
+
+-------
+someone
+----------
+i feel that my most urgent problem is that i donot obey the object or subject principle
+i like to reinvent wheel
+
+
+-------
+someone
+--------
+why i have no the symbolic that producitivity time ,such as
+in the afternoon,my brain will be not smart.what do u want
+to say?
+
+
+
+------
+blockchain
+-----------
+i feel that about ccensorship,in the china,we need to rethink 
+blokchain's reassitance function
+
+------
+python
+-------
+i wnat to jnow python excute a .py script ?what memory occur?????this is my care about problem!!!
+in the most recent,i want to know.when i run  a python  program
+a=1
+b=2
+def test(a,b):
+    reutrn (a+b)
+from csapp view , ithin k memory donot have acllocte for name inly allocate space for value
+when meet a function test,which  will vuild a stack ,i understand that is another space
+in memory,thet will use csapp theory.FROM  PHD ZHANG,I GET A VIEW ,a=1,a is  not cllocated space and
+whe python call a test function ,that is ,then,it will allocate a space.  
+
+
+------
+python
+-------
+i think my python consists :before outputing result,what deos python interpreter do??string and byte,unicode,python all method.what in-memory
+actions is??
+
+-----
+python
+--------
+python interpreter is composed of compiler and vm.compiler produce
+bytecode ,vm excute bytecode to produce result.
+
+-------
+python
+-------
+there are intepreter and compiler ,the interpreter will proccess source code
+and run the result of processing,donot need to transform source code
+to machine code ,the aboving machine code is compiler work by compiler.
+-------
+python
+-------
+i think i need to know python interpreter how to work ,becuase , i donot be get
+used to gap the stage of how python file to be excute?
+https://ruslanspivak.com/lsbasi-part1/
+http://jayconrod.com/posts/40/a-simple-interpreter-from-scratch-in-python-part-4
+http://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html
+http://stackoverflow.com/questions/16808387/writing-my-own-python-parser-and-interpreter
+https://csl.name/post/vm/
+https://morepypy.blogspot.jp/2011/04/tutorial-writing-interpreter-with-pypy.html
+
+
+
+
+
+
+
+
+---------
+hmtl design
+-----------
+https://stylepill.carrd.co/
+
+------
+python
+-------
+python array 's exsistence let me feel annonyed ,bacause
+my c foudation is weak.
+------  
+python
+---------------------
+i feel that python 's diffcult part is
+python generaor ,python work with c,python network
+python iterator ,python decorator
+------
+python tech stack
+-------
+Qualifications: •Familiarity with our technology stack:
+Python, Django, PostgreSQL, Nginx, Varnish,
+ Redis, JavaScript, Angular and Bootstrap –
+ all on Linux on a popular public IaaS or PaaS.
+  •Experience working in DevOps environments.
+  •Understanding of security standards and concepts.
+-----
+
+python class
+-------
+you can figure out python instance attribute must be arranged.
+not have to be in __init__ constuctor.beswides.in python 2,class
+Someone(object),in python 3 ,you can use class Someone: not subclass
+object.i find that pythonn  
+
+-------
+python
+--------
+python requirements.txt used to install corresponding your package
+when you distribute your code.as,pip install -e requirements.
+------
+
+------
+cs
+------
+stanford machine learning is recomend very proundl!
+-----
+cs
+------
+i believe that the core of cs id math and algorithm ,if i have a good understand of math and algo.i will
+beat all kinds of coder.
+-----
+cs
+-----
+stanford open so many course that lead to very influence
+------
+when we are change the old education.we can change the triditional education in  remote education?
+------
+cs
+-------
+stanford  database is very good!!!!!
+-----
+cs science
+--------
+My advice to self-learners is: never engage in "cargo-cult programming". This means: do not touch or reuse code that you do not understand. Force yourself to understand. If you lack the time, write it down and follow up later
+-------
+cs computer vision
+------
+let the computer to understand version ,you need to
+input so many immages to train the neural network and the algorithm
+will be smart .it will recognize the graph
+https://www.youtube.com/watch?v=40riCqvRoMs
+-----
+python
+------
+form now,i feel that python all kinds of methods implemented by class method
+aalso,class method main include magical method,this is main method to implement
+such as len(), d[k],in so on .yeah .of course,i doubt that string ,list ,dict is
+some subclass ,just  a guess ,such as ,collection,object .......balbala.about class method ,there is a mechinism called fall back to ,it is, when you invoke a method ,the method doesnot exist ,it will invoke another method.
+------
+python
+-------
+python array 's exsistence let me feel annonyed ,bacause
+my c foudation is weak.
+------  
+python
+---------------------
+i feel that python 's diffcult part is
+python generaor ,python work with c,python network
+python iterator ,python decorator
+------
+python tech stack
+-------
+Qualifications: •Familiarity with our technology stack:
+Python, Django, PostgreSQL, Nginx, Varnish,
+ Redis, JavaScript, Angular and Bootstrap –
+ all on Linux on a popular public IaaS or PaaS.
+  •Experience working in DevOps environments.
+  •Understanding of security standards and concepts.
+-----
+-----
+python
+-------
+in the inner of class ,you call class method,you should use self.method()
+it is a good way ,class method also return self.
+------
+python
+-------
+i understand python context manager ,that is,it is used to manage context,it is
+when you open a file ,you need to ,close a file,when you open a database connect ,you should close a connect.contexanager is to say ,oh ,if you are in north ,you need to open
+a door and you need to close a door.and the context manager will use the __enter__ and
+the __exit__ method to implement it .and you can use with door() this form to do this things
+-----
+python
+-----
+from yangming's view ,when you use a=5 or b='yangmingishandosmor',when you run python
+python will allocate memory according to size,besides,'yangmingishandsome' is convert to
+byte according to  utf-8 encoding schema.i want to ask who  finish the encode ,is python ??
+is the gcc???
+
+python class
+-------
+you can figure out python instance attribute must be arranged.
+not have to be in __init__ constuctor.beswides.in python 2,class
+Someone(object),in python 3 ,you can use class Someone: not subclass
+object.i find that pythonn  
+
+-------
+python
+--------
+python requirements.txt used to install corresponding your package
+when you distribute your code.as,pip install -e requirements.
+------

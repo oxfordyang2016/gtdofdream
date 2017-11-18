@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yangming's Network</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+
+.red{
+    color: red
+}
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's Network  </a></h2>
+      <ul>
+      <li><a class="" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/Computer%20Networks%20(5th%20Edition).pdf">Biography</a></li>
+<li><a class="">1 INTRODUCTION 1</a></li>
+<li><a class="">1.1 USES OF COMPUTER NETWORKS, 3</a></li>
+<li><a class="">1.1.1 Business Applications, 3</a></li>
+<li><a class="">1.1.2 Home Applications, 6</a></li>
+<li><a class="">1.1.3 Mobile Users, 10</a></li>
+<li><a class="">1.1.4 Social Issues, 14</a></li>
+<li><a class="">1.2 NETWORK HARDWARE, 17</a></li>
+<li><a class="">1.2.1 Personal Area Networks, 18</a></li>
+<li><a class="">1.2.2 Local Area Networks, 19</a></li>
+<li><a class="">1.2.3 Metropolitan Area Networks, 23</a></li>
+<li><a class="">1.2.4 Wide Area Networks, 23</a></li>
+<li><a class="">1.2.5 Internetworks, 28</a></li>
+<li><a class="">1.3 NETWORK SOFTWARE, 29</a></li>
+<li><a class="">1.3.1 Protocol Hierarchies, 29</a></li>
+<li><a class="">1.3.2 Design Issues for the Layers, 33</a></li>
+<li><a class="">1.3.3 Connection-Oriented Versus Connectionless Service, 35</a></li>
+<li><a class="">1.3.4 Service Primitives, 38</a></li>
+<li><a class="">1.3.5 The Relationship of Services to Protocols, 40</a></li>
+<li><a class="">1.4 REFERENCE MODELS, 41</a></li>
+<li><a class="">1.4.1 The OSI Reference Model, 41</a></li>
+<li><a class="">1.4.2 The TCP/IP Reference Model, 45</a></li>
+<li><a class="">1.4.3 The Model Used in This Book, 48</a></li>
+<li><a class="">vii</a></li>
+<li><a class="">viii CONTENTS</a></li>
+<li><a class="">1.4.4 A Comparison of the OSI and TCP/IP Reference Models*, 49</a></li>
+<li><a class="">1.4.5 A Critique of the OSI Model and Protocols*, 51</a></li>
+<li><a class="">1.4.6 A Critique of the TCP/IP Reference Model*, 53</a></li>
+<li><a class="">1.5 EXAMPLE NETWORKS, 54</a></li>
+<li><a class="">1.5.1 The Internet, 54</a></li>
+<li><a class="">1.5.2 Third-Generation Mobile Phone Networks*, 65</a></li>
+<li><a class="">1.5.3 Wireless LANs: 802.11*, 70</a></li>
+<li><a class="">1.5.4 RFID and Sensor Networks*, 73</a></li>
+<li><a class="">1.6 NETWORK STANDARDIZATION*, 75</a></li>
+<li><a class="">1.6.1 Who’s Who in the Telecommunications World, 77</a></li>
+<li><a class="">1.6.2 Who’s Who in the International Standards World, 78</a></li>
+<li><a class="">1.6.3 Who’s Who in the Internet Standards World, 80</a></li>
+<li><a class="">1.7 METRIC UNITS, 82</a></li>
+<li><a class="">1.8 OUTLINE OF THE REST OF THE BOOK, 83</a></li>
+<li><a class="">1.9 SUMMARY, 84</a></li>
+<li><a class="">2 THE PHYSICAL LAYER 89</a></li>
+<li><a class="">2.1 THE THEORETICAL BASIS FOR DATA COMMUNICATION, 90</a></li>
+<li><a class="">2.1.1 Fourier Analysis, 90</a></li>
+<li><a class="">2.1.2 Bandwidth-Limited Signals, 90</a></li>
+<li><a class="">2.1.3 The Maximum Data Rate of a Channel, 94</a></li>
+<li><a class="">2.2 GUIDED TRANSMISSION MEDIA, 95</a></li>
+<li><a class="">2.2.1 Magnetic Media, 95</a></li>
+<li><a class="">2.2.2 Twisted Pairs, 96</a></li>
+<li><a class="">2.2.3 Coaxial Cable, 97</a></li>
+<li><a class="">2.2.4 Power Lines, 98</a></li>
+<li><a class="">2.2.5 Fiber Optics, 99</a></li>
+<li><a class="">2.3 WIRELESS TRANSMISSION, 105</a></li>
+<li><a class="">2.3.1 The Electromagnetic Spectrum, 105</a></li>
+<li><a class="">2.3.2 Radio Transmission, 109</a></li>
+<li><a class="">2.3.3 Microwave Transmission, 110</a></li>
+<li><a class="">2.3.4 Infrared Transmission, 114</a></li>
+<li><a class="">2.3.5 Light Transmission, 114</a></li>
+<li><a class="">CONTENTS ix</a></li>
+<li><a class="">2.4 COMMUNICATION SATELLITES*, 116</a></li>
+<li><a class="">2.4.1 Geostationary Satellites, 117</a></li>
+<li><a class="">2.4.2 Medium-Earth Orbit Satellites, 121</a></li>
+<li><a class="">2.4.3 Low-Earth Orbit Satellites, 121</a></li>
+<li><a class="">2.4.4 Satellites Versus Fiber, 123</a></li>
+<li><a class="">2.5 DIGITAL MODULATION AND MULTIPLEXING, 125</a></li>
+<li><a class="">2.5.1 Baseband Transmission, 125</a></li>
+<li><a class="">2.5.2 Passband Transmission, 130</a></li>
+<li><a class="">2.5.3 Frequency Division Multiplexing, 132</a></li>
+<li><a class="">2.5.4 Time Division Multiplexing, 135</a></li>
+<li><a class="">2.5.5 Code Division Multiplexing, 135</a></li>
+<li><a class="">2.6 THE PUBLIC SWITCHED TELEPHONE NETWORK, 138</a></li>
+<li><a class="">2.6.1 Structure of the Telephone System, 139</a></li>
+<li><a class="">2.6.2 The Politics of Telephones, 142</a></li>
+<li><a class="">2.6.3 The Local Loop: Modems, ADSL, and Fiber, 144</a></li>
+<li><a class="">2.6.4 Trunks and Multiplexing, 152</a></li>
+<li><a class="">2.6.5 Switching, 161</a></li>
+<li><a class="">2.7 THE MOBILE TELEPHONE SYSTEM*, 164</a></li>
+<li><a class="">2.7.1 First-Generation (coco1G) Mobile Phones: Analog Voice, 166</a></li>
+<li><a class="">2.7.2 Second-Generation (2G) Mobile Phones: Digital Voice, 170</a></li>
+<li><a class="">2.7.3 Third-Generation (3G) Mobile Phones: Digital Voice and Data, 174</a></li>
+<li><a class="">2.8 CABLE TELEVISION*, 179</a></li>
+<li><a class="">2.8.1 Community Antenna Television, 179</a></li>
+<li><a class="">2.8.2 Internet over Cable, 180</a></li>
+<li><a class="">2.8.3 Spectrum Allocation, 182</a></li>
+<li><a class="">2.8.4 Cable Modems, 183</a></li>
+<li><a class="">2.8.5 ADSL Versus Cable, 185</a></li>
+<li><a class="">2.9 SUMMARY, 186</a></li>
+<li><a class="">3 THE DATA LINK LAYER 193</a></li>
+<li><a class="">3.1 DATA LINK LAYER DESIGN ISSUES, 194</a></li>
+<li><a class="">3.1.1 Services Provided to the Network Layer, 194</a></li>
+<li><a class="">3.1.2 Framing, 197</a></li>
+<li><a class="">3.1.3 Error Control, 200</a></li>
+<li><a class="">3.1.4 Flow Control, 201</a></li>
+<li><a class="">x CONTENTS</a></li>
+<li><a class="">3.2 ERROR DETECTION AND CORRECTION, 202</a></li>
+<li><a class="">3.2.1 Error-Correcting Codes, 204</a></li>
+<li><a class="">3.2.2 Error-Detecting Codes, 209</a></li>
+<li><a class="">3.3 ELEMENTARY DATA LINK PROTOCOLS, 215</a></li>
+<li><a class="">3.3.1 A Utopian Simplex Protocol, 220</a></li>
+<li><a class="">3.3.2 A Simplex Stop-and-Wait Protocol for an Error-Free Channel, 221</a></li>
+<li><a class="">3.3.3 A Simplex Stop-and-Wait Protocol for a Noisy Channel, 222</a></li>
+<li><a class="">3.4 SLIDING WINDOW PROTOCOLS, 226</a></li>
+<li><a class="">3.4.1 A One-Bit Sliding Window Protocol, 229</a></li>
+<li><a class="">3.4.2 A Protocol Using Go-Back-N, 232</a></li>
+<li><a class="">3.4.3 A Protocol Using Selective Repeat, 239</a></li>
+<li><a class="">3.5 EXAMPLE DATA LINK PROTOCOLS, 244</a></li>
+<li><a class="">3.5.1 Packet over SONET, 245</a></li>
+<li><a class="">3.5.2 ADSL (Asymmetric Digital Subscriber Loop), 249</a></li>
+<li><a class="">3.6 SUMMARY, 251</a></li>
+<li><a class="">4 THE MEDIUM ACCESS CONTROL SUBLAYER 257</a></li>
+<li><a class="">4.1 THE CHANNEL ALLOCATION PROBLEM, 258</a></li>
+<li><a class="">4.1.1 Static Channel Allocation, 258</a></li>
+<li><a class="">4.1.2 Assumptions for Dynamic Channel Allocation, 260</a></li>
+<li><a class="">4.2 MULTIPLE ACCESS PROTOCOLS, 261</a></li>
+<li><a class="">4.2.1 ALOHA, 262</a></li>
+<li><a class="">4.2.2 Carrier Sense Multiple Access Protocols, 266</a></li>
+<li><a class="">4.2.3 Collision-Free Protocols, 269</a></li>
+<li><a class="">4.2.4 Limited-Contention Protocols, 274</a></li>
+<li><a class="">4.2.5 Wireless LAN Protocols, 277</a></li>
+<li><a class="">4.3 ETHERNET, 280</a></li>
+<li><a class="">4.3.1 Classic Ethernet Physical Layer, 281</a></li>
+<li><a class="">4.3.2 Classic Ethernet MAC Sublayer Protocol, 282</a></li>
+<li><a class="">4.3.3 Ethernet Performance, 286</a></li>
+<li><a class="">4.3.4 Switched Ethernet, 288</a></li>
+<li><a class="">CONTENTS xi</a></li>
+<li><a class="">4.3.5 Fast Ethernet, 290</a></li>
+<li><a class="">4.3.6 Gigabit Ethernet, 293</a></li>
+<li><a class="">4.3.7 10-Gigabit Ethernet, 296</a></li>
+<li><a class="">4.3.8 Retrospective on Ethernet, 298</a></li>
+<li><a class="">4.4 WIRELESS LANS, 299</a></li>
+<li><a class="">4.4.1 The 802.11 Architecture and Protocol Stack, 299</a></li>
+<li><a class="">4.4.2 The 802.11 Physical Layer, 301</a></li>
+<li><a class="">4.4.3 The 802.11 MAC Sublayer Protocol, 303</a></li>
+<li><a class="">4.4.4 The 802.11 Frame Structure, 309</a></li>
+<li><a class="">4.4.5 Services, 311</a></li>
+<li><a class="">4.5 BROADBAND WIRELESS*, 312</a></li>
+<li><a class="">4.5.1 Comparison of 802.16 with 802.11 and 3G, 313</a></li>
+<li><a class="">4.5.2 The 802.16 Architecture and Protocol Stack, 314</a></li>
+<li><a class="">4.5.3 The 802.16 Physical Layer, 316</a></li>
+<li><a class="">4.5.4 The 802.16 MAC Sublayer Protocol, 317</a></li>
+<li><a class="">4.5.5 The 802.16 Frame Structure, 319</a></li>
+<li><a class="">4.6 BLUETOOTH*, 320</a></li>
+<li><a class="">4.6.1 Bluetooth Architecture, 320</a></li>
+<li><a class="">4.6.2 Bluetooth Applications, 321</a></li>
+<li><a class="">4.6.3 The Bluetooth Protocol Stack, 322</a></li>
+<li><a class="">4.6.4 The Bluetooth Radio Layer, 324</a></li>
+<li><a class="">4.6.5 The Bluetooth Link Layers, 324</a></li>
+<li><a class="">4.6.6 The Bluetooth Frame Structure, 325</a></li>
+<li><a class="">4.7 RFID*, 327</a></li>
+<li><a class="">4.7.1 EPC Gen 2 Architecture, 327</a></li>
+<li><a class="">4.7.2 EPC Gen 2 Physical Layer, 328</a></li>
+<li><a class="">4.7.3 EPC Gen 2 Tag Identification Layer, 329</a></li>
+<li><a class="">4.7.4 Tag Identification Message Formats, 331</a></li>
+<li><a class="">4.8 DATA LINK LAYER SWITCHING, 332</a></li>
+<li><a class="">4.8.1 Uses of Bridges, 332</a></li>
+<li><a class="">4.8.2 Learning Bridges, 334</a></li>
+<li><a class="">4.8.3 Spanning Tree Bridges, 337</a></li>
+<li><a class="">4.8.4 Repeaters, Hubs, Bridges, Switches, Routers, and Gateways, 340</a></li>
+<li><a class="">4.8.5 Virtual LANs, 342</a></li>
+<li><a class="">4.9 SUMMARY, 349</a></li>
+<li><a class="">xii CONTENTS</a></li>
+<li><a class="">5 THE NETWORK LAYER 355</a></li>
+<li><a class="">5.1 NETWORK LAYER DESIGN ISSUES, 355</a></li>
+<li><a class="">5.1.1 Store-and-Forward Packet Switching, 356</a></li>
+<li><a class="">5.1.2 Services Provided to the Transport Layer, 356</a></li>
+<li><a class="">5.1.3 Implementation of Connectionless Service, 358</a></li>
+<li><a class="">5.1.4 Implementation of Connection-Oriented Service, 359</a></li>
+<li><a class="">5.1.5 Comparison of Virtual-Circuit and Datagram Networks, 361</a></li>
+<li><a class="">5.2 ROUTING ALGORITHMS, 362</a></li>
+<li><a class="">5.2.1 The Optimality Principle, 364</a></li>
+<li><a class="">5.2.2 Shortest Path Algorithm, 366</a></li>
+<li><a class="">5.2.3 Flooding, 368</a></li>
+<li><a class="">5.2.4 Distance Vector Routing, 370</a></li>
+<li><a class="">5.2.5 Link State Routing, 373</a></li>
+<li><a class="">5.2.6 Hierarchical Routing, 378</a></li>
+<li><a class="">5.2.7 Broadcast Routing, 380</a></li>
+<li><a class="">5.2.8 Multicast Routing, 382</a></li>
+<li><a class="">5.2.9 Anycast Routing, 385</a></li>
+<li><a class="">5.2.10 Routing for Mobile Hosts, 386</a></li>
+<li><a class="">5.2.11 Routing in Ad Hoc Networks, 389</a></li>
+<li><a class="">5.3 CONGESTION CONTROL ALGORITHMS, 392</a></li>
+<li><a class="">5.3.1 Approaches to Congestion Control, 394</a></li>
+<li><a class="">5.3.2 Traffic-Aware Routing, 395</a></li>
+<li><a class="">5.3.3 Admission Control, 397</a></li>
+<li><a class="">5.3.4 Traffic Throttling, 398</a></li>
+<li><a class="">5.3.5 Load Shedding, 401</a></li>
+<li><a class="">5.4 QUALITY OF SERVICE, 404</a></li>
+<li><a class="">5.4.1 Application Requirements, 405</a></li>
+<li><a class="">5.4.2 Traffic Shaping, 407</a></li>
+<li><a class="">5.4.3 Packet Scheduling, 411</a></li>
+<li><a class="">5.4.4 Admission Control, 415</a></li>
+<li><a class="">5.4.5 Integrated Services, 418</a></li>
+<li><a class="">5.4.6 Differentiated Services, 421</a></li>
+<li><a class="">5.5 INTERNETWORKING, 424</a></li>
+<li><a class="">5.5.1 How Networks Differ, 425</a></li>
+<li><a class="">5.5.2 How Networks Can Be Connected, 426</a></li>
+<li><a class="">5.5.3 Tunneling, 429</a></li>
+<li><a class="">CONTENTS xiii</a></li>
+<li><a class="">5.5.4 Internetwork Routing, 431</a></li>
+<li><a class="">5.5.5 Packet Fragmentation, 432</a></li>
+<li><a class="">5.6 THE NETWORK LAYER IN THE INTERNET, 436</a></li>
+<li><a class="">5.6.1 The IP Version 4 Protocol, 439</a></li>
+<li><a class="">5.6.2 IP Addresses, 442</a></li>
+<li><a class="">5.6.3 IP Version 6, 455</a></li>
+<li><a class="">5.6.4 Internet Control Protocols, 465</a></li>
+<li><a class="">5.6.5 Label Switching and MPLS, 470</a></li>
+<li><a class="">5.6.6 OSPF—An Interior Gateway Routing Protocol, 474</a></li>
+<li><a class="">5.6.7 BGP—The Exterior Gateway Routing Protocol, 479</a></li>
+<li><a class="">5.6.8 Internet Multicasting, 484</a></li>
+<li><a class="">5.6.9 Mobile IP, 485</a></li>
+<li><a class="">5.7 SUMMARY, 488</a></li>
+<li><a class="">6 THE TRANSPORT LAYER 495</a></li>
+<li><a class="">6.1 THE TRANSPORT SERVICE, 495</a></li>
+<li><a class="">6.1.1 Services Provided to the Upper Layers, 496</a></li>
+<li><a class="">6.1.2 Transport Service Primitives, 498</a></li>
+<li><a class="">6.1.3 Berkeley Sockets, 500</a></li>
+<li><a class="">6.1.4 An Example of Socket Programming: An Internet File Server, 503</a></li>
+<li><a class="">6.2 ELEMENTS OF TRANSPORT PROTOCOLS, 507</a></li>
+<li><a class="">6.2.1 Addressing, 509</a></li>
+<li><a class="">6.2.2 Connection Establishment, 512</a></li>
+<li><a class="">6.2.3 Connection Release, 517</a></li>
+<li><a class="">6.2.4 Error Control and Flow Control, 522</a></li>
+<li><a class="">6.2.5 Multiplexing, 527</a></li>
+<li><a class="">6.2.6 Crash Recovery, 527</a></li>
+<li><a class="">6.3 CONGESTION CONTROL, 530</a></li>
+<li><a class="">6.3.1 Desirable Bandwidth Allocation, 531</a></li>
+<li><a class="">6.3.2 Regulating the Sending Rate, 535</a></li>
+<li><a class="">6.3.3 Wireless Issues, 539</a></li>
+<li><a class="">6.4 THE INTERNET TRANSPORT PROTOCOLS: UDP, 541</a></li>
+<li><a class="">6.4.1 Introduction to UDP, 541</a></li>
+<li><a class="">6.4.2 Remote Procedure Call, 543</a></li>
+<li><a class="">6.4.3 Real-Time Transport Protocols, 546</a></li>
+<li><a class="">xiv CONTENTS</a></li>
+<li><a class="">6.5 THE INTERNET TRANSPORT PROTOCOLS: TCP, 552</a></li>
+<li><a class="">6.5.1 Introduction to TCP, 552</a></li>
+<li><a class="">6.5.2 The TCP Service Model, 553</a></li>
+<li><a class="">6.5.3 The TCP Protocol, 556</a></li>
+<li><a class="">6.5.4 The TCP Segment Header, 557</a></li>
+<li><a class="">6.5.5 TCP Connection Establishment, 560</a></li>
+<li><a class="">6.5.6 TCP Connection Release, 562</a></li>
+<li><a class="">6.5.7 TCP Connection Management Modeling, 562</a></li>
+<li><a class="">6.5.8 TCP Sliding Window, 565</a></li>
+<li><a class="">6.5.9 TCP Timer Management, 568</a></li>
+<li><a class="">6.5.10 TCP Congestion Control, 571</a></li>
+<li><a class="">6.5.11 The Future of TCP, 581</a></li>
+<li><a class="">6.6 PERFORMANCE ISSUES*, 582</a></li>
+<li><a class="">6.6.1 Performance Problems in Computer Networks, 583</a></li>
+<li><a class="">6.6.2 Network Performance Measurement, 584</a></li>
+<li><a class="">6.6.3 Host Design for Fast Networks, 586</a></li>
+<li><a class="">6.6.4 Fast Segment Processing, 590</a></li>
+<li><a class="">6.6.5 Header Compression, 593</a></li>
+<li><a class="">6.6.6 Protocols for Long Fat Networks, 595</a></li>
+<li><a class="">6.7 DELAY-TOLERANT NETWORKING*, 599</a></li>
+<li><a class="">6.7.1 DTN Architecture, 600</a></li>
+<li><a class="">6.7.2 The Bundle Protocol, 603</a></li>
+<li><a class="">6.8 SUMMARY, 605</a></li>
+<li><a class="">7 THE APPLICATION LAYER 611</a></li>
+<li><a class="">7.1 DNS—THE DOMAIN NAME SYSTEM, 611</a></li>
+<li><a class="">7.1.1 The DNS Name Space, 612</a></li>
+<li><a class="">7.1.2 Domain Resource Records, 616</a></li>
+<li><a class="">7.1.3 Name Servers, 619</a></li>
+<li><a class="">7.2 ELECTRONIC MAIL*, 623</a></li>
+<li><a class="">7.2.1 Architecture and Services, 624</a></li>
+<li><a class="">7.2.2 The User Agent, 626</a></li>
+<li><a class="">7.2.3 Message Formats, 630</a></li>
+<li><a class="">7.2.4 Message Transfer, 637</a></li>
+<li><a class="">7.2.5 Final Delivery, 643</a></li>
+<li><a class="">CONTENTS xv</a></li>
+<li><a class="">7.3 THE WORLD WIDE WEB, 646</a></li>
+<li><a class="">7.3.1 Architectural Overview, 647</a></li>
+<li><a class="">7.3.2 Static Web Pages, 662</a></li>
+<li><a class="">7.3.3 Dynamic Web Pages and Web Applications, 672</a></li>
+<li><a class="">7.3.4 HTTP—The HyperText Transfer Protocol, 683</a></li>
+<li><a class="">7.3.5 The Mobile Web, 693</a></li>
+<li><a class="">7.3.6 Web Search, 695</a></li>
+<li><a class="">7.4 STREAMING AUDIO AND VIDEO, 697</a></li>
+<li><a class="">7.4.1 Digital Audio, 699</a></li>
+<li><a class="">7.4.2 Digital Video, 704</a></li>
+<li><a class="">7.4.3 Streaming Stored Media, 713</a></li>
+<li><a class="">7.4.4 Streaming Live Media, 721</a></li>
+<li><a class="">7.4.5 Real-Time Conferencing, 724</a></li>
+<li><a class="">7.5 CONTENT DELIVERY, 734</a></li>
+<li><a class="">7.5.1 Content and Internet Traffic, 736</a></li>
+<li><a class="">7.5.2 Server Farms and Web Proxies, 738</a></li>
+<li><a class="">7.5.3 Content Delivery Networks, 743</a></li>
+<li><a class="">7.5.4 Peer-to-Peer Networks, 748</a></li>
+<li><a class="">7.6 SUMMARY, 757</a></li>
+<li><a class="">8 NETWORK SECURITY 763</a></li>
+<li><a class="">8.1 CRYPTOGRAPHY, 766</a></li>
+<li><a class="">8.1.1 Introduction to Cryptography, 767</a></li>
+<li><a class="">8.1.2 Substitution Ciphers, 769</a></li>
+<li><a class="">8.1.3 Transposition Ciphers, 771</a></li>
+<li><a class="">8.1.4 One-Time Pads, 772</a></li>
+<li><a class="">8.1.5 Two Fundamental Cryptographic Principles, 776</a></li>
+<li><a class="">8.2 SYMMETRIC-KEY ALGORITHMS, 778</a></li>
+<li><a class="">8.2.1 DES—The Data Encryption Standard, 780</a></li>
+<li><a class="">8.2.2 AES—The Advanced Encryption Standard, 783</a></li>
+<li><a class="">8.2.3 Cipher Modes, 787</a></li>
+<li><a class="">8.2.4 Other Ciphers, 792</a></li>
+<li><a class="">8.2.5 Cryptanalysis, 792</a></li>
+<li><a class="">xvi CONTENTS</a></li>
+<li><a class="">8.3 PUBLIC-KEY ALGORITHMS, 793</a></li>
+<li><a class="">8.3.1 RSA, 794</a></li>
+<li><a class="">8.3.2 Other Public-Key Algorithms, 796</a></li>
+<li><a class="">8.4 DIGITAL SIGNATURES, 797</a></li>
+<li><a class="">8.4.1 Symmetric-Key Signatures, 798</a></li>
+<li><a class="">8.4.2 Public-Key Signatures, 799</a></li>
+<li><a class="">8.4.3 Message Digests, 800</a></li>
+<li><a class="">8.4.4 The Birthday Attack, 804</a></li>
+<li><a class="">8.5 MANAGEMENT OF PUBLIC KEYS, 806</a></li>
+<li><a class="">8.5.1 Certificates, 807</a></li>
+<li><a class="">8.5.2 X.509, 809</a></li>
+<li><a class="">8.5.3 Public Key Infrastructures, 810</a></li>
+<li><a class="">8.6 COMMUNICATION SECURITY, 813</a></li>
+<li><a class="">8.6.1 IPsec, 814</a></li>
+<li><a class="">8.6.2 Firewalls, 818</a></li>
+<li><a class="">8.6.3 Virtual Private Networks, 821</a></li>
+<li><a class="">8.6.4 Wireless Security, 822</a></li>
+<li><a class="">8.7 AUTHENTICATION PROTOCOLS, 827</a></li>
+<li><a class="">8.7.1 Authentication Based on a Shared Secret Key, 828</a></li>
+<li><a class="">8.7.2 Establishing a Shared Key: The Diffie-Hellman Key Exchange, 833</a></li>
+<li><a class="">8.7.3 Authentication Using a Key Distribution Center, 835</a></li>
+<li><a class="">8.7.4 Authentication Using Kerberos, 838</a></li>
+<li><a class="">8.7.5 Authentication Using Public-Key Cryptography, 840</a></li>
+<li><a class="">8.8 EMAIL SECURITY*, 841</a></li>
+<li><a class="">8.8.1 PGP—Pretty Good Privacy, 842</a></li>
+<li><a class="">8.8.2 S/MIME, 846</a></li>
+<li><a class="">8.9 WEB SECURITY, 846</a></li>
+<li><a class="">8.9.1 Threats, 847</a></li>
+<li><a class="">8.9.2 Secure Naming, 848</a></li>
+<li><a class="">8.9.3 SSL—The Secure Sockets Layer, 853</a></li>
+<li><a class="">8.9.4 Mobile Code Security, 857</a></li>
+<li><a class="">8.10 SOCIAL ISSUES, 860</a></li>
+<li><a class="">8.10.1 Privacy, 860</a></li>
+<li><a class="">8.10.2 Freedom of Speech, 863</a></li>
+<li><a class="">8.10.3 Copyright, 867</a></li>
+<li><a class="">8.11 SUMMARY, 869</a></li>
+<li><a class="">CONTENTS xvii</a></li>
+<li><a class="">9 READING LIST AND BIBLIOGRAPHY 877</a></li>
+<li><a class="">9.1 SUGGESTIONS FOR FURTHER READING*, 877</a></li>
+<li><a class="">9.1.1 Introduction and General Works, 878</a></li>
+<li><a class="">9.1.2 The Physical Layer, 879</a></li>
+<li><a class="">9.1.3 The Data Link Layer, 880</a></li>
+<li><a class="">9.1.4 The Medium Access Control Sublayer, 880</a></li>
+<li><a class="">9.1.5 The Network Layer, 881</a></li>
+<li><a class="">9.1.6 The Transport Layer, 882</a></li>
+<li><a class="">9.1.7 The Application Layer, 882</a></li>
+<li><a class="">9.1.8 Network Security, 883</a></li>
+<li><a class="">9.2 ALPHABETICAL BIBLIOGRAPHY*, 884</a></li>
+         <li ><a href="https://developersab.wordpress.com/2009/10/30/osi-model-associated-protocol/">OSI MODEL </a></li>
+        <li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/architecture/index.html">Chapter 1 Architecture</a></li>
+        <li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/architecture/protocol_layers.html">Protocol Layers</a></li>
+         <li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/the_tcpip_stack.html">The Tcp/Ip stack</a></li>
+
+    
+<li ><a href="computer.howstuffworks.com/dns.htm">How DNS wroks</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/ip_address_type.html">IP Address</a></li>
+
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/services.html">Service</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/tcp_sockets.html">Tcp sockets</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/controlling_tcp_connections.html">Tcp Control</a></li>
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/udp_datagrams.html">Udp</a></li>
+
+<li ><a href="https://github.com/oxfordyang2016/caton_time/tree/master/udpconnect">Udp datagram code(by yangming)</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/the_types_conn,_packetconn_and_listener.html">The types Conn, PacketConn and Listener</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/raw_sockets_and_the_type_ipconn.html">The types Conn, PacketConn and Listener</a></li>
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/socket/raw_sockets_and_the_type_ipconn.html">Raw sockets and the type IPConn</a></li>
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/dataserialisation/index.html">Data serialisation</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/dataserialisation/mutual_agreement.html">Mutual agreement</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/dataserialisation/self-describing_data.html">Self-describing data</a></li>
+
+<li ><a href="https://jannewmarch.gitbooks.io/network-programming-with-go-golang-/content/web_socket_server.html">web socket server</a></li>
+
+<li ><a href="https://github.com/oxfordyang2016/caton_time/tree/master/websocketsuccess2">web socket server success code</a></li>
+
+
+
+        <li><a href="http://programmers.stackexchange.com/questions/171734/difference-between-a-socket-and-a-port">what is socket and port?</a></li>
+        <li><a href="http://stackoverflow.com/questions/152457/what-is-the-difference-between-a-port-and-a-socket   ">what is socket and port (unique)?</a></li>
+        <li><a href="https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/08.1.html">what is socket 2?</a></li>
+        <li><a href="http://bl.ocks.org/tmichel/7390690">simple websocket example with golang</a></li>
+
+         <li><a href="https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/08.2.html">golang websocket prog intro</a></li>
+        
+         <li><a href="http://stackoverflow.com/questions/13551140/how-to-make-a-websocket-client-wait-util-the-server-is-running">websocket golang server</a></li>
+ 
+         <li><a href="https://github.com/oxfordyang2016/golang-websocket">go websocket client and server success version (all by go)</a></li>
+
+
+
+      </ul>
+      <p class="footer">
+        by <a>yangming</a> | <a href="yang756260386@gmail.com">feedback</a> | <a href="https://github.com/oxfordyang2016/">source</a> | <a href="https://yangmingweatherapp.herokuapp.com">page</a>
+        {% load disqus_tags %}
+{% disqus_show_comments "yangmingweatherappherokuappcom" %}
+{% set_disqus_url object.get_absolute_url %}
+      </p>
+    </div>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

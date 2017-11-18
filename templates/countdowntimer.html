@@ -1,0 +1,306 @@
+<!-- Display the countdown timer in an element -->
+<!--
+the front page structure is
+html=======the page content
+css========all tab positions
+js----------control all tab actions,such ad show elements.
+-->
+
+
+
+
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+</body>
+
+<STYLE TYPE="text/css">
+  #demo {
+  font-size: 500%;
+  color: red ;
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 40%;}
+  #demo1 {
+  font-size: 500%;
+  color: red ;
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 25%;}
+
+
+
+</STYLE>
+
+<script>
+// Set the date we're counting down to
+
+var countDownDate1 = new Date("May 25, 2017 15:37:25").getTime();
+
+//set a var to store 25 minutes for me
+//var tomato=25;
+//set a var to store the time when the page is loaded
+//var loadtime = new Date().getTime();
+//var countDownDate=moment(loadtime).add(30,'m');
+//25+5+25+10+25+5+25+20=140
+//try to slove the problem
+var d = new Date();//get now time
+d.setMinutes(d.getMinutes()+140);//count the time of 25 minuts later
+// i believe that if i can set a proper time ,i will get the effect the
+//stage function   effect
+var countDownDate=d.getTime()
+
+var d1 = new Date();//get now time
+d1.setMinutes(d1.getMinutes()+25);//count the time of 25 minuts later
+var countDownDate1=d1.getTime()
+
+
+var d2 = new Date();//get now time
+d2.setMinutes(d2.getMinutes()+55);//count the time of 25 minuts later
+var countDownDate2=d2.getTime()
+
+var d3 = new Date();//get now time
+d3.setMinutes(d2.getMinutes()+90);//count the time of 25 minuts later
+var countDownDate3=d3.getTime()
+
+
+var d4 = new Date();//get now time
+d4.setMinutes(d4.getMinutes()+120);//count the time of 25 minuts later
+var countDownDate4=d4.getTime()
+
+
+
+
+
+var rest1 = new Date();//get now time
+rest1.setMinutes(rest1.getMinutes()+30);//count the time of 25 minuts later
+var stop1=rest1.getTime()
+
+var rest2 = new Date();//get now time
+rest2.setMinutes(rest2.getMinutes()+65);//count the time of 25 minuts later
+var rest2=rest2.getTime()
+
+var rest3 = new Date();//get now time
+rest3.setMinutes(rest3.getMinutes()+95);//count the time of 25 minuts later
+var rest3=rest3.getTime()
+
+
+var rest4 = new Date();//get now time
+rest4.setMinutes(rest4.getMinutes()+140);//count the time of 25 minuts later
+var countDownDate4=rest4.getTime()
+
+/*
+
+*/
+
+
+//get the standard   format of  time of 25 minutes later
+document.body.style.background = "green";
+//the unit is milliseconds
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  var distance1 = countDownDate1 - now;
+  var distance2 = countDownDate2 - now;
+  var distance3 = countDownDate3 - now;
+  var distance4 = countDownDate4 - now;
+
+  var what1 = stop1 - now;
+  var what2 = rest2 - now;
+  var rest3 = rest3 - now;
+  var rest4 = rest4 - now;
+
+
+
+
+  // Time calculations for days, hours, minutes and seconds
+ // this is
+ if(distance>6910000){
+  var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+  var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+ // document.getElementById("demo").innerHTML = days+"d"+ hours + "h"+ minutes + "m " + seconds + "s ";
+ //firstly.it start to count time
+ document.getElementById("demo").innerHTML =hours1+"h"+ minutes1 + "m" + seconds1 + "s ";
+  // If the count down is finished, write some text
+//25+5+25+10+25+5+25+20=140
+//25 later,lef 125 minutes 5 min rest time
+}
+  if (distance < 6900000) {
+//rest
+
+    var seconds1 = Math.floor((what1 / 1000));
+    document.getElementById("demo").innerHTML = "STOP "+ seconds1+"s";
+    document.body.style.background = "black";
+   //setInterval(rest(),500);
+
+  }
+//lef 110 min,the 25 min stage start!!!!
+  if (distance < 6600000) {
+    var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+    var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+    //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+   // var countDownDate=d.getTime()；
+    //clearInterval(x);
+    //document.getElementById("demo1").innerHTML = "";
+    //document.getElementById("demo").style.left=0.35;
+    //document.getElementById("demo").innerHTML = "STOP";
+    document.getElementById("demo").innerHTML =hours2+"h"+ minutes2 + "m" + seconds2 + "s ";
+    //document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+    document.body.style.background = "green";
+
+   //setInterval(rest(),500);
+
+  }
+
+  //lef 85 min,the 10 min  rest stage start!!!!
+    if (distance < 5100000) {
+
+      //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+     // var countDownDate=d.getTime()；
+      //clearInterval(x);
+      //document.getElementById("demo1").innerHTML = "";
+      //document.getElementById("demo").style.left=0.35;
+      //document.getElementById("demo").innerHTML = "STOP";
+      var seconds2 = Math.floor((what2 / 1000));
+      document.getElementById("demo").innerHTML = "STOP "+ seconds2+"s";
+      //document.getElementById("demo").innerHTML = "STOP";
+      document.body.style.background = "black";
+
+     //setInterval(rest(),500);
+
+    }
+
+    //lef 75 min,the 25 MIN work stage start!!!!
+      if (distance < 4500000) {
+        var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+        var hours3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds3 = Math.floor((distance3 % (1000 * 60)) / 1000);
+        //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+       // var countDownDate=d.getTime()；
+        //clearInterval(x);
+        //document.getElementById("demo1").innerHTML = "";
+        //document.getElementById("demo").style.left=0.35;
+        //document.getElementById("demo").innerHTML = "STOP";
+        document.getElementById("demo").innerHTML =hours3+"h"+ minutes3 + "m" + seconds3 + "s ";
+
+
+        //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+       // var countDownDate=d.getTime()；
+        //clearInterval(x);
+        //document.getElementById("demo1").innerHTML = "";
+        //document.getElementById("demo").style.left=0.35;
+        //document.getElementById("demo").innerHTML = "STOP";
+        //document.getElementById("demo").innerHTML = "STOP";
+        document.body.style.background = "green";
+
+       //setInterval(rest(),500);
+
+      }
+
+      //lef 50 min,the 5 min  rest stage start!!!!
+        if (distance < 3000000) {
+       //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+         // var countDownDate=d.getTime()；
+          //clearInterval(x);
+          //document.getElementById("demo1").innerHTML = "";
+          //document.getElementById("demo").style.left=0.35;
+          //document.getElementById("demo").innerHTML = "STOP";
+          var seconds3 = Math.floor((rest3 / 1000));
+          document.getElementById("demo").innerHTML = "STOP "+ seconds3+"s";
+          //document.getElementById("demo").innerHTML = "STOP";
+          document.body.style.background = "black";
+
+         //setInterval(rest(),500);
+        }
+
+
+            //lef 45 min,the 25 MIN work stage start!!!!
+              if (distance < 2700000) {
+                var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24));
+                var hours4 = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes4 = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds4 = Math.floor((distance4 % (1000 * 60)) / 1000);
+                //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+               // var countDownDate=d.getTime()；
+                //clearInterval(x);
+                //document.getElementById("demo1").innerHTML = "";
+                //document.getElementById("demo").style.left=0.35;
+                //document.getElementById("demo").innerHTML = "STOP";
+                document.getElementById("demo").innerHTML =hours4+"h"+ minutes4 + "m" + seconds4 + "s ";
+                //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+               // var countDownDate=d.getTime()；
+                //clearInterval(x);
+                //document.getElementById("demo1").innerHTML = "";
+                //document.getElementById("demo").style.left=0.35;
+                //document.getElementById("demo").innerHTML = "STOP";
+                //document.getElementById("demo").innerHTML =hours+"h"+ minutes + "m" + seconds + "s ";
+                //document.getElementById("demo").innerHTML = "STOP";
+                document.body.style.background = "green";
+
+               //setInterval(rest(),500);
+
+              }
+
+              //lef 20 min,the rest time 20 min !!!!
+                if (distance < 3000000) {
+                 //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+                 // var countDownDate=d.getTime()；
+                  //clearInterval(x);
+                  //document.getElementById("demo1").innerHTML = "";
+                  //document.getElementById("demo").style.left=0.35;
+                  //document.getElementById("demo").innerHTML = "STOP";
+                  var seconds4 = Math.floor((rest4 / 1000));
+                  document.getElementById("demo").innerHTML = "STOP "+ seconds4+"s";
+                  document.getElementById("demo").innerHTML = "STOP";
+                  document.body.style.background = "black";
+
+                 //setInterval(rest(),500);
+                }
+
+                //lef 20 min,the rest time 20 min !!!!
+                  if (distance < 0) {
+                    //var d = new Date(); d.setMinutes(d.getMinutes()+1);
+                   // var countDownDate=d.getTime()；
+                    clearInterval(x);
+                    //document.getElementById("demo1").innerHTML = "";
+                    //document.getElementById("demo").style.left=0.35;
+                    //document.getElementById("demo").innerHTML = "STOP";
+                    document.getElementById("demo").innerHTML = "RESTART";
+                    document.body.style.background = "black";
+
+                   //setInterval(rest(),500);
+
+                  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}, 500);
+
+
+
+</script>

@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yangming's computer basic</title>
+    <style>
+	/* CSS reset: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout and typography */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252519;
+}
+em {
+    font-style: italic;
+}
+a, a:visited {
+    color: #261a3b;
+}
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+h2 a {
+    text-decoration: none;
+}
+div.example {
+    width: 900px;
+    min-width: 900px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div.example table {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p.next {
+    margin-bottom: 20px;
+}
+p.footer {
+    color: grey;
+}
+p.footer a, p.footer a:visited {
+    color: grey;
+}
+div#intro {
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+div#intro p {
+    padding-top: 20px;
+}
+div#intro ul {
+    padding-top: 20px;
+}a
+table td {
+    border: 0;
+    outline: 0;
+}
+td.docs {
+    width: 420px;
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+td.docs p {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+td.code {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    background: #f0f0f0;
+}
+td.code.leading {
+    padding-bottom: 11px;
+}
+td.code.empty {
+    background: #ffffff;
+}
+pre, code {
+    font-size: 14px; line-height: 18px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Lucida Console', monospace;
+}
+img.run {
+  height: 16px;
+  width: 16px;
+  float: right
+}
+
+/* Syntax highlighting */
+body .hll { background-color: #ffffcc }
+body .err { border: 1px solid #FF0000 }         /* Error */
+body .c  { color: #408080; font-style: italic } /* Comment */
+body .k  { color: #954121 }                     /* Keyword */
+body .o  { color: #666666 }                     /* Operator */
+body .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+body .cp { color: #BC7A00 }                     /* Comment.Preproc */
+body .c1 { color: #408080; font-style: italic } /* Comment.Single */
+body .cs { color: #408080; font-style: italic } /* Comment.Special */
+body .gd { color: #A00000 }                     /* Generic.Deleted */
+body .ge { font-style: italic }                 /* Generic.Emph */
+body .gr { color: #FF0000 }                     /* Generic.Error */
+body .gh { color: #000080; font-weight: bold }  /* Generic.Heading */
+body .gi { color: #00A000 }                     /* Generic.Inserted */
+body .go { color: #808080 }                     /* Generic.Output */
+body .gp { color: #000080; font-weight: bold }  /* Generic.Prompt */
+body .gs { font-weight: bold }                  /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold }  /* Generic.Subheading */
+body .gt { color: #0040D0 }                     /* Generic.Traceback */
+body .kc { color: #954121 }                     /* Keyword.Constant */
+body .kd { color: #954121 }                     /* Keyword.Declaration */
+body .kn { color: #954121 }                     /* Keyword.Namespace */
+body .kp { color: #954121 }                     /* Keyword.Pseudo */
+body .kr { color: #954121; font-weight: bold }  /* Keyword.Reserved */
+body .kt { color: #B00040 }                     /* Keyword.Type */
+body .m  { color: #666666 }                     /* Literal.Number */
+body .s  { color: #219161 }                     /* Literal.String */
+body .na { color: #7D9029 }                     /* Name.Attribute */
+body .nb { color: #954121 }                     /* Name.Builtin */
+body .nc { color: #0000FF; font-weight: bold }  /* Name.Class */
+body .no { color: #880000 }                     /* Name.Constant */
+body .nd { color: #AA22FF }                     /* Name.Decorator */
+body .ni { color: #999999; font-weight: bold }  /* Name.Entity */
+body .ne { color: #D2413A; font-weight: bold }  /* Name.Exception */
+body .nf { color: #0000FF }                     /* Name.Function */
+body .nl { color: #A0A000 }                     /* Name.Label */
+body .nn { color: #0000FF; font-weight: bold }  /* Name.Namespace */
+body .nt { color: #954121; font-weight: bold }  /* Name.Tag */
+body .nv { color: #19469D }                     /* Name.Variable */
+body .ow { color: #AA22FF; font-weight: bold }  /* Operator.Word */
+body .w  { color: #bbbbbb }                     /* Text.Whitespace */
+body .mf { color: #666666 }                     /* Literal.Number.Float */
+body .mh { color: #666666 }                     /* Literal.Number.Hex */
+body .mi { color: #666666 }                     /* Literal.Number.Integer */
+body .mo { color: #666666 }                     /* Literal.Number.Oct */
+body .sb { color: #219161 }                     /* Literal.String.Backtick */
+body .sc { color: #219161 }                     /* Literal.String.Char */
+body .sd { color: #219161; font-style: italic } /* Literal.String.Doc */
+body .s2 { color: #219161 }                     /* Literal.String.Double */
+body .se { color: #BB6622; font-weight: bold }  /* Literal.String.Escape */
+body .sh { color: #219161 }                     /* Literal.String.Heredoc */
+body .si { color: #BB6688; font-weight: bold }  /* Literal.String.Interpol */
+body .sx { color: #954121 }                     /* Literal.String.Other */
+body .sr { color: #BB6688 }                     /* Literal.String.Regex */
+body .s1 { color: #219161 }                     /* Literal.String.Single */
+body .ss { color: #19469D }                     /* Literal.String.Symbol */
+body .bp { color: #954121 }                     /* Name.Builtin.Pseudo */
+body .vc { color: #19469D }                     /* Name.Variable.Class */
+body .vg { color: #19469D }                     /* Name.Variable.Global */
+body .vi { color: #19469D }                     /* Name.Variable.Instance */
+body .il { color: #666666 }                     /* Literal.Number.Integer.Long */
+	.A{color: red !important;}
+  .B{color: blue !important;}
+	.C{color: purple  !important;}
+ .classfication{color: purple  !important;}
+	</style>
+  </head>
+  <script type="text/javascript">
+    if (window.location.host == "gobyexample.com") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34996217-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    }
+  </script>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Yangming's computer Basic</a></h2>
+      
+
+
+      <ul>
+       <a class="A">Comuter orgnization<br/></a>
+       <li><a href=" " class="B">Introduce to computer</a></li>
+       <li><a href=" "  class="B">Data's expression and computing</a></li>
+       <li><a href=" " class="B">Storage</a></li>
+       <li><a href=" " class="B">Instructions system</a></li>
+       <li><a href=" " class="B">Cpu</a></li>
+       <li><a href=" " class="B">Bus</a></li>
+       <li><a href=" " class="B">I/O</a></li>
+        
+       
+       <br/>
+        <a class="A">Operating System<br/></a>
+       <li><a class="B">introduce to OS</a></li>
+       <li><a >process in memrory(ts.os.7.10_18min)</a></li>
+       <li><a href="yangming" class="B">Proccess manage</a></li>
+       <li><a href="http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread" class="D">process and threads</a></li>
+       <li><a href=" " class="B">Memory manage</a></li>
+       <li><a href=" " class="B">File manage</a></li>
+        <li><a href="https://www.youtube.com/watch?v=H9dodboLXmA" class="C">Introduce to File system</a></li>
+         <li><a href="https://www.youtube.com/watch?v=RFkBYxmwi8M" class="C">File-System Implementation: Allocation Methods</a></li>
+       <li><a href=" " class="B" >I/O manage</a></li>
+       <li><a href="https://www.youtube.com/watch?v=wYiT9OLekZU" class="B" >about interrupt</a></li>
+      
+       <br/>
+       <a class="A">Computer Network<br/></a>
+       <li><a href="http://blog.hubspot.com/marketing/how-the-internet-works#sm.000110bb7trf5ey0uo6170xtm5ifd" class="B" >How Network works</a></li>
+       <li><a href="https://youtu.be/ihmHDZKOkA8" class="B" >How Network works2</a></li>
+       <li><a href="http://searchnetworking.techtarget.com/definition/Network-tap" class="B" >Network tap</a></li>
+       <li><a href="http://bt3gl.github.io/wiresharking-for-fun-or-profit.html" class="B" >Wireshark</a></li>
+       <li><a href="http://www.computerhope.com/arphlp.htm  " class="B" >arp -a</a></li>
+       <li><a href=" " class="B" >Network Arch</a></li>
+       <li><a href=" " class="C">introduce to Network</a></li>
+       <li><a href=" " class="C">Network arch and model</a></li>
+       
+       <li><a href=" " class="B">Physic layer</a></li>
+       <li><a href=" " class="B">DataLink layer</a></li>
+       <li><a href="http://www.thegeekstuff.com/2013/05/ip-multicasting/ " class="C"></a>ip-multicasting</li>
+       <li><a href=" " class="B">Network layer</a></li>
+       <li><a href=" " class="B">Transport layer</a></li>
+       <li><a href=" " class="B">Application layer</a></li>
+
+
+
+       
+
+
+
+ 
+        <br/>
+        <a class="A">Data structure and algrithm<br/></a>
+        <li><a href="https://people.ok.ubc.ca/ylucet/DS/Algorithms.html" class="A">Data structure  Visualizations</a></li>
+        <li><a href="http://bigocheatsheet.com/" class="A">algorithm complexity sheet</a></li>
+        <li><a href=" " mju class="B">Algorithm basics</a></li>  
+        <li><a href=" " class="C">Asymptotic analysis</a></li>
+        <li><a href=" " class="C">Greedy Algorithm</a></li>
+        <li><a href=" " class="C">Divide and Conquer</a></li>
+        <li><a href=" " class="C">Dynamic programing</a></li>
+        <li><a href=" " calss="B" >Data structure Basic</a></li>
+        <li><a href=" " class="B">Array data structure</a></li>
+        <li><a href=" "  class="C">Binary search tree</a></li>
+        <li><a href="https://youtu.be/ZdooBTdW5bM"  class="C">Huffman tree</a></li>
+        <li><a href=" "  class="B">Linked list Basics</a></li>
+        <li><a href=" "  class="C">Doubly Linked list </a></li>
+        <li><a href=" "  class="C">Circular linked list</a></li>
+        <li><a href=" "  class="B">Stack</a></li>
+        <li><a href=" "  class="B">Expression Parsing</a></li>
+        <li><a href=" " class="B">Queue</a></li>
+          <li><a href=" " class="B">Serch algorithm</a></li>
+        <li><a href=" "  class="C" >Linear Search</a></li>
+        <li><a href=" " class="C">Binary Search </a></li>
+        <li><a href=" " class="C">Interpolation search</a></li>
+        <li><a href=" " class="C">Hash Table</a></li>
+        <li><a href=" " class="B">Sorting algorithms</a></li>
+
+        <li><a href="https://youtu.be/P00xJgWzz2c" class="C">Bubble sort</a></li>
+        <li><a href="https://youtu.be/lyZQPjUT5B4" class="C">Bubble sort 1</a></li>
+        <li><a href="http://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html" class="C">Binary tree and full tree, complete tree</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Bubble-sort.gif" class="C">Bubble sort gif</a></li>
+        <li><a href="https://www.youtube.com/watch?v=ROalU379l3U" class="C">Insertion Sort</a></li>
+        <li><a href="http://www.studytonight.com/data-structures/insertion-sorting" class="C">Insertion Sort</a></li>
+        <li><a href="https://youtu.be/6nDMgr0-Yyo" class="C">Selection sort</a></li>
+        <li><a href="http://www.studytonight.com/data-structures/selection-sorting" class="C">Selection sort</a></li>
+        <li><a href="https://youtu.be/GCae1WNvnZM" class="C">Merge sort</a></li>
+         <li><a href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/mergesort-102-fa08.ppt" class="C">merge sort 2</a></li>
+        <li><a href=" " class="C">Shell sort</a></li>
+
+        <li><a href="https://www.youtube.com/watch?v=Z5nSXTnD1I4" class="C">Quick sort</a></li>
+        <li><a href="http://me.dt.in.th/page/Quicksort/#disqus_thread" class="C">Quick sort with demo</a></li>
+        <li><a class="C" href="http://stackoverflow.com/questions/20802396/how-external-merge-sort-algorithm-works">External_merge_sort_algorithm</a></li>
+
+        <li><a href=" "  class="B">Graph data structure</a></li>
+        <li><a href="https://youtu.be/X6n30V6qCWU"  class="C">Floyd algo</a></li>
+        <li><a href="https://youtu.be/ddTC4Zovtbc"  class="C">topological sort</a></li>
+        <li><a href="https://youtu.be/ddTC4Zovtbc"  class="C">Radix sort</a></li>
+        <li><a href="https://youtu.be/51JGP4VVlDc"  class="C">Heap sort</a></li>
+        <li><a href="https://youtu.be/bkROCj-BTWE"  class="C">Depth First traversal</a></li>
+        <li><a href="https://cs.usfca.edu/~galles/visualization/DFS.html"  class="C">Depth First traversal 2</a></li>
+        <li><a href="https://youtu.be/we2xFCPkH0Y " class="C">Breadth First traversal</a></li>
+        <li><a href="https://youtu.be/1057z9XTfcs" class="C">Dijstralk shortest path</a></li>
+        <li><a href="https://youtu.be/WOCV2UcxNrI" class="C">Dijstralk shortest path 2</a></li>
+        <li><a href="https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html" class="C">Dijstralk shortest path 3 same with prim algorithm</a></li>
+        <li><a href="https://www.youtube.com/watch?v=5XkK88VEILk" class="C">MST Kruskal's  Algorithm</a></li>
+        <li><a href="https://www.youtube.com/watch?v=71UQH7Pr9kU" class="C">MST Kruskal's  Algorithm 2 add small vertix method</a></li>
+        <li><a href="https://www.cs.princeton.edu/~rs/AlgsDS07/14MST.pdf" class="C">Minimum Spanning Tree</a></li>
+        <li><a href="http://interactivepython.org/runestone/static/pythonds/SortSearch/TheBinarySearch.html" class="C">Binary Search </a></li>
+        <li><a href="https://people.ok.ubc.ca/ylucet/DS/BST.html" class="C">Binary Search Tree</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Pn874kEc3IA" class="C">MST Prim's Algorithm </a></li>
+        <li><a href="https://www.tutorialspoint.com/data_structures_algorithms/prims_spanning_tree_algorithm.htm" class="C">MST Prim's Algorithm 2 add small vertex</a></li>
+        <li><a href=" " class="B" >Tree data structure</a></li>
+        <li><a href=" " class="C">Tree traversal</a></li>
+        <li><a href=" " class="C">Binary search tree</a></li>
+        <li><a href=" " class="C">AVL tree</a></li>
+        <li><a href=" "  class="C">Spanning Tree</a></li>
+        <li><a href=" " class="B">Heap</a></li>
+        <li><a href=" " class="B">Recursion</a></li>
+        <li><a href=" " class="C" >Tower of hanoi</a></li>
+        <li><a href=" " class="C">Fibonacci Series</a></li>
+<li><a class="classfication" href="https://github.com/oxfordyang2016/caton_time/blob/master/hodgepodge/introduce%20to%20algrithm.pdf">introduce to algrithm</a></li>
+        <li><a class="">Introduction 3</a></li>
+<li><a class="">1 The Role of Algorithms in Computing 5</a></li>
+<li><a class="">1.1 Algorithms 5</a></li>
+<li><a class="">1.2 Algorithms as a technology 10</a></li>
+<li><a class="">2 Getting Started 15</a></li>
+<li><a class="">2.1 Insertion sort 15</a></li>
+<li><a class="">2.2 Analyzing algorithms 21</a></li>
+<li><a class="">2.3 Designing algorithms 27</a></li>
+<li><a class="">3 Growth of Functions 41</a></li>
+<li><a class="">3.1 Asymptotic notation 41</a></li>
+<li><a class="">3.2 Standard notations and common functions 51</a></li>
+<li><a class="">4 Recurrences 62</a></li>
+<li><a class="">4.1 The substitution method 63</a></li>
+<li><a class="">4.2 The recursion-tree method 67</a></li>
+<li><a class="">4.3 The master method 73</a></li>
+<li><a class=""> 4.4 Proof of the master theorem 76</a></li>
+<li><a class="">5 Probabilistic Analysis and Randomized Algorithms 91</a></li>
+<li><a class="">5.1 The hiring problem 91</a></li>
+<li><a class="">5.2 Indicator random variables 94</a></li>
+<li><a class="">5.3 Randomized algorithms 99</a></li>
+<li><a class="">5.4 Probabilistic analysis and further uses of indicator random variables</a></li>
+<li><a class="">106</a></li>
+<li><a class="">vi Contents</a></li>
+<li><a class="">II Sorting and Order Statistics</a></li>
+<li><a class="">Introduction 123</a></li>
+<li><a class="">6 Heapsort 127</a></li>
+<li><a class="">6.1 Heaps 127</a></li>
+<li><a class="">6.2 Maintaining the heap property 130</a></li>
+<li><a class="">6.3 Building a heap 132</a></li>
+<li><a class="">6.4 The heapsort algorithm 135</a></li>
+<li><a class="">6.5 Priority queues 138</a></li>
+<li><a class="">7 Quicksort 145</a></li>
+<li><a class="">7.1 Description of quicksort 145</a></li>
+<li><a class="">7.2 Performance of quicksort 149</a></li>
+<li><a class="">7.3 A randomized version of quicksort 153</a></li>
+<li><a class="">7.4 Analysis of quicksort 155</a></li>
+<li><a class="">8 Sorting in Linear Time 165</a></li>
+<li><a class="">8.1 Lower bounds for sorting 165</a></li>
+<li><a class="">8.2 Counting sort 168</a></li>
+<li><a class="">8.3 Radix sort 170</a></li>
+<li><a class="">8.4 Bucket sort 174</a></li>
+<li><a class="">9 Medians and Order Statistics 183</a></li>
+<li><a class="">9.1 Minimum and maximum 184</a></li>
+<li><a class="">9.2 Selection in expected linear time 185</a></li>
+<li><a class="">9.3 Selection in worst-case linear time 189</a></li>
+<li><a class="">III Data Structures</a></li>
+<li><a class="">Introduction 197</a></li>
+<li><a class="">10 Elementary Data Structures 200</a></li>
+<li><a class="">10.1 Stacks and queues 200</a></li>
+<li><a class="">10.2 Linked lists 204</a></li>
+<li><a class="">10.3 Implementing pointers and objects 209</a></li>
+<li><a class="">10.4 Representing rooted trees 214</a></li>
+<li><a class="">11 Hash Tables 221</a></li>
+<li><a class="">11.1 Direct-address tables 222</a></li>
+<li><a class="">11.2 Hash tables 224</a></li>
+<li><a class="">11.3 Hash functions 229</a></li>
+<li><a class="">11.4 Open addressing 237</a></li>
+<li><a class=""> 11.5 Perfect hashing 245</a></li>
+<li><a class="">Contents vii</a></li>
+<li><a class="">12 Binary Search Trees 253</a></li>
+<li><a class="">12.1 What is a binary search tree? 253</a></li>
+<li><a class="">12.2 Querying a binary search tree 256</a></li>
+<li><a class="">12.3 Insertion and deletion 261</a></li>
+<li><a class=""> 12.4 Randomly built binary search trees 265</a></li>
+<li><a class="">13 Red-Black Trees 273</a></li>
+<li><a class="">13.1 Properties of red-black trees 273</a></li>
+<li><a class="">13.2 Rotations 277</a></li>
+<li><a class="">13.3 Insertion 280</a></li>
+<li><a class="">13.4 Deletion 288</a></li>
+<li><a class="">14 Augmenting Data Structures 302</a></li>
+<li><a class="">14.1 Dynamic order statistics 302</a></li>
+<li><a class="">14.2 How to augment a data structure 308</a></li>
+<li><a class="">14.3 Interval trees 311</a></li>
+<li><a class="">IV Advanced Design and Analysis Techniques</a></li>
+<li><a class="">Introduction 321</a></li>
+<li><a class="">15 Dynamic Programming 323</a></li>
+<li><a class="">15.1 Assembly-line scheduling 324</a></li>
+<li><a class="">15.2 Matrix-chain multiplication 331</a></li>
+<li><a class="">15.3 Elements of dynamic programming 339</a></li>
+<li><a class="">15.4 Longest common subsequence 350</a></li>
+<li><a class="">15.5 Optimal binary search trees 356</a></li>
+<li><a class="">16 Greedy Algorithms 370</a></li>
+<li><a class="">16.1 An activity-selection problem 371</a></li>
+<li><a class="">16.2 Elements of the greedy strategy 379</a></li>
+<li><a class="">16.3 Huffman codes 385</a></li>
+<li><a class="">16.4 Theoretical foundations for greedy methods 393</a></li>
+<li><a class="">16.5 A task-scheduling problem 399</a></li>
+<li><a class="">17 Amortized Analysis 405</a></li>
+<li><a class="">17.1 Aggregate analysis 406</a></li>
+<li><a class="">17.2 The accounting method 410</a></li>
+<li><a class="">17.3 The potential method 412</a></li>
+<li><a class="">17.4 Dynamic tables 416</a></li>
+<li><a class="">viii Contents</a></li>
+<li><a class="">V Advanced Data Structures</a></li>
+<li><a class="">Introduction 431</a></li>
+<li><a class="">18 B-Trees 434</a></li>
+<li><a class="">18.1 Definition of B-trees 438</a></li>
+<li><a class="">18.2 Basic operations on B-trees 441</a></li>
+<li><a class="">18.3 Deleting a key from a B-tree 449</a></li>
+<li><a class="">19 Binomial Heaps 455</a></li>
+<li><a class="">19.1 Binomial trees and binomial heaps 457</a></li>
+<li><a class="">19.2 Operations on binomial heaps 461</a></li>
+<li><a class="">20 Fibonacci Heaps 476</a></li>
+<li><a class="">20.1 Structure of Fibonacci heaps 477</a></li>
+<li><a class="">20.2 Mergeable-heap operations 479</a></li>
+<li><a class="">20.3 Decreasing a key and deleting a node 489</a></li>
+<li><a class="">20.4 Bounding the maximum degree 493</a></li>
+<li><a class="">21 Data Structures for Disjoint Sets 498</a></li>
+<li><a class="">21.1 Disjoint-set operations 498</a></li>
+<li><a class="">21.2 Linked-list representation of disjoint sets 501</a></li>
+<li><a class="">21.3 Disjoint-set forests 505</a></li>
+<li><a class="">21.4 Analysis of union by rank with path compression 509</a></li>
+<li><a class="">VI Graph Algorithms</a></li>
+<li><a class="">Introduction 525</a></li>
+<li><a class="">22 Elementary Graph Algorithms 527</a></li>
+<li><a class="">22.1 Representations of graphs 527</a></li>
+<li><a class="">22.2 Breadth-first search 531</a></li>
+<li><a class="">22.3 Depth-first search 540</a></li>
+<li><a class="">22.4 Topological sort 549</a></li>
+<li><a class="">22.5 Strongly connected components 552</a></li>
+<li><a class="">23 Minimum Spanning Trees 561</a></li>
+<li><a class="">23.1 Growing a minimum spanning tree 562</a></li>
+<li><a class="">23.2 The algorithms of Kruskal and Prim 567</a></li>
+<li><a class="">24 Single-Source Shortest Paths 580</a></li>
+<li><a class="">24.1 The Bellman-Ford algorithm 588</a></li>
+<li><a class="">24.2 Single-source shortest paths in directed acyclic graphs 592</a></li>
+<li><a class="">24.3 Dijkstra’s algorithm 595</a></li>
+<li><a class="">24.4 Difference constraints and shortest paths 601</a></li>
+<li><a class="">24.5 Proofs of shortest-paths properties 607</a></li>
+<li><a class="">Contents ix</a></li>
+<li><a class="">25 All-Pairs Shortest Paths 620</a></li>
+<li><a class="">25.1 Shortest paths and matrix multiplication 622</a></li>
+<li><a class="">25.2 The Floyd-Warshall algorithm 629</a></li>
+<li><a class="">25.3 Johnson’s algorithm for sparse graphs 636</a></li>
+<li><a class="">26 Maximum Flow 643</a></li>
+<li><a class="">26.1 Flow networks 644</a></li>
+<li><a class="">26.2 The Ford-Fulkerson method 651</a></li>
+<li><a class="">26.3 Maximum bipartite matching 664</a></li>
+<li><a class="">26.4 Push-relabel algorithms 669</a></li>
+<li><a class="">26.5 The relabel-to-front algorithm 681</a></li>
+<li><a class="">VII Selected Topics</a></li>
+<li><a class="">Introduction 701</a></li>
+<li><a class="">27 Sorting Networks 704</a></li>
+<li><a class="">27.1 Comparison networks 704</a></li>
+<li><a class="">27.2 The zero-one principle 709</a></li>
+<li><a class="">27.3 A bitonic sorting network 712</a></li>
+<li><a class="">27.4 A merging network 716</a></li>
+<li><a class="">27.5 A sorting network 719</a></li>
+<li><a class="">28 Matrix Operations 725</a></li>
+<li><a class="">28.1 Properties of matrices 725</a></li>
+<li><a class="">28.2 Strassen’s algorithm for matrix multiplication 735</a></li>
+<li><a class="">28.3 Solving systems of linear equations 742</a></li>
+<li><a class="">28.4 Inverting matrices 755</a></li>
+<li><a class="">28.5 Symmetric positive-definite matrices and least-squares approximation</a></li>
+<li><a class="">760</a></li>
+<li><a class="">29 Linear Programming 770</a></li>
+<li><a class="">29.1 Standard and slack forms 777</a></li>
+<li><a class="">29.2 Formulating problems as linear programs 785</a></li>
+<li><a class="">29.3 The simplex algorithm 790</a></li>
+<li><a class="">29.4 Duality 804</a></li>
+<li><a class="">29.5 The initial basic feasible solution 811</a></li>
+<li><a class="">30 Polynomials and the FFT 822</a></li>
+<li><a class="">30.1 Representation of polynomials 824</a></li>
+<li><a class="">30.2 The DFT and FFT 830</a></li>
+<li><a class="">30.3 Efficient FFT implementations 839</a></li>
+<li><a class="">x Contents</a></li>
+<li><a class="">31 Number-Theoretic Algorithms 849</a></li>
+<li><a class="">31.1 Elementary number-theoretic notions 850</a></li>
+<li><a class="">31.2 Greatest common divisor 856</a></li>
+<li><a class="">31.3 Modular arithmetic 862</a></li>
+<li><a class="">31.4 Solving modular linear equations 869</a></li>
+<li><a class="">31.5 The Chinese remainder theorem 873</a></li>
+<li><a class="">31.6 Powers of an element 876</a></li>
+<li><a class="">31.7 The RSA public-key cryptosystem 881</a></li>
+<li><a class="">31.8 Primality testing 887</a></li>
+<li><a class="">31.9 Integer factorization 896</a></li>
+<li><a class="">32 String Matching 906</a></li>
+<li><a class="">32.1 The naive string-matching algorithm 909</a></li>
+<li><a class="">32.2 The Rabin-Karp algorithm 911</a></li>
+<li><a class="">32.3 String matching with finite automata 916</a></li>
+<li><a class="">32.4 The Knuth-Morris-Pratt algorithm 923</a></li>
+<li><a class="">33 Computational Geometry 933</a></li>
+<li><a class="">33.1 Line-segment properties 934</a></li>
+<li><a class="">33.2 Determining whether any pair of segments intersects 940</a></li>
+<li><a class="">33.3 Finding the convex hull 947</a></li>
+<li><a class="">33.4 Finding the closest pair of points 957</a></li>
+<li><a class="">34 NP-Completeness 966</a></li>
+<li><a class="">34.1 Polynomial time 971</a></li>
+<li><a class="">34.2 Polynomial-time verification 979</a></li>
+<li><a class="">34.3 NP-completeness and reducibility 984</a></li>
+<li><a class="">34.4 NP-completeness proofs 995</a></li>
+<li><a class="">34.5 NP-complete problems 1003</a></li>
+<li><a class="">35 Approximation Algorithms 1022</a></li>
+<li><a class="">35.1 The vertex-cover problem 1024</a></li>
+<li><a class="">35.2 The traveling-salesman problem 1027</a></li>
+<li><a class="">35.3 The set-covering problem 1033</a></li>
+<li><a class="">35.4 Randomization and linear programming 1039</a></li>
+<li><a class="">35.5 The subset-sum problem 1043</a></li>
+<li><a class="">VIII Appendix: Mathematical Background</a></li>
+<li><a class="">Introduction 1057</a></li>
+<li><a class="">A Summations 1058</a></li>
+<li><a class="">A.1 Summation formulas and properties 1058</a></li>
+<li><a class="">A.2 Bounding summations 1062</a></li>
+<li><a class="">Contents xi</a></li>
+<li><a class="">B Sets, Etc. 1070</a></li>
+<li><a class="">B.1 Sets 1070</a></li>
+<li><a class="">B.2 Relations 1075</a></li>
+<li><a class="">B.3 Functions 1077</a></li>
+<li><a class="">B.4 Graphs 1080</a></li>
+<li><a class="">B.5 Trees 1085</a></li>
+<li><a class="">C Counting and Probability 1094</a></li>
+<li><a class="">C.1 Counting 1094</a></li>
+<li><a class="">C.2 Probability 1100</a></li>
+<li><a class="">C.3 Discrete random variables 1106</a></li>
+<li><a class="">C.4 The geometric and binomial distributions 1112</a></li>
+<li><a class="">C.5 The tails of the binomial distribution 1118</a></li>
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+        
+  
+      
+      </ul>
+      <p class="footer">
+        by <a href="">yangming</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+  </body>
+</html>
