@@ -87,6 +87,7 @@ def info():
     if request.method == 'POST':
         timer = str(time.time())
         content = request.values.get('input')
+        print(content)
         taskcontent = task(str(content))
         print("====================")
         print(taskcontent)
