@@ -89,10 +89,10 @@ def information():
         db.session.add(user)
         db.session.commit()
         print(content)
-        #all_users = User.query.all()
+        all_users = User.query.all()
         #print(all_users)
-        #for k in all_users:
-        #    print(k.email)
+        for k in all_users:
+            print(k.email)
         #content = task(content)
         #print(content)
         return json.dumps({'content':str(content),'time':str(time.time())})
