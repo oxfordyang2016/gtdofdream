@@ -108,6 +108,11 @@ def information1():
     if request.method == 'POST':
         info = []
         try:
+            print(request.json)
+        except:
+            info1 = "request json have no data"
+            info.append(info1)    
+        try:
             print(request.data)
         except:
             a = ("request.data error")
