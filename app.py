@@ -104,26 +104,6 @@ def information():
         return json.dumps({'content':str(content),'time':str(time.time())})
   
 
-@app.route('/info1',methods=['GET','POST'])
-def information1():
-    if request.method == 'POST':
-        content = request.values.get('input')
-        #user = User(str(time.time()), str(content)+str(time.time()))
-        #db.session.add(user)
-        taskcontent = task(str(content))
-        db.session.add(taskcontent)
-        db.session.commit()
-        print(content)
-        #all_users = User.query.all()
-        #print(all_users)
-        '''
-        for k in all_users:
-            print(str(k.email)+'email')
-        '''    
-        #content = task(content)
-        #print(content)
-        return jsonify("input":str(content))
-
 
 
 
