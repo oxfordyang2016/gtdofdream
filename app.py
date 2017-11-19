@@ -106,6 +106,8 @@ def information():
 @app.route('/info1',methods=['GET','POST'])
 def information1():
     if request.method == 'POST':
+        print(request.data)
+        print(json.loads(request.data))
         #content = request.values.get('input')
         #user = User(str(time.time()), str(content)+str(time.time()))
         #db.session.add(user)
