@@ -106,13 +106,13 @@ def information():
 @app.route('/info1',methods=['GET','POST'])
 def information1():
     if request.method == 'POST':
-        content = request.values.get('input')
+        #content = request.values.get('input')
         #user = User(str(time.time()), str(content)+str(time.time()))
         #db.session.add(user)
-        taskcontent = task(str(content))
-        db.session.add(taskcontent)
-        db.session.commit()
-        print(content)
+        #taskcontent = task(str(content))
+        #db.session.add(taskcontent)
+        #db.session.commit()
+        #print(content)
         #all_users = User.query.all()
         #print(all_users)
         '''
@@ -121,7 +121,7 @@ def information1():
         '''    
         #content = task(content)
         #print(content)
-        return jsonify(input1=str(content))
+        return jsonify(input1=str("yangmingis=====here"))
 
 
 
