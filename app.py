@@ -121,7 +121,7 @@ def information1():
         '''    
         #content = task(content)
         #print(content)
-        return jsonify("input":str(content))
+        return jsonify(input1=str(content))
 
 
 
