@@ -113,9 +113,9 @@ def information1():
             info1 = "request json have no data"
             info.append(info1)    
         try:
-            print(request.data)
+            print(request.data())
         except:
-            a = ("request.data error")
+            a = ("request.data() error")
             info.append(a)    
         try:
             print(json.loads(request.data))
