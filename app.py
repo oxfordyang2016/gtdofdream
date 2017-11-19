@@ -106,8 +106,17 @@ def information():
 @app.route('/info1',methods=['GET','POST'])
 def information1():
     if request.method == 'POST':
-        print(request.data)
-        print(json.loads(request.data))
+        info = []
+        try:
+            print(request.data)
+        except:
+            a = ("request.data error")
+            info.append(a)    
+        try:
+            print(json.loads(request.data))
+        except:
+            b = "json parser fail" 
+            info.append(b)   
         #content = request.values.get('input')
         #user = User(str(time.time()), str(content)+str(time.time()))
         #db.session.add(user)
@@ -123,7 +132,7 @@ def information1():
         '''    
         #content = task(content)
         #print(content)
-        return jsonify(input1=str("yangmingis=====here"))
+        return jsonify(input1=str("yangmingis=====here"),info1 =str(info))
 
 
 
