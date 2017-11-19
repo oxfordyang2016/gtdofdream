@@ -102,7 +102,8 @@ def information():
         #content = task(content)
         #print(content)
         return json.dumps({'content':str(content),'time':str(time.time())})
-  
+
+#ios requests http post  
 @app.route('/info1',methods=['GET','POST'])
 def information1():
     if request.method == 'POST':
@@ -113,7 +114,8 @@ def information1():
             info1 = "request json have no data"
             info.append(info1)    
         try:
-            print(request.get_data())
+            a=request.get_data()
+            print(a)
         except:
             a = ("request.data() error")
             info.append(a)    
