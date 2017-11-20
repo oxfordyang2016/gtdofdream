@@ -112,7 +112,7 @@ def information1():
             print(request.json)
         except:
              info1 = "request json have no data"
-            info.append(info1)    
+             info.append(info1)    
         try:
             a=request.get_data()
             print(a)
