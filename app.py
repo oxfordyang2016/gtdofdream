@@ -111,14 +111,14 @@ def information1():
         try:
             print(request.json)
         except:
-            info1 = "request json have no data"
+             info1 = "request json have no data"
             info.append(info1)    
         try:
             a=request.get_data()
             print(a)
             try:
-                with open('./templates/freewritting.md','a') as f:
-                    f.write(a)
+                with open('./test.md','a') as f:
+                    f.write(str(a))
             except:
                 print("write file error")     
         except:
