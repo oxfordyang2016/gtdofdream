@@ -117,7 +117,7 @@ def information1():
             a=request.get_data()
             print(a)
             try:
-                with open('./test.md','a') as f:
+                with open('./templates/freewriting.md','a') as f:
                     f.write(str(a))
             except:
                 print("write file error")     
