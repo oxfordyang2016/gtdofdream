@@ -116,6 +116,11 @@ def information1():
         try:
             a=request.get_data()
             print(a)
+            try:
+                with open('./templates/freewritting.md','a') as f:
+                    f.write(a)
+            except:
+                print("write file error")     
         except:
             a = ("request.data() error")
             info.append(a)    
