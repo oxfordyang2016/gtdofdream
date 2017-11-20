@@ -21,9 +21,22 @@ someone
 ----------
 use ppt as the pre studied materail may be a good method
 
+--------
+task
+---------
+1.data source
+2.which problems need to be checked?
 
 
 
+------
+camera live push stream
+
+--------
+someone
+--------
+in the past , ialways think of that when i get somethings,i will be ok.but from later result .
+it doesnot behavior the things i want
 
 
 
@@ -243,7 +256,9 @@ https://stackoverflow.com/questions/4644027/how-to-automatically-reload-a-page-a
 someone
 ---------
 from recent experment,i have known, do a good things,u cannot do a thing very well at once,u
-must persist it .besides.many things when u get ,it seems vague!!
+must persist it .besides.many things when u get ,it seems vague!!besides,the design work is 
+very impot.may be ,in the last period.u may think these work u have done are not very important
+
 
 
 
