@@ -116,6 +116,9 @@ def information1():
         try:
             a=request.get_data()
             print(a)
+            taskcontent = task(str(a))
+            db.session.add(taskcontent)
+            db.session.commit()
             try:
                 with open('./templates/freewriting.md','a') as f:
                     f.write(str(a))
