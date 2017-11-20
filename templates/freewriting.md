@@ -239,6 +239,16 @@ html  how to reload a html page
 https://stackoverflow.com/questions/4644027/how-to-automatically-reload-a-page-after-a-given-period-of-inactivity
 
 
+---------
+someone
+---------
+from recent experment,i have known, do a good things,u cannot do a thing very well at once,u
+must persist it .besides.many things when u get ,it seems vague!!
+
+
+
+
+
 
 -----------
 machine learning
