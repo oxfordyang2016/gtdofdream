@@ -111,11 +111,19 @@ def information1():
         try:
             print(request.json)
         except:
-            info1 = "request json have no data"
-            info.append(info1)    
+             info1 = "request json have no data"
+             info.append(info1)    
         try:
             a=request.get_data()
             print(a)
+            taskcontent = task(str(a))
+            db.session.add(taskcontent)
+            db.session.commit()
+            try:
+                with open('./templates/freewriting.md','a') as f:
+                    f.write(str(a))
+            except:
+                print("write file error")     
         except:
             a = ("request.data() error")
             info.append(a)    
