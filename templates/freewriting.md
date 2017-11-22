@@ -32,24 +32,15 @@ task
 ------
 camera live push stream
 
---------
-someone
---------
-in the past , ialways think of that when i get somethings,i will be ok.but from later result .
-it doesnot behavior the things i want
 
-
-
---------
+---------
 someone
 ---------
-how to concentate my  enegy to  many discipline
+from some ponit ,i feel that there is all kinds of businees chance.i can rent my sichuan home 
+in mingsu.i can build a website for my college
 
 
--------
-someone
---------
-get big data to sell   !!!
+
 
 
 --------
