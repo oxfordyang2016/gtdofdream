@@ -29,6 +29,15 @@
 
 ```
 
+
+
+
+
+--------
+ios
+-------
+https://www.reddit.com/r/swift/comments/3gvyd2/how_to_make_launchscreen_show_longer_in_ios_apps/
+
 ----------
 someone
 ----------
