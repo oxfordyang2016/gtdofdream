@@ -47,6 +47,13 @@ def law():
 def hello_world():
     return render_template('in.html')
 
+
+@app.route('/todoist')
+def hello_world():
+    return render_template('toist.html')
+
+
+
 @app.route('/all')
 def all():
     return render_template('all.html')
