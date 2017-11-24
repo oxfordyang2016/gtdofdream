@@ -29,6 +29,14 @@
 
 ```
 
+
+-------
+software 
+---------
+http://compsci.hunter.cuny.edu/~sweiss/course_materials/csci235/lecture_notes/chapter_01.pdf
+http://www.thwink.org/soft/product/ref/Viewer.html
+
+
 ---------
 someone
 ---------

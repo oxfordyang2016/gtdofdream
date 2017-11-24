@@ -38,8 +38,9 @@ class task(db.Model):
     def __repr__(self):
         return '<Name %r>' % self.name
 
-
-
+@app.route('/xiajian')
+def law():
+    return render_template('law.html')
 
 
 @app.route('/in')
