@@ -29,6 +29,25 @@
 
 ```
 
+----------
+someone
+----------
+i have idea to start new career in finnace
+--------
+ios app icon maker
+-----------
+
+https://github.com/laptrinhcomvn/ios-app-icon-generator(it works)
+
+
+
+
+----------
+someone
+----------
+i need to tidy my tech source for use later
+
+
 
 -------
 software 
