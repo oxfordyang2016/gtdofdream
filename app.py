@@ -49,7 +49,7 @@ def hello_world():
 
 
 @app.route('/todoist')
-def hello_world():
+def todo():
     return render_template('toist.html')
 
 
