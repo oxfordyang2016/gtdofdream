@@ -29,7 +29,10 @@
 
 ```
 
-
+--------
+someone
+--------
+i have find when i have get some result,if iwill continue.....waht iwa nt say
 
 
 
@@ -560,6 +563,16 @@ someone
 ---------
 i think  i need to set a period of  time to prepare a project
 when the project is not  organized into small step
+
+
+
+---------
+someone
+----------
+i must make full use of the fudan time
+
+
+
 
 
 
