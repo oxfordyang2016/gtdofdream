@@ -1,4 +1,5 @@
 import os,time,json
+from datetime import datetime
 from flask import Flask, request,jsonify
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -32,7 +33,7 @@ class task(db.Model):
 
     def __init__(self, task):
         self.task = task
-        self.date = str(time.time())
+        self.date = str(datetime.now())
 
 
     def __repr__(self):
