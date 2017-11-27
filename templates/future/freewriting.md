@@ -486,6 +486,21 @@ someone
 in fact ,i cannot understand where my interest is ???
 
 
+--------
+crypt bitcoin platform 
+----------
+https://gate.io/login
+
+
+
+-------
+html5 videos
+----------
+https://stackoverflow.com/questions/10377453/play-infinitely-looping-video-on-load-in-html5
+html5 hide control
+https://stackoverflow.com/questions/14161516/html5-video-completely-hide-controls
+
+
 
 
 

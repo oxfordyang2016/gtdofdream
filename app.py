@@ -41,7 +41,7 @@ class task(db.Model):
 
 @app.route('/xiajian')
 def law():
-    return render_template('law.html')
+    return render_template('youdu.html')
 
 
 @app.route('/in')
