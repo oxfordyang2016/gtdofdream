@@ -59,6 +59,14 @@ def todo():
 def all():
     return render_template('all.html')
 
+
+@app.route('/task')
+def task():
+    return render_template('task.html')
+
+
+
+
 @app.route('/project')
 def project():
     return render_template('project.html')
