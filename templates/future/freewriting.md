@@ -493,6 +493,14 @@ https://gate.io/login
 
 
 
+
+---------
+python install box
+-----------
+
+https://computervisiononline.com/blog/install-opencv-31-and-python-27-centos-7
+
+
 -------
 html5 videos
 ----------
