@@ -494,6 +494,12 @@ https://gate.io/login
 
 
 
+-------
+html button
+---------
+https://stackoverflow.com/questions/42517956/stack-buttons-vertically
+
+
 ---------
 python install box
 -----------
