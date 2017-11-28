@@ -2,14 +2,22 @@ import os,time,json
 from datetime import datetime
 from flask import Flask, request,jsonify
 from flask import render_template
-from flask.ext.sqlalchemy import SQLAlchemy
+try:
+    from flask.ext.sqlalchemy import SQLAlchemy
+except:
+    pass    
 #in procfile to specify the python run the app
 #web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+try:    
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+except:
+    pass
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
-db = SQLAlchemy(app)
-
+try:
+    db = SQLAlchemy(app)
+except:
+    pass
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
