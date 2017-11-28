@@ -29,6 +29,53 @@ https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-en
 
 ```
 
+--------
+someone
+--------
+i have find when i have get some result,if iwill continue.....waht iwa nt say
+
+
+
+--------
+ios
+-------
+https://www.reddit.com/r/swift/comments/3gvyd2/how_to_make_launchscreen_show_longer_in_ios_apps/
+
+----------
+someone
+----------
+i have idea to start new career in finnace
+--------
+ios app icon maker
+-----------
+
+https://github.com/laptrinhcomvn/ios-app-icon-generator(it works)
+
+
+
+
+----------
+someone
+----------
+i need to tidy my tech source for use later
+
+
+
+-------
+software 
+---------
+http://compsci.hunter.cuny.edu/~sweiss/course_materials/csci235/lecture_notes/chapter_01.pdf
+http://www.thwink.org/soft/product/ref/Viewer.html
+
+
+---------
+someone
+---------
+i must understand my feeling to be against all kinds of things.
+
+
+
+
 
 ---------
 someone
@@ -439,6 +486,30 @@ someone
 in fact ,i cannot understand where my interest is ???
 
 
+--------
+crypt bitcoin platform 
+----------
+https://gate.io/login
+
+
+
+-------
+html5 videos
+----------
+https://stackoverflow.com/questions/10377453/play-infinitely-looping-video-on-load-in-html5
+html5 hide control
+https://stackoverflow.com/questions/14161516/html5-video-completely-hide-controls
+
+
+
+
+
+
+---------
+someone
+----------
+i must give some time to look for soulmate
+
 ----------
 js startup cs drag 
 -------------
@@ -516,6 +587,16 @@ someone
 ---------
 i think  i need to set a period of  time to prepare a project
 when the project is not  organized into small step
+
+
+
+---------
+someone
+----------
+i must make full use of the fudan time
+
+
+
 
 
 

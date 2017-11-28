@@ -1,4 +1,5 @@
 import os,time,json
+from datetime import datetime
 from flask import Flask, request,jsonify
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -32,23 +33,39 @@ class task(db.Model):
 
     def __init__(self, task):
         self.task = task
-        self.date = str(time.time())
+        self.date = str(datetime.now())
 
 
     def __repr__(self):
         return '<Name %r>' % self.name
 
-
-
+@app.route('/xiajian')
+def law():
+    return render_template('youdu.html')
 
 
 @app.route('/in')
 def hello_world():
     return render_template('in.html')
 
+
+@app.route('/todoist')
+def todo():
+    return render_template('toist.html')
+
+
+
 @app.route('/all')
 def all():
     return render_template('all.html')
+
+
+@app.route('/task')
+def task():
+    return render_template('task.html')
+
+
+
 
 @app.route('/project')
 def project():
