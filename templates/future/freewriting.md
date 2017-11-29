@@ -23,6 +23,37 @@ https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-en
 
 
 ```
+
+----------
+gtd plan
+-----------
+if let me design a todoist app,i feel so complicated!
+
+--------
+someone
+--------
+when i need to implement a app .i find it diffcult.regardless ,i have some basic understandng of html and js
+
+
+
+
+--------
+someone
+--------
+try to understand the personality of   chengducivilizion
+
+
+
+----------
+someone
+-----------
+from my opnion ,if i have so accurate input or google translate ,my problem will be sloved more easy!
+such as when i slove the problem ,that is ,how to format messy html and js file.in the begin,i feel soo sucked
+when i use google translate ,the problem was sloved
+
+
+
+
 -----------
 html beauty code
 ------------
