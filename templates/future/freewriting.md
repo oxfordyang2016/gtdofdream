@@ -8,11 +8,6 @@
 
 ```
 
-
-
-
-
-`
 # <span style="color:red">**You will never feel that you love to do so** </span>
 
 
@@ -28,11 +23,17 @@ https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-en
 
 
 ```
+-----------
+html beauty code
+------------
 
---------
-someone
---------
-i have find when i have get some result,if iwill continue.....waht iwa nt say
+https://www.cleancss.com/html-beautify/
+
+---------
+how to format messy  js file
+-----------
+https://www.danstools.com/javascript-beautify/
+
 
 
 
@@ -492,6 +493,11 @@ crypt bitcoin platform
 https://gate.io/login
 
 
+
+---------
+english
+-----------
+i t was built five miles south of the communicity!(the last . five miles ........ was used as adv)
 
 
 -------
