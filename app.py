@@ -52,6 +52,21 @@ def law():
     return render_template('youdu.html')
 
 
+
+@app.route('/dream')
+def dream():
+    return render_template('fiveyearplan.html')
+
+
+
+@app.route('/deadlist')
+def deadlist():
+    return render_template('fiveyearplan.html')
+
+
+
+
+
 @app.route('/in')
 def hello_world():
     return render_template('in.html')
