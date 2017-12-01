@@ -64,6 +64,8 @@ def gtd-cli():
         plantime = request.values.get('plantime')
         print(inboxthing)
         return json.dumps({'status':'u have uploaded successfully'})
+    else:
+        return json.dumps({'status':'upload fail'})
 
 
 
