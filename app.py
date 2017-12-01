@@ -56,17 +56,19 @@ def law():
 
 @app.route('/gtdcli'):
 def gtdcli():
-    print("i have no word")
-    if request.method == 'POST':
-        inboxthing = request.values.get('inbox')
-        inputtime = request.values.get('input-time')
-        taskstatus = request.values.get('task-status')
-        plantime = request.values.get('plantime')
-        print(inboxthing)
-        return json.dumps({'status':'u have uploaded successfully'})
-    else:
-        return json.dumps({'status':'upload fail'})
-
+    try:
+        print("i have no word")
+        if request.method == 'POST':
+            inboxthing = request.values.get('inbox')
+            inputtime = request.values.get('input-time')
+            taskstatus = request.values.get('task-status')
+            plantime = request.values.get('plantime')
+            print(inboxthing)
+            return json.dumps({'status':'u have uploaded successfully'})
+        else:
+            return json.dumps({'status':'upload fail'})
+    except Exception as e:
+        return json.dumps('errorindo':str(e))
 
 
 @app.route('/dream')
