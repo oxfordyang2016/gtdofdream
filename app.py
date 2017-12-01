@@ -54,8 +54,8 @@ def law():
 
 
 
-@app.route('/gtd-cli'):
-def gtd-cli():
+@app.route('/gtdcli'):
+def gtdcli():
     print("i have no word")
     if request.method == 'POST':
         inboxthing = request.values.get('inbox')
