@@ -59,7 +59,7 @@ def gtdcli():
     print("i have no word")
     if request.method == 'POST':
         inboxthing = request.values.get('inbox')
-        inputtime = request.values.get('input-time'))
+        inputtime = request.values.get('input-time')
         taskstatus = request.values.get('task-status')
         plantime = request.values.get('plantime')
         print(inboxthing)
