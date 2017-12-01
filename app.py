@@ -54,7 +54,7 @@ def law():
 
 
 
-@app.route('/gtdcli'):
+@app.route('/gtdcli')
 def gtdcli():
     try:
         print("i have no word")
@@ -68,6 +68,7 @@ def gtdcli():
         else:
             return json.dumps({'status':'upload fail'})
     except Exception as e:
+        print('error info',str(e))
         return json.dumps('errorindo':str(e))
 
 
