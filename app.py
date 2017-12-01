@@ -69,7 +69,7 @@ def gtdcli():
             return json.dumps({'status':'upload fail'})
     except Exception as e:
         print('error info',str(e))
-        return json.dumps('errorindo':str(e))
+        return json.dumps({'errorindo':str(e)})
 
 
 @app.route('/dream')
