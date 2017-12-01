@@ -59,8 +59,8 @@ def gtd-cli():
     print("i have no word")
     if request.method == 'POST':
         inboxthing = request.values.get('inbox')
-        input-time = request.values.get('input-time'))
-        task-status = request.values.get('task-status')
+        inputtime = request.values.get('input-time'))
+        taskstatus = request.values.get('task-status')
         plantime = request.values.get('plantime')
         print(inboxthing)
         return json.dumps({'status':'u have uploaded successfully'})
