@@ -21,7 +21,10 @@ html gtd plan
 -----------
 if let me design a todoist app,i feel so complicated!
 
-
+--------
+cs
+------
+if in some time ,u cannot fix bug,u may get accurate except info area
 
 
 --------

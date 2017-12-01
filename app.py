@@ -54,7 +54,7 @@ def law():
 
 
 
-@app.route('/gtdcli')
+@app.route('/gtdcli',methods=['GET','POST'])
 def gtdcli():
     try:
         print("i have no word")
