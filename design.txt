@@ -1,0 +1,43 @@
+design method
+
+
+
+
+gtd-cli client
+
+
+
+
+
+
+
+server
+
+api 
+1./gtd-cli
+  method:post
+  request example
+
+
+
+
+
+
+
+
+
+
+database
+1.create a gtd database
+2.in gtd datbase create many table,a table correspond to a user
+3.in a table ,it include these terms
+  a.inbox-thing
+  b.task-status(bool)
+  c.input-time
+  d.project
+
+
+
+
+
+

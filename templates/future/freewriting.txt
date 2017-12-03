@@ -1,6 +1,9 @@
 
 
-
+--------
+someoneone
+----------
+in the recent days ,i have not time to read anything.i think this is not a good sign
 
 
 
@@ -9,6 +12,19 @@ image search
 -----------
 
 https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-engine-python-opencv/
+
+
+
+-------
+someone
+-------
+i think that my method is design a tool/system it can use and develop it slowly
+
+
+
+------------
+cs java scritp
+-----------
 
 
 ------
