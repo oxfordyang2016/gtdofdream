@@ -10,7 +10,8 @@ except:
 #web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
 try:    
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+    #app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+    app.config['SQLALCHEMY_DATABASE_URI']='mysql://dt_admin:47.100.100.141/dreamteam_db'
 except:
     pass
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
@@ -30,6 +31,24 @@ class User(db.Model):
 
     def __repr__(self):
         return '<Name %r>' % self.name
+
+
+
+
+class aliyun(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80))
+    email = db.Column(db.String(120), unique=True)
+
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+    def __repr__(self):
+        return '<Name %r>' % self.name
+
+
+
 
 
 
