@@ -10,8 +10,8 @@ except:
 #web: FLASK_APP = server.py python -m flask run --host=0.0.0.0 --port=$PORT
 app = Flask(__name__)
 try:    
-    #app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-    app.config['SQLALCHEMY_DATABASE_URI']='mysql://dt_admin:47.100.100.141/dreamteam_db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+    #app.config['SQLALCHEMY_DATABASE_URI']='mysql://dt_admin:47.100.100.141/dreamteam_db'
 except:
     pass
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
