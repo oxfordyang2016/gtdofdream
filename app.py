@@ -66,6 +66,13 @@ class task(db.Model):
     def __repr__(self):
         return '<Name %r>' % self.name
 
+
+
+db.create_all()
+
+
+
+
 @app.route('/xiajian')
 def law():
     return render_template('youdu.html')
@@ -89,6 +96,11 @@ def gtdcli():
     except Exception as e:
         print('error info',str(e))
         return json.dumps({'errorindo':str(e)})
+
+
+
+
+
 
 
 @app.route('/dream')
