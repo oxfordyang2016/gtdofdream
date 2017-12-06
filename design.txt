@@ -18,6 +18,11 @@ api
   method:post
   request example
 
+2./today
+  method:get
+  response
+  {'15212':'yangming is here'} 
+
 
 
 
