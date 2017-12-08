@@ -197,12 +197,10 @@ video{
 <script>
   isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)
     if (is_safari) {
+      console.log("what happen")
 var x = document.getElementById("myvideo");
-x.setAttribute("hidden",true);
-var img = new Image(1,1); 
-img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Buddhist_temple_in_Midong%2C_Urumqi%2C_Xinjiang_%281%29.jpg/1280px-Buddhist_temple_in_Midong%2C_Urumqi%2C_Xinjiang_%281%29.jpg';
+x.setAttribute("controls",true);
 
-    }
 </script>
 
 
