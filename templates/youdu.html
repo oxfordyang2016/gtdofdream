@@ -198,8 +198,10 @@ video{
   isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)
     if (is_safari) {
 var x = document.getElementById("myvideo");
-
 x.setAttribute("hidden");
+var x = document.createElement("image");
+var img = new Image(1,1); 
+img.src = 'http://www.testtrackinglink.com';
 
     }
 </script>
