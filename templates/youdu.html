@@ -196,15 +196,19 @@ video{
 
 <script>
   var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-  if (isSafari) alert('Safari');
+  if (isSafari){
+   alert('Safari');
+var x = document.getElementById("myvideo");
+x.setAttribute("controls",true);
+}
+
 </script>
 
 <!--
 
     if (is_safari) {
       console.log("what happen");
-var x = document.getElementById("myvideo");
-x.setAttribute("controls",true);
+
 }
 
 
