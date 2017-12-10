@@ -413,6 +413,15 @@ https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a249
 
 
 ---------
+
+
+
+
+
+
+
+
+---------
 algorithm
 -----------
 https://news.ycombinator.com/item?id=12021476

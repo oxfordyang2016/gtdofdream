@@ -263,6 +263,14 @@ def info2():
 
 
 
+@app.route('/jy')
+def jy():
+    #a={'test':'++++++++++++','time':str(time.time())}
+    return render_template('jy.html')
+
+
+
+
 
 
 

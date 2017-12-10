@@ -12,7 +12,7 @@ def template_test():
     return render_template('template.html', my_string="Wheeeee!", my_list=[0,1,2,3,4,5],testdict = testdict)
 
 
-@app.route("/youdu")
+@app.route("/youdu1")
 def template_test1():
     return render_template("youdu.html")
 
